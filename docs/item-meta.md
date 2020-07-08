@@ -82,7 +82,7 @@ item:
 ```
 
 
-== Enchantments ==
+## Enchantments
 You can also add enchantments to items. Each enchantment has to be put in separate line in format NAME:LEVEL. [Full list of enchantments](enchantments)
 
 For example, let's add Sharpness IV and Looting I to the sword from the previous example:
