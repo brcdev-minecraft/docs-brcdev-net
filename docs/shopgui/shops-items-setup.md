@@ -282,6 +282,20 @@ Firework
         slot: 0
 ```
 
+### Custom items
+
+#### HeadDatabase
+Head from HeadDatabase with ID `1734`
+```yaml
+      1:
+        type: item
+        item:
+          headDatabase: 1234
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
+
 
 ### Mob spawners 
 
