@@ -290,7 +290,7 @@ Head from HeadDatabase with ID `1734`
       1:
         type: item
         item:
-          headDatabase: 1234
+          headDatabase: 1734
         buyPrice: 50
         sellPrice: 25
         slot: 0
