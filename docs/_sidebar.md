@@ -5,6 +5,7 @@
   - [Item IDs](item-ids.md)
   - [Materials](materials.md)
   - [Entity types](entity-types.md)
+  - [Enchantments](enchantments.md)
 
 - ShopGUI+
 
