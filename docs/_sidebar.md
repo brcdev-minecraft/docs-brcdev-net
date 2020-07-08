@@ -19,6 +19,7 @@
 
   - [Commands & permissions](gangs/commands-permissions)
   - [Adding fight arenas](gangs/fight-arenas)
+  - [Placeholders](gangs/placeholders)
   
 - AuctionGUI+
 
