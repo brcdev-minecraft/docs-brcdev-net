@@ -296,6 +296,21 @@ Head from HeadDatabase with ID `1734`
         slot: 0
 ```
 
+#### MMOItems
+Item from MMOItems with type `armor` and id `MYTHRIL_CHAINMAIL`
+```yaml
+      1:
+        type: item
+        item:
+          mmoItems:
+            type: armor
+            id: MYTHRIL_CHAINMAIL
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
+
+
 
 ### Mob spawners 
 
