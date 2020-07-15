@@ -310,6 +310,17 @@ Item from MMOItems with type `armor` and id `MYTHRIL_CHAINMAIL`
         slot: 0
 ```
 
+#### CrackShot
+CrackShot gun with ID `AK-47`
+```yaml
+      1:
+        type: item
+        item:
+          crackShot: "AK-47"
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
 
 
 ### Mob spawners 
