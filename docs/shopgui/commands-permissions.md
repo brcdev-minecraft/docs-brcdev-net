@@ -4,23 +4,23 @@
 > permissions to access all shops.</p> 
 
 ## Commands
-| Command                                                             | Description                                                                    | Required permission                                       |
-|---------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------|
-| /shop                                                               | Open the main shop menu                                                        | shopguiplus.shop                                          |
-| /shop reload                                                        | Reload the configuration                                                       | shopguiplus.reload                                        |
-| /shop check                                                         | Get information of the item held in hand                                       | shopguiplus.check                                         |
-| /shop [shop name]                                                   | Directly open the specified shop                                               | shopguiplus.shops.SHOP_ID (see **Permissions** paragraph) |
-| /shop [player] [shop name]                                          | Open the specified shop (or main one if none specified) to specified player    | shopguiplus.others                                        |
-| /sell hand [quantity]                                               | Sell the item held in your hand                                                | shopguiplus.sell.hand                                     |
-| /sell handall                                                       | Sell all items inventory which are the same as the one being held in your hand | shopguiplus.sell.hand.all                                 |
-| /sell all                                                           | Sell all items from your inventory                                             | shopguiplus.sell.all                                      |
-| /shop addmodifier item <player> <shop> <item> <value> [buy\|sell]   | Add item-specific price modifier                                               | shopguiplus.shop.addmodifier                              |
-| /shop addmodifier shop <player> <shop> <value> [buy\|sell]          | Add shop-specific price modifier                                               | shopguiplus.shop.addmodifier                              |
-| /shop addmodifier global <player> <value> [buy\|sell]               | Add global price modifier                                                      | shopguiplus.shop.addmodifier                              |
-| /shop resetmodifier item <player> <shop> <item> [buy\|sell]         | Reset player's item-specific price modifier                                    | shopguiplus.shop.resetmodifier                            |
-| /shop resetmodifier shop <player> <shop> [buy\|sell]                | Reset player's shop-specific price modifier                                    | shopguiplus.shop.resetmodifier                            |
-| /shop resetmodifier global <player> <value> [buy\|sell]             | Reset player's global price modifier                                           | shopguiplus.shop.resetmodifier                            |
-| /shop checkmodifiers <player>                                       | Check player's current price modifiers                                         | shopguiplus.shop.checkmodifiers                           |
+| Command                                                                   | Description                                                                    | Required permission                                       |
+|---------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------|
+| /shop                                                                     | Open the main shop menu                                                        | shopguiplus.shop                                          |
+| /shop reload                                                              | Reload the configuration                                                       | shopguiplus.reload                                        |
+| /shop check                                                               | Get information of the item held in hand                                       | shopguiplus.check                                         |
+| /shop [shop name]                                                         | Directly open the specified shop                                               | shopguiplus.shops.SHOP_ID (see **Permissions** paragraph) |
+| /shop [player] [shop name]                                                | Open the specified shop (or main one if none specified) to specified player    | shopguiplus.others                                        |
+| /sell hand [quantity]                                                     | Sell the item held in your hand                                                | shopguiplus.sell.hand                                     |
+| /sell handall                                                             | Sell all items inventory which are the same as the one being held in your hand | shopguiplus.sell.hand.all                                 |
+| /sell all                                                                 | Sell all items from your inventory                                             | shopguiplus.sell.all                                      |
+| /shop addmodifier item \<player\> \<shop\> \<item\> \<value\> [buy\|sell] | Add item-specific price modifier                                               | shopguiplus.shop.addmodifier                              |
+| /shop addmodifier shop \<player\> \<shop\> \<value\> [buy\|sell]          | Add shop-specific price modifier                                               | shopguiplus.shop.addmodifier                              |
+| /shop addmodifier global \<player\> \<value\> [buy\|sell]                 | Add global price modifier                                                      | shopguiplus.shop.addmodifier                              |
+| /shop resetmodifier item \<player\> \<shop\> <item> [buy\|sell]           | Reset player's item-specific price modifier                                    | shopguiplus.shop.resetmodifier                            |
+| /shop resetmodifier shop \<player\> \<shop\> [buy\|sell]                  | Reset player's shop-specific price modifier                                    | shopguiplus.shop.resetmodifier                            |
+| /shop resetmodifier global \<player\> \<value\> [buy\|sell]               | Reset player's global price modifier                                           | shopguiplus.shop.resetmodifier                            |
+| /shop checkmodifiers \<player\>                                           | Check player's current price modifiers                                         | shopguiplus.shop.checkmodifiers                           |
 
 ## Permissions
 All command permissions have been listed above. However, players need additional permissions to access each shop. 
