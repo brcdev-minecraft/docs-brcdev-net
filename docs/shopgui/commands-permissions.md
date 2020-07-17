@@ -8,6 +8,7 @@
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------|
 | /shop                                                               | Open the main shop menu                                                        | shopguiplus.shop                                          |
 | /shop reload                                                        | Reload the configuration                                                       | shopguiplus.reload                                        |
+| /shop check                                                         | Get information of the item held in hand                                       | shopguiplus.check                                         |
 | /shop [shop name]                                                   | Directly open the specified shop                                               | shopguiplus.shops.SHOP_ID (see **Permissions** paragraph) |
 | /shop [player] [shop name]                                          | Open the specified shop (or main one if none specified) to specified player    | shopguiplus.others                                        |
 | /sell hand [quantity]                                               | Sell the item held in your hand                                                | shopguiplus.sell.hand                                     |
