@@ -14,6 +14,7 @@
   - [Price modifiers](shopgui/price-modifiers)
   - [Changing currency names](shopgui/currency-names)
   - [Controlling the item stack size](shopgui/stack-size)
+  - [FAQ](shopgui/faq)
   - [API](shopgui/api)
   
 - Gangs+
