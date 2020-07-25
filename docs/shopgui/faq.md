@@ -272,6 +272,8 @@ There are some additional secret settings available config.yml to change the for
  
 ```yaml
 numberFormat:
+  decimalSeparator: '.'
+  groupingSeparator: ','
   minimumIntegerDigits: 1
   maximumIntegerDigits: 32
   minimumFractionDigits: 0
