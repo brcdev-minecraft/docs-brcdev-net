@@ -574,3 +574,28 @@ gui:
   clickCooldown: 250
 ```
 </details>
+
+#### Enabling/disabling amount selection GUI in particular shops
+You can override the default amount selection GUI settings (`enableBuyGUI`, `enableSellGUI`, `enableSellGUISellAll`) from config.yml in each of shop yamls.
+<details>
+ <summary>Example (Click to toggle)</summary>
+ 
+```yaml
+armor:
+  name: "&4&lArmor (page %page%)"
+  enableBuyGUI: false
+  enableSellGUI: false
+  fillItem:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  items:
+    1:
+      type: item
+      item:
+        material: LEATHER_HELMET
+        quantity: 1
+      buyPrice: 40
+      sellPrice: 8
+      slot: 10
+```
+</details>
