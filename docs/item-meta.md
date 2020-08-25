@@ -318,7 +318,7 @@ item:
 
 ## NBT tags
 
-<p class="warn"><b>Note:</b> The <i>compareMeta</i> option must be enabled for an item to alter its NBT tags!</p>
+<p class="warn"><b>Note:</b> The <i>compareMeta</i> option must be enabled for an item to use the NBT option!</p>
 
 Adding NBT tags to items is as simple as adding `nbt` section and tags inside. Each tag (except `COMPOUND` type) must
  contain `type`, `key` and `value`. Compound tags require `type`, `key` and `children` instead. Compounds can be
