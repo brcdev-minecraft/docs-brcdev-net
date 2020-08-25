@@ -315,6 +315,67 @@ item:
       color: WHITE
 ```
 
+
+## NBT tags
+
+<p class="warn"><b>Note:</b> The <i>compareMeta</i> option must be enabled for an item to alter its NBT tags!</p>
+
+Adding NBT tags to items is as simple as adding `nbt` section and tags inside. Each tag (except `COMPOUND` type) must
+ contain `type`, `key` and `value`. Compound tags require `type`, `key` and `children` instead. Compounds can be
+  nested recursively.
+  
+More info on the NBT format itself can be found [here](https://minecraft.gamepedia.com/NBT_format).
+
+### NBT tag types
+* BYTE
+* SHORT
+* INT
+* LONG
+* FLOAT
+* DOUBLE
+* BYTE_ARRAY
+* STRING
+* COMPOUND
+* INT_ARRAY
+
+Example (single string tag):
+```yaml
+item:
+  material: BREAD 
+  amount: 32
+  damage: 0 
+  nbt:
+    1:
+      type: STRING
+      key: Hello
+      value: World
+```
+
+Example (two tags - string and compound containing two doubles):
+```yaml
+item:
+  material: BREAD 
+  amount: 32
+  damage: 0 
+  nbt:
+    1:
+      type: STRING
+      key: Hello
+      value: World
+    2:
+      type: COMPOUND
+      key: TestCompound
+      children:
+        1:
+          type: DOUBLE
+          key: ExampleKey1
+          value: 123
+        2:
+          type: DOUBLE
+          key: ExampleKey2
+          value: 456
+```
+
 ## Leather armor color 
 To add a dyed leather armor you have to define the color in R,G,B format.
 
