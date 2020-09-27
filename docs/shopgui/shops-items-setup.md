@@ -446,7 +446,7 @@ Multiple permissions `essentials.balance` and `essentials.balance.others` valid 
 
 
 ### Commands 
-/say Hello [player name]!
+Selling single command: `/say Hello [player name]!`
 ```yaml
     items:
       1:
@@ -461,9 +461,10 @@ Multiple permissions `essentials.balance` and `essentials.balance.others` valid 
         slot: 0
 ```
 
+Selling multiple commands at once:
+* `/say Good bye [player name]!`
+* `/msg [player name] See you later!`
 
-/say Good bye [player name]!
-/msg [player name] See you later!
 ```yaml
       2:
         type: command
@@ -478,6 +479,38 @@ Multiple permissions `essentials.balance` and `essentials.balance.others` valid 
         slot: 1
 ```
 
+Allowing players to purchase multiple executions (quantity is limited by the value of `commandsLimit`) of a single
+ command:
+ ```yaml
+       2:
+         type: command
+         item:
+           material: WOOL
+           quantity: 32
+           damage: 1
+         commands: 
+           - "say Sup %PLAYER%"
+         commandsLimit: 64
+         buyPrice: 100
+         slot: 1
+ ```
+
+Allowing players to purchase single execution (quantity is limited by the value of `commandsLimit`) of a single command
+ with
+ placeholder `%AMOUNT%` being replaced with purchased quantity:
+ ```yaml
+       2:
+         type: command
+         item:
+           material: WOOL
+           quantity: 32
+           damage: 1
+         commands: 
+           - "say Sup %PLAYER%, you bought %AMOUNT% commands"
+         commandsLimit: 64
+         buyPrice: 100
+         slot: 1
+ ```
 
 ## Amount selection GUI customization 
 You can change every part of the amount selection GUI in the config. You can change items/slots, hide buttons etc.
