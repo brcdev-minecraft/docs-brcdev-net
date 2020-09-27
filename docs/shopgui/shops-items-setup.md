@@ -508,6 +508,7 @@ Allowing players to purchase single execution (quantity is limited by the value 
          commands: 
            - "say Sup %PLAYER%, you bought %AMOUNT% commands"
          commandsLimit: 64
+         runSingleCommand: true
          buyPrice: 100
          slot: 1
  ```
