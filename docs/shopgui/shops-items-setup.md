@@ -448,16 +448,14 @@ Multiple permissions `essentials.balance` and `essentials.balance.others` valid 
 ### Commands 
 Selling single command: `/say Hello [player name]!`
 ```yaml
-    items:
       1:
         type: command
         item:
-          material: WOOL
-          quantity: 32
-          damage: 0
+          material: DIAMOND_PICKAXE
+          quantity: 1
         commands: 
           - "say Hello, %PLAYER%!"
-        buyPrice: 500
+        buyPrice: 100
         slot: 0
 ```
 
@@ -466,51 +464,48 @@ Selling multiple commands at once:
 * `/msg [player name] See you later!`
 
 ```yaml
-      2:
+      1:
         type: command
         item:
-          material: WOOL
-          quantity: 32
-          damage: 1
+          material: DIAMOND_PICKAXE
+          quantity: 1
         commands: 
           - "say Good bye, %PLAYER%!"
           - "msg %PLAYER% See you later!"
         buyPrice: 100
-        slot: 1
+        slot: 0
 ```
 
 Allowing players to purchase multiple executions (quantity is limited by the value of `commandsLimit`) of a single
  command:
  ```yaml
-       2:
+       1:
          type: command
          item:
-           material: WOOL
-           quantity: 32
-           damage: 1
+           material: DIAMOND_PICKAXE
+           quantity: 1
          commands: 
            - "say Sup %PLAYER%"
          commandsLimit: 64
          buyPrice: 100
-         slot: 1
+         slot: 0
  ```
 
 Allowing players to purchase single execution (quantity is limited by the value of `commandsLimit`) of a single command
  with
  placeholder `%AMOUNT%` being replaced with purchased quantity:
  ```yaml
-       2:
+       1:
          type: command
          item:
-           material: WOOL
-           quantity: 32
-           damage: 1
+           material: DIAMOND_PICKAXE
+           quantity: 1
          commands: 
            - "say Sup %PLAYER%, you bought %AMOUNT% commands"
          commandsLimit: 64
          runSingleCommand: true
          buyPrice: 100
-         slot: 1
+         slot: 0
  ```
 
 ## Amount selection GUI customization 
