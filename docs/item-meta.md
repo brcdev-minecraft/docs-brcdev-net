@@ -469,7 +469,7 @@ item:
   amount: 1
 ```
 
-Example: (Firework Star with color):
+Example (Firework Star with color):
 ```yaml
 item:
   material: FIREWORK_STAR
@@ -477,7 +477,7 @@ item:
   fireworkColor: RED
 ```
 
-Example: (Firework Star with color and fade color):
+Example (Firework Star with color and fade color):
 ```yaml
 item:
   material: FIREWORK_STAR
