@@ -457,3 +457,31 @@ item:
       flicker: true
       trail: true
 ```
+
+## Firework stars
+<p class="warn"><b>Note:</b> Remember to use valid material name corresponding to your Minecraft version (<i
+>FIREWORK_STAR</i> or <i>FIREWORK_CHARGE</i>).</p> 
+
+Example (regular Firework Star):
+```yaml
+item:
+  material: FIREWORK_STAR
+  amount: 1
+```
+
+Example: (Firework Star with color):
+```yaml
+item:
+  material: FIREWORK_STAR
+  amount: 1
+  fireworkColor: RED
+```
+
+Example: (Firework Star with color and fade color):
+```yaml
+item:
+  material: FIREWORK_STAR
+  amount: 1
+  fireworkColor: RED
+  fireworkFadeColor: PURPLE
+```
