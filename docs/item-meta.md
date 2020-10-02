@@ -390,7 +390,8 @@ item:
 You can find the dye colors here: [Leather dye colors list](leather-dye-colors)
 
 ## Fireworks 
-To add a new potion you have to choose the FIREWORK material and define firework power and effects. You can set the power by adding fireworkPower entry with number from 1 to 4 which will be the result power.
+To add a new firework you have to choose the FIREWORK material and define firework power and effects. You can set the
+ power by adding fireworkPower entry with number from 1 to 4 which will be the result power.
 
 ```yaml
 item:
