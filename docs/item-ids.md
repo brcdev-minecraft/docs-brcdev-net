@@ -2,6 +2,9 @@
 
 <p class="warn"><b>Tip:</b> You don't have to set the damage value when it's 0 (it's the default value).</p>
 
+<p class="warn"><b>Tip:</b> Use <i>/shop check</i> command in game to check the material name and damage for the held
+ item.</p>
+
 <!-- tabs:start -->
 
 ## ** Minecraft 1.14-1.16 **
