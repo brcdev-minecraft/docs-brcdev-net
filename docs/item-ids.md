@@ -2,8 +2,7 @@
 
 <p class="warn"><b>Tip:</b> You don't have to set the damage value when it's 0 (it's the default value).</p>
 
-<p class="warn"><b>Tip:</b> Use <i>/shop check</i> command in game to check the material name and damage for the held
- item.</p>
+<p class="warn"><b>Tip:</b> Looking for ShopGUI+ items? Use <i>/shop check</i> command in game when holding an item.</p>
 
 <!-- tabs:start -->
 

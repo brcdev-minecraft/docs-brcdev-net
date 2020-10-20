@@ -2,8 +2,7 @@
 
 <p class="warn"><b>Note:</b> Numeric item IDs aren't supported, please use the names listed below.</p>
 
-<p class="warn"><b>Tip:</b> Use <i>/shop check</i> command in game to check the material name and damage for the held
- item.</p>
+<p class="warn"><b>Tip:</b> Looking for ShopGUI+ items? Use <i>/shop check</i> command in game when holding an item.</p>
 
 Make sure you use the tab corresponding to your server's Minecraft version.
 
