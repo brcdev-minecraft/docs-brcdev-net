@@ -315,6 +315,27 @@ item:
       color: WHITE
 ```
 
+## Shields
+
+[Pattern types list](pattern-types)
+
+[Colors list](dye-colors)
+
+Example:
+```yaml
+item:
+  material: SHIELD
+  quantity: 1
+  color: ORANGE
+  patterns:
+    1:
+      type: STRIPE_BOTTOM
+      color: WHITE
+    2:
+      type: STRIPE_TOP
+      color: WHITE
+```
+
 
 ## NBT tags
 
