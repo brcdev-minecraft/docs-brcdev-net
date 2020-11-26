@@ -322,6 +322,18 @@ CrackShot gun with ID `AK-47`
         slot: 0
 ```
 
+#### Oraxen
+Oraxen item with ID `obsidian_pickaxe`
+```yaml
+      1:
+        type: item
+        item:
+          oraxen: "obsidian_pickaxe"
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
+
 
 ### Mob spawners 
 
