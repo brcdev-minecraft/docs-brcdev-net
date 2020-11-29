@@ -609,10 +609,12 @@ However, if you want to fix them yourself, following steps must be performed:
 1. Refactor your shop by merging all `blocks1`, `blocks2`, `blocks3` etc shops into one `blocks` with multiple pages
  according to the [instruction](shopgui/faq?id=adding-more-pages).
 2. Remove the existing buttons with `-1` buy price and `commandsOnClick` added
-3. Add buttons the correct way to the merged shop:
+3. Add buttons the correct way to the merged shop
+
+Example of correct buttons setup:
 
 <details>
- <summary>Example of correct buttons setup (Click to toggle)</summary>
+ <summary>Example (Click to toggle)</summary>
  
 ```yaml
 food:
