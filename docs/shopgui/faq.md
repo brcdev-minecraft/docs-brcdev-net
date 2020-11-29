@@ -599,3 +599,41 @@ armor:
       slot: 10
 ```
 </details>
+
+#### Fixing previous/next page buttons opening buy menu instead
+If you're experiencing this issue, it means you're running a really outdated configuration. We highly suggest to
+ contact its author with an inquiry to either update it or refund if it's a paid configuration - these changes were
+  few years ago and there was more than enough time to update.
+  
+However, if you want to fix them yourself, following steps must be performed:
+1. Refactor your shop by merging all `blocks1`, `blocks2`, `blocks3` etc shops into one `blocks` with multiple pages
+ according to the [instruction](shopgui/faq?id=adding-more-pages).
+2. Remove the existing buttons with `-1` buy price and `commandsOnClick` added
+3. Add buttons the correct way to the merged shop:
+<details>
+ <summary>Example (Click to toggle)</summary>
+ 
+```yaml
+food:
+  name: "&2&lFood (page %page%)"
+  fillItem:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  buttons:
+    goBack:
+      slot: 49
+    previousPage:
+      slot: 39
+    nextPage:
+      slot: 41
+  items:
+    1:
+      type: item
+      item:
+        material: MELON
+        quantity: 10
+      buyPrice: 30
+      sellPrice: 6
+      slot: 10
+```
+</details>
