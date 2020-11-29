@@ -610,6 +610,7 @@ However, if you want to fix them yourself, following steps must be performed:
  according to the [instruction](shopgui/faq?id=adding-more-pages).
 2. Remove the existing buttons with `-1` buy price and `commandsOnClick` added
 3. Add buttons the correct way to the merged shop:
+
 <details>
  <summary>Example (Click to toggle)</summary>
  
@@ -637,3 +638,4 @@ food:
       slot: 10
 ```
 </details>
+
