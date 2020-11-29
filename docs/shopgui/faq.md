@@ -612,7 +612,7 @@ However, if you want to fix them yourself, following steps must be performed:
 3. Add buttons the correct way to the merged shop:
 
 <details>
- <summary>Example (Click to toggle)</summary>
+ <summary>Example of correct buttons setup (Click to toggle)</summary>
  
 ```yaml
 food:
