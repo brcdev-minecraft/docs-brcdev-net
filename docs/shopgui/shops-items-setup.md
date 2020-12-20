@@ -548,73 +548,64 @@ amountSelectionGUI:
     #"Set to 1" button
     set1:
       item:
-        material: STAINED_GLASS_PANE
+        material: RED_STAINED_GLASS_PANE
         quantity: 1
-        damage: 14
         name: "&c&lSet to 1"
       slot: 18
     #"Remove 10" button
     remove10:
       item:
-        material: STAINED_GLASS_PANE
+        material: RED_STAINED_GLASS_PANE
         quantity: 10
-        damage: 14
         name: "&c&lRemove 10"
       slot: 19
     #"Remove 1" button
     remove1:
       item:
-        material: STAINED_GLASS_PANE
+        material: RED_STAINED_GLASS_PANE
         quantity: 1
-        damage: 14
         name: "&c&lRemove 1"
       slot: 20
     #"Add 1" button
     add1:
       item:
-        material: STAINED_GLASS_PANE
+        material: GREEN_STAINED_GLASS_PANE
         quantity: 1
-        damage: 5
         name: "&a&lAdd 1"
       slot: 24
     #"Add 10" button
     add10:
       item:
-        material: STAINED_GLASS_PANE
+        material: GREEN_STAINED_GLASS_PANE
         quantity: 10
-        damage: 5
         name: "&a&lAdd 10"
       slot: 25
     #"Set to 64" button
     set64:
       item:
-        material: STAINED_GLASS_PANE
+        material: GREEN_STAINED_GLASS_PANE
         quantity: 64
-        damage: 5
         name: "&c&lSet to 64"
       slot: 26
     #"Confirm" button
     confirm:
       item:
-        material: STAINED_GLASS
+        material: GREEN_STAINED_GLASS
         quantity: 1
-        damage: 5
         name: "&a&lConfirm"   
       slot: 39
     #"Sell all" button
     sellAll:
       item:
-        material: STAINED_GLASS
+        material: GREEN_STAINED_GLASS
         quantity: 1
-        damage: 5
         name: "&a&lSell all"      
       slot: 40
     #"Cancel" button      
     cancel:
       item:
-        material: STAINED_GLASS
+        material: RED_STAINED_GLASS
         quantity: 1
-        damage: 14
         name: "&c&lCancel"  
       slot: 41
 ```
