@@ -334,6 +334,18 @@ Oraxen item with ID `obsidian_pickaxe`
         slot: 0
 ```
 
+#### Custom Items
+Custom Items item with ID `item1`
+```yaml
+      1:
+        type: item
+        item:
+          customItems: "item1"
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
+
 
 ### Mob spawners 
 
