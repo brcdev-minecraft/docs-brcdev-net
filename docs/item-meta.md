@@ -81,6 +81,18 @@ item:
     - HIDE_ATTRIBUTES
 ```
 
+## Unbreakable items
+You can add the "Unbreakable" tag to an item. If can be combined with `HIDE_ATTRIBUTES` item flag described above to 
+make the item glow.
+
+Example of a pickaxe with "Unbreakable" tag:
+```yaml
+item:
+  material: DIAMOND_PICKAXE
+  amount: 1
+  unbreakable: true
+```
+
 
 ## Enchantments
 You can also add enchantments to items. Each enchantment has to be put in separate line in format NAME:LEVEL. [Full list of enchantments](enchantments)
