@@ -163,6 +163,7 @@ item:
     type: SPEED
     level: 1
     extended: true
+    color: BLUE
 ```
 
 
@@ -410,17 +411,23 @@ item:
 ```
 
 ## Leather armor color 
-To add a dyed leather armor you have to define the color in R,G,B format.
+To add a dyed leather armor you can define the color either as a [RGB color](leather-dye-colors) or one of [Colors](colors).
 
-Example:
+Example (regular color):
+```yaml
+item:
+  material: LEATHER_HELMET
+  quantity: 1
+  color: TEAL
+```
+
+Example (RGB color):
 ```yaml
 item:
   material: LEATHER_HELMET
   quantity: 1
   color: 127,255,0
 ```
-
-You can find the dye colors here: [Leather dye colors list](leather-dye-colors)
 
 ## Fireworks 
 To add a new firework you have to choose the FIREWORK material and define firework power and effects. You can set the
