@@ -532,6 +532,20 @@ Allowing players to purchase single execution (quantity is limited by the value 
          slot: 0
  ```
 
+## Adding same item to multiple slots
+You can add the same item multiple times to a shop by specifying the slots numbers as a list instead of a single value:
+```yaml
+       1:
+         item:
+           material: STONE
+           quantity: 1
+         type: DUMMY
+         slots:
+           - 30
+           - 31
+           - 32
+```
+
 ## Amount selection GUI customization 
 You can change every part of the amount selection GUI in the config. You can change items/slots, hide buttons etc.
 
