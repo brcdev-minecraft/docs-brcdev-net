@@ -346,6 +346,19 @@ Custom Items item with ID `item1`
         slot: 0
 ```
 
+#### Brewery
+Brewery `wine` potion with quality `10`
+```yaml
+      1:
+        type: item
+        item:
+          brewery:
+            recipe: "wine"
+            quality: 10
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
 
 ### Mob spawners 
 
