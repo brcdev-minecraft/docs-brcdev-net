@@ -360,6 +360,18 @@ Brewery `wine` potion with quality `10`
         slot: 0
 ```
 
+#### Executable Items
+Item from Executable Items with ID `heal` 
+```yaml
+      1:
+        type: item
+        item:
+          executableItems: "heal"
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
+
 ### Mob spawners 
 
 <p class="warn"><b>Note:</b> Remember to use valid material name corresponding to your Minecraft version (<i>SPAWNER
