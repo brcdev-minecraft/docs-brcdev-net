@@ -372,6 +372,18 @@ Item from Executable Items with ID `heal`
         slot: 0
 ```
 
+#### ItemsAdder
+Item from ItemsAdder with ID `ruby_sword`
+```yaml
+      1:
+        type: item
+        item:
+          itemsAdder: "ruby_sword"
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
+
 ### Mob spawners 
 
 <p class="warn"><b>Note:</b> Remember to use valid material name corresponding to your Minecraft version (<i>SPAWNER
