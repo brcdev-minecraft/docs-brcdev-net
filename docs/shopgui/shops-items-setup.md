@@ -303,7 +303,7 @@ Item from MMOItems with type `armor` and id `MYTHRIL_CHAINMAIL`
         type: item
         item:
           mmoItems:
-            type: armor
+            type: ARMOR
             id: MYTHRIL_CHAINMAIL
         buyPrice: 50
         sellPrice: 25
