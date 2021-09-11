@@ -6,7 +6,7 @@
 
 <!-- tabs:start -->
 
-## ** Minecraft 1.14-1.16 **
+## ** Minecraft 1.14-1.17 **
 ### Stone types
 | Item Name         | Material          | Damage Value |
 |-------------------|-------------------|--------------|

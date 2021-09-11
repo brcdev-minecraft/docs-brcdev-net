@@ -8,7 +8,7 @@ Useful links:
 * [Item flags list](item-flags)
 * [Firework effects list](firework-effects)
 * [Leather dye colors list](leather-dye-colors)
-* [Potion types list (1.9-1.16 only)](potion-types)
+* [Potion types list (1.9-1.17 only)](potion-types)
 * [Potion Calculator by Graham Edgecombe (1.7-1.8 only)](https://minecraft-ids.grahamedgecombe.com/potion-calculator)
 
 
@@ -147,12 +147,12 @@ item:
   damage: 16417
 ```
 
-### 1.9-1.16
+### 1.9-1.17
 Since 1.9 damage values don't work any more. You have to set the potion parameters using particular settings.
 
 First off, you have to choose the type of the potion by using appropriate material, POTION, LINGERING_POTION or SPLASH_POTION. Then you can adjust the potion parameters using following settings (only type is required).
 
-[List of all 1.9-1.16 potion types](potion-types)
+[List of all 1.9-1.17 potion types](potion-types)
 
 Example:
 ```yaml
@@ -205,7 +205,7 @@ item:
   mobType: 4
 ```
 
-### 1.13-1.16
+### 1.13-1.17
 Since 1.13, there were created separate material names for each spawn egg what made creating them much more simple. You need only the material name which can be found [here](item-ids#mob-spawning-eggs).
 
 Example (Creeper Spawn Egg):
@@ -228,7 +228,7 @@ item:
   skullOwner: jeb_
 ```
 
-### 1.13-1.16
+### 1.13-1.17
 To add a player head you have to use the new PLAYER_HEAD material and set the skull owner.
 
 Example:
@@ -254,7 +254,7 @@ item:
   skin: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjI4NDM1ZDc5MWEwMThmY2E3OTI2ODU0Zjc3ZWNkN2RmMmQxZGYwYjFjMWM3ZjlhNjM4YjhhOTMxZGI5NWEifX19
 ```
 
-### 1.13-1.16
+### 1.13-1.17
 To add a custom base64 head you need to use the PLAYER_HEAD material as well. The base64 skin can be passed in a skin entry.
 
 Example:
@@ -308,7 +308,7 @@ item:
       color: WHITE
 ```
 
-### 1.13 - 1.16
+### 1.13 - 1.17
 Since 1.13 you need to use specific [material name](materials) containing the color, without specifying it explicitly.
 
 Example: 
