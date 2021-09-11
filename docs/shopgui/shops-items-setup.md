@@ -822,3 +822,31 @@ economyTypes:
   - VAULT
   - EXP
 ``` 
+
+
+## Setting per-shop click actions
+You can override the default click actions from config.yml (so e.g. LMB sells items and RMB buys them) by setting 
+the same config entries in a shop.
+
+Note: It overrides specified actions only. If you want to disable an action from config.yml, you have to set it to 
+`none`.
+
+Example:
+```yaml
+armor:
+  name: "&4&lArmor (page %page%)"
+  clickActions:
+    LEFT: SELL
+   RIGHT: BUY
+  items:
+    1:
+      type: item
+      item:
+        material: LEATHER_HELMET
+        quantity: 1
+      buyPrice: 40
+      sellPrice: 8
+      slot: 10
+``` 
+
+This results in left and right clicks being overridden, while middle click is still inherited from config.yml. 
