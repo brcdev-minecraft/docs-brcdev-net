@@ -6,8 +6,9 @@
 ## Spawn eggs
 <!-- tabs:start -->
 
-### ** Minecraft 1.11-1.16 **
+### ** Minecraft 1.11-1.17 **
 
+axolotl<br />
 bat<br />
 bee<br />
 blaze<br />
@@ -38,6 +39,7 @@ ocelot<br />
 parrot<br />
 pig<br />
 piglin<br />
+piglin_brute<br />
 polar_bear<br />
 rabbit<br />
 sheep<br />
@@ -137,12 +139,14 @@ PolarBear
 
 ## Spawners
 
+AXOLOTL (1.17+)<br />
 BAT<br />
 BEE (1.15+)<br />
 BLAZE<br />
 CAT (1.14+)<br />
 CAVE_SPIDER<br />
 CHICKEN<br />
+COD (1.13+)<br />
 COW<br />
 CREEPER<br />
 DOLPHIN (1.13+)<br />
@@ -173,6 +177,7 @@ PARROT (1.12+)<br />
 PHANTOM (1.13+)<br />
 PIG<br />
 PIGLIN (1.16+)<br />
+PIGLIN_BRUTE (1.16+)<br />
 PILLAGER (1.14+)<br />
 PIG_ZOMBIE (1.7-1.15), ZOMBIFIED_PIGLIN (1.16+)<br />
 POLAR_BEAR (1.10+)<br />

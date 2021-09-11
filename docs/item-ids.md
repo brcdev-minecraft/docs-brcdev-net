@@ -252,59 +252,76 @@
 | Peony            | PEONY        | 0            |
 
 ### Mob spawning eggs
-| Item name                 | Material                  | Damage value |
-|---------------------------|---------------------------|--------------|
-| Bat Spawn Egg             | bat_spawn_egg             | 0            |
-| Blaze Spawn Egg           | blaze_spawn_egg           | 0            |
-| Cave Spider Spawn Egg     | cave_spider_spawn_egg     | 0            |
-| Chicken Spawn Egg         | chicken_spawn_egg         | 0            |
-| Cod Spawn Egg             | cod_spawn_egg             | 0            |
-| Cow Spawn Egg             | cow_spawn_egg             | 0            |
-| Creeper Spawn Egg         | creeper_spawn_egg         | 0            |
-| Dolphin Spawn Egg         | dolphin_spawn_egg         | 0            |
-| Donkey Spawn Egg          | donkey_spawn_egg          | 0            |
-| Drowned Spawn Egg         | drowned_spawn_egg         | 0            |
-| Elder Guardian Spawn Egg  | elder_guardian_spawn_egg  | 0            |
-| Enderman Spawn Egg        | enderman_spawn_egg        | 0            |
-| Endermite Spawn Egg       | endermite_spawn_egg       | 0            |
-| Evoker Spawn Egg          | evoker_spawn_egg          | 0            |
-| Ghast Spawn Egg           | ghast_spawn_egg           | 0            |
-| Guardian Spawn Egg        | guardian_spawn_egg        | 0            |
-| Horse Spawn Egg           | horse_spawn_egg           | 0            |
-| Husk Spawn Egg            | husk_spawn_egg            | 0            |
-| Llama Spawn Egg           | llama_spawn_egg           | 0            |
-| Magma Cube Spawn Egg      | magma_cube_spawn_egg      | 0            |
-| Mooshroom Spawn Egg       | mooshroom_spawn_egg       | 0            |
-| Mule Spawn Egg            | mule_spawn_egg            | 0            |
-| Ocelot Spawn Egg          | ocelot_spawn_egg          | 0            |
-| Parrot Spawn Egg          | parrot_spawn_egg          | 0            |
-| Spawn Egg                 | phantom _spawn_egg        | 0            |
-| Pig Spawn Egg             | pig_spawn_egg             | 0            |
-| Polar Bear Spawn Egg      | polar_bear_spawn_egg      | 0            |
-| Pufferfish Spawn Egg      | pufferfish_spawn_egg      | 0            |
-| Rabbit Spawn Egg          | rabbit_spawn_egg          | 0            |
-| Salmon Spawn Egg          | salmon_spawn_egg          | 0            |
-| Sheep Spawn Egg           | sheep_spawn_egg           | 0            |
-| Shulker Spawn Egg         | shulker_spawn_egg         | 0            |
-| Silverfish Spawn Egg      | silverfish_spawn_egg      | 0            |
-| Skeleton Spawn Egg        | skeleton_spawn_egg        | 0            |
-| Skeleton Horse Spawn Egg  | skeleton_horse_spawn_egg  | 0            |
-| Slime Spawn Egg           | slime_spawn_egg           | 0            |
-| Spider Spawn Egg          | spider_spawn_egg          | 0            |
-| Squid Spawn Egg           | squid_spawn_egg           | 0            |
-| Stray Spawn Egg           | stray_spawn_egg           | 0            |
-| Tropical Fish Spawn Egg   | tropical_fish_spawn_egg   | 0            |
-| Turtle Spawn Egg          | turtle_spawn_egg          | 0            |
-| Vex Spawn Egg             | vex_spawn_egg             | 0            |
-| Villager Spawn Egg        | villager_spawn_egg        | 0            |
-| Vindicator Spawn Egg      | vindicator_spawn_egg      | 0            |
-| Witch Spawn Egg           | witch_spawn_egg           | 0            |
-| Wither Skeleton Spawn Egg | wither_skeleton_spawn_egg | 0            |
-| Wolf Spawn Egg            | wolf_spawn_egg            | 0            |
-| Zombie Spawn Egg          | zombie_spawn_egg          | 0            |
-| Zombie Horse Spawn Egg    | zombie_horse_spawn_egg    | 0            |
-| Zombie Pigman Spawn Egg   | zombie_pigman_spawn_egg   | 0            |
-| Zombie Villager Spawn Egg | zombie_villager_spawn_egg | 0            |
+| Item name                  | Material                   | Damage value |
+|----------------------------|----------------------------|--------------|
+| Axolotl Spawn Egg          | axolotl_spawn_egg          | 0            |
+| Bat Spawn Egg              | bat_spawn_egg              | 0            |
+| Bee Spawn Egg              | bee_spawn_egg              | 0            |
+| Blaze Spawn Egg            | blaze_spawn_egg            | 0            |
+| Cat Spawn Egg              | cat_spawn_egg              | 0            |
+| Cave Spider Spawn Egg      | cave_spider_spawn_egg      | 0            |
+| Chicken Spawn Egg          | chicken_spawn_egg          | 0            |
+| Cod Spawn Egg              | cod_spawn_egg              | 0            |
+| Cow Spawn Egg              | cow_spawn_egg              | 0            |
+| Creeper Spawn Egg          | creeper_spawn_egg          | 0            |
+| Dolphin Spawn Egg          | dolphin_spawn_egg          | 0            |
+| Donkey Spawn Egg           | donkey_spawn_egg           | 0            |
+| Drowned Spawn Egg          | drowned_spawn_egg          | 0            |
+| Elder Guardian Spawn Egg   | elder_guardian_spawn_egg   | 0            |
+| Enderman Spawn Egg         | enderman_spawn_egg         | 0            |
+| Endermite Spawn Egg        | endermite_spawn_egg        | 0            |
+| Evoker Spawn Egg           | evoker_spawn_egg           | 0            |
+| Fox Spawn Egg              | fox_spawn_egg              | 0            |
+| Ghast Spawn Egg            | ghast_spawn_egg            | 0            |
+| Glow Squid Spawn Egg       | glow_squid_spawn_egg       | 0            |
+| Goat Spawn Egg             | goat_spawn_egg             | 0            |
+| Guardian Spawn Egg         | guardian_spawn_egg         | 0            |
+| Hoglin Spawn Egg           | hoglin_spawn_egg           | 0            |
+| Horse Spawn Egg            | horse_spawn_egg            | 0            |
+| Husk Spawn Egg             | husk_spawn_egg             | 0            |
+| Llama Spawn Egg            | llama_spawn_egg            | 0            |
+| Magma Cube Spawn Egg       | magma_cube_spawn_egg       | 0            |
+| Mooshroom Spawn Egg        | mooshroom_spawn_egg        | 0            |
+| Mule Spawn Egg             | mule_spawn_egg             | 0            |
+| Ocelot Spawn Egg           | ocelot_spawn_egg           | 0            |
+| Panda Spawn Egg            | panda_spawn_egg            | 0            |
+| Parrot Spawn Egg           | parrot_spawn_egg           | 0            |
+| Phantom Spawn Egg          | phantom_spawn_egg          | 0            |
+| Piglin Brute Spawn Egg     | piglin_brute_spawn_egg     | 0            |
+| Piglin Spawn Egg           | piglin_spawn_egg           | 0            |
+| Pig Spawn Egg              | pig_spawn_egg              | 0            |
+| Pillager Spawn Egg         | pillager_spawn_egg         | 0            |
+| Polar Bear Spawn Egg       | polar_bear_spawn_egg       | 0            |
+| Pufferfish Spawn Egg       | pufferfish_spawn_egg       | 0            |
+| Rabbit Spawn Egg           | rabbit_spawn_egg           | 0            |
+| Ravager Spawn Egg          | ravager_spawn_egg          | 0            |
+| Salmon Spawn Egg           | salmon_spawn_egg           | 0            |
+| Sheep Spawn Egg            | sheep_spawn_egg            | 0            |
+| Shulker Spawn Egg          | shulker_spawn_egg          | 0            |
+| Silverfish Spawn Egg       | silverfish_spawn_egg       | 0            |
+| Skeleton Spawn Egg         | skeleton_spawn_egg         | 0            |
+| Skeleton Horse Spawn Egg   | skeleton_horse_spawn_egg   | 0            |
+| Slime Spawn Egg            | slime_spawn_egg            | 0            |
+| Spider Spawn Egg           | spider_spawn_egg           | 0            |
+| Squid Spawn Egg            | squid_spawn_egg            | 0            |
+| Stray Spawn Egg            | stray_spawn_egg            | 0            |
+| Strider Spawn Egg          | strider_spawn_egg          | 0            |
+| Trader Llama Spawn Egg     | trader_llama_spawn_egg     | 0            |
+| Tropical Fish Spawn Egg    | tropical_fish_spawn_egg    | 0            |
+| Turtle Spawn Egg           | turtle_spawn_egg           | 0            |
+| Vex Spawn Egg              | vex_spawn_egg              | 0            |
+| Villager Spawn Egg         | villager_spawn_egg         | 0            |
+| Vindicator Spawn Egg       | vindicator_spawn_egg       | 0            |
+| Wandering Trader Spawn Egg | wandering_trader_spawn_egg | 0            |
+| Witch Spawn Egg            | witch_spawn_egg            | 0            |
+| Wither Skeleton Spawn Egg  | wither_skeleton_spawn_egg  | 0            |
+| Wolf Spawn Egg             | wolf_spawn_egg             | 0            |
+| Zoglin Spawn Egg           | zoglin_spawn_egg           | 0            |
+| Zombie Spawn Egg           | zombie_spawn_egg           | 0            |
+| Zombie Horse Spawn Egg     | zombie_horse_spawn_egg     | 0            |
+| Zombie Pigman Spawn Egg    | zombie_pigman_spawn_egg    | 0            |
+| Zombie Villager Spawn Egg  | zombie_villager_spawn_egg  | 0            |
+| Zombified Piglin Spawn Egg | zombified_piglin_spawn_egg | 0            |
 
 ### Other
 | Item name                       | Material               | Damage value |
