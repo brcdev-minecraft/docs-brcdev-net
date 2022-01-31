@@ -1,12 +1,12 @@
 # Entity types
 
 <p class="warn"><b>Note:</b> There are different entity types to use in various contexts (such as different spawners
- plugins) and various Spigot versions. Always make sure you're using the correct one.</p> 
+ plugins) and various Spigot versions. Always make sure you're using the correct one.</p>
 
 ## Spawn eggs
 <!-- tabs:start -->
 
-### ** Minecraft 1.11-1.17 **
+### ** Minecraft 1.11-1.18 **
 
 axolotl<br />
 bat<br />

@@ -6,7 +6,7 @@
 
 <!-- tabs:start -->
 
-## ** Minecraft 1.14-1.17 **
+## ** Minecraft 1.14-1.18 **
 ### Stone types
 | Item Name         | Material          | Damage Value |
 |-------------------|-------------------|--------------|
@@ -173,7 +173,7 @@
 | Andesite          | ANDESITE          | 0            |
 | Polished Andesite | POLISHED_ANDESITE | 0            |
 
-### Stone brick types 
+### Stone brick types
 | Item name            | Material              | Damage value |
 |----------------------|-----------------------|--------------|
 | Stone Brick          | STONE_BRICKS          | 0            |

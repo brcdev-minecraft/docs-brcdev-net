@@ -2,7 +2,7 @@
 
 <!-- tabs:start -->
 
-## ** Minecraft 1.9-1.17 **
+## ** Minecraft 1.9-1.18 **
 
 AMBIENT_CAVE<br />
 AMBIENT_UNDERWATER_ENTER<br />

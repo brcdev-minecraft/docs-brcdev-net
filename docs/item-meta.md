@@ -8,7 +8,7 @@ Useful links:
 * [Item flags list](item-flags)
 * [Firework effects list](firework-effects)
 * [Leather dye colors list](leather-dye-colors)
-* [Potion types list (1.9-1.17 only)](potion-types)
+* [Potion types list (1.9+ only)](potion-types)
 * [Potion Calculator by Graham Edgecombe (1.7-1.8 only)](https://minecraft-ids.grahamedgecombe.com/potion-calculator)
 
 
@@ -16,7 +16,7 @@ Useful links:
 The most important and the only required part is the material name. It has to be a valid material name or numeric ID. [Full list of materials](materials)
 ```yaml
 item:
-  material: BREAD 
+  material: BREAD
 ```
 
 Now you can add the amount of the item.
@@ -26,15 +26,15 @@ Now you can add the amount of the item.
 
 You can also add the damage value. Damage value is the part after the colon in data values, for instance 35:1 is Orange Wool where 1 is the damage value. It can be used to define more specific type of item (wood type, wool color, potion type etc).
 ```yaml
-  damage: 0 
+  damage: 0
 ```
 
 Result:
 ```yaml
 item:
-  material: BREAD 
+  material: BREAD
   amount: 32
-  damage: 0 
+  damage: 0
 ```
 
 ## Name & lore
@@ -57,9 +57,9 @@ Result:
 item:
   material: DIAMOND_SWORD
   amount: 1
-  damage: 0 
+  damage: 0
   name: "&aPowerful Blade"
-  lore: 
+  lore:
     - "&31st line"
     - "&22nd line"
 ```
@@ -82,7 +82,7 @@ item:
 ```
 
 ## Unbreakable items
-You can add the "Unbreakable" tag to an item. If can be combined with `HIDE_ATTRIBUTES` item flag described above to 
+You can add the "Unbreakable" tag to an item. If can be combined with `HIDE_ATTRIBUTES` item flag described above to
 make the item glow.
 
 Example of a pickaxe with "Unbreakable" tag:
@@ -104,7 +104,7 @@ For example, let's add Sharpness IV and Looting I to the sword from the previous
     - LOOTING:1
 ```
 
-Result: 
+Result:
 ```yaml
 item:
   material: DIAMOND_SWORD
@@ -135,7 +135,7 @@ item:
 
 ## Potions
 ### 1.7-1.8
-Adding potions is a bit different than in other plugins. You don't have to specify all parameters like type, effect and tier, you need only the damage value. 
+Adding potions is a bit different than in other plugins. You don't have to specify all parameters like type, effect and tier, you need only the damage value.
 
 It's recommended to use the [Potion Calculator by Graham Edgecombe](https://minecraft-ids.grahamedgecombe.com/potion-calculator). All you have to do is select desired parameters and write down the metadata value. Then you have to create a new item with material POTION and damage value same as the metadata value. Damage value of Splash Potion of Regeneration II is 16417, so that's what we will put in the damage value.
 
@@ -147,12 +147,12 @@ item:
   damage: 16417
 ```
 
-### 1.9-1.17
+### 1.9+
 Since 1.9 damage values don't work any more. You have to set the potion parameters using particular settings.
 
 First off, you have to choose the type of the potion by using appropriate material, POTION, LINGERING_POTION or SPLASH_POTION. Then you can adjust the potion parameters using following settings (only type is required).
 
-[List of all 1.9-1.17 potion types](potion-types)
+[List of all 1.9+ potion types](potion-types)
 
 Example:
 ```yaml
@@ -167,8 +167,8 @@ item:
 ```
 
 
-## Spawn Eggs 
-### 1.7-1.8 
+## Spawn Eggs
+### 1.7-1.8
 In 1.7-1.8 setting spawn egg type as simple as setting a correct damage value (eg. 50 is Creeper, 51 is Skeleton etc).
 
 Example:
@@ -182,7 +182,7 @@ item:
 ### 1.9-1.12
 Since 1.9 damage values don't work any more. You have to set the mob name using a separate parameter.
 
-**"mob" has to be a valid entity name.** [List of all entity types](entity-types) 
+**"mob" has to be a valid entity name.** [List of all entity types](entity-types)
 
 <p class="warn"><b>Note:</b>  Entity type names changed in 1.11!</p>
 
@@ -205,7 +205,7 @@ item:
   mobType: 4
 ```
 
-### 1.13-1.17
+### 1.13+
 Since 1.13, there were created separate material names for each spawn egg what made creating them much more simple. You need only the material name which can be found [here](item-ids#mob-spawning-eggs).
 
 Example (Creeper Spawn Egg):
@@ -228,7 +228,7 @@ item:
   skullOwner: jeb_
 ```
 
-### 1.13-1.17
+### 1.13+
 To add a player head you have to use the new PLAYER_HEAD material and set the skull owner.
 
 Example:
@@ -254,7 +254,7 @@ item:
   skin: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjI4NDM1ZDc5MWEwMThmY2E3OTI2ODU0Zjc3ZWNkN2RmMmQxZGYwYjFjMWM3ZjlhNjM4YjhhOTMxZGI5NWEifX19
 ```
 
-### 1.13-1.17
+### 1.13+
 To add a custom base64 head you need to use the PLAYER_HEAD material as well. The base64 skin can be passed in a skin entry.
 
 Example:
@@ -308,10 +308,10 @@ item:
       color: WHITE
 ```
 
-### 1.13 - 1.17
+### 1.13+
 Since 1.13 you need to use specific [material name](materials) containing the color, without specifying it explicitly.
 
-Example: 
+Example:
 ```yaml
 item:
   material: BLACK_BANNER
@@ -357,7 +357,7 @@ item:
 Adding NBT tags to items is as simple as adding `nbt` section and tags inside. Each tag (except `COMPOUND` type) must
  contain `type`, `key` and `value`. Compound tags require `type`, `key` and `children` instead. Compounds can be
   nested recursively.
-  
+
 More info on the NBT format itself can be found [here](https://minecraft.gamepedia.com/NBT_format).
 
 ### NBT tag types
@@ -375,9 +375,9 @@ More info on the NBT format itself can be found [here](https://minecraft.gameped
 Example (single string tag):
 ```yaml
 item:
-  material: BREAD 
+  material: BREAD
   amount: 32
-  damage: 0 
+  damage: 0
   nbt:
     1:
       type: STRING
@@ -388,9 +388,9 @@ item:
 Example (two tags - string and compound containing two doubles):
 ```yaml
 item:
-  material: BREAD 
+  material: BREAD
   amount: 32
-  damage: 0 
+  damage: 0
   nbt:
     1:
       type: STRING
@@ -410,7 +410,7 @@ item:
           value: 456
 ```
 
-## Leather armor color 
+## Leather armor color
 To add a dyed leather armor you can define the color either as a [RGB color](leather-dye-colors) or one of [Colors](colors).
 
 Example (regular color):
@@ -429,7 +429,7 @@ item:
   color: 127,255,0
 ```
 
-## Fireworks 
+## Fireworks
 To add a new firework you have to choose the FIREWORK material and define firework power and effects. You can set the
  power by adding fireworkPower entry with number from 1 to 4 which will be the result power.
 
@@ -500,7 +500,7 @@ item:
 
 ## Firework stars
 <p class="warn"><b>Note:</b> Remember to use valid material name corresponding to your Minecraft version (<i
->FIREWORK_STAR</i> or <i>FIREWORK_CHARGE</i>).</p> 
+>FIREWORK_STAR</i> or <i>FIREWORK_CHARGE</i>).</p>
 
 Example (regular Firework Star):
 ```yaml
