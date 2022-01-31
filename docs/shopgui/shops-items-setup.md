@@ -2,7 +2,7 @@
 
 ## Adding new shops
 First, head to the `/plugins/ShopGUIPlus/shops/` directory. You can find all default and previously added shops in there
-. Each file is responsible for a single shop. 
+. Each file is responsible for a single shop.
 
 This is an example of `armor.yml` file:
 ```yaml
@@ -117,7 +117,7 @@ armor:
 ```
 
 
-Now you have to add the shop to the main menu, otherwise players couldn't access it. Open the config.yml and proceed to shopMenuItems section. You can see there all previously added shops. 
+Now you have to add the shop to the main menu, otherwise players couldn't access it. Open the config.yml and proceed to shopMenuItems section. You can see there all previously added shops.
 
 ```yaml
 shopMenuItems:
@@ -132,38 +132,38 @@ shopMenuItems:
     shop: "armor"
     # Slot in shops menu, counting from 0 to 53
     slot: 15
-``` 
+```
 
 
 We're done with our first shop. If you have any questions or errors please contact us at [our Discord server](https://discord.brcdev.net).
 
-## Adding items to shops 
+## Adding items to shops
 
 Now we want to add some more items to previously created shop. Let's start from what we've got at the end of the previous tutorial section.
 ```yaml
 food:
   #Shop inventory name
-  name: "&5Food Shop" 
+  name: "&5Food Shop"
   items:
     #Has to be unique for each of items, value doesn't matter
-    1: 
+    1:
       type: item
       item:
         #Material name, full list can be found here: https://docs.brcdev.net/#/materials
-        material: BREAD 
+        material: BREAD
         #(optional) Quantity of the item
         quantity: 32
         #(optional) Data value, for example 1 for WOOD:1 means spruce wood planks
-        damage: 0 
+        damage: 0
         #(optional) Custom name
         name: "&aYummy bread"
         #(optional) Lore, can contain multiple lines
-        lore: 
+        lore:
           - "&3<3"
       #Buy price, lower than 0 means you can't buy it, 0 mean free, higher than 0 is regular value
       buyPrice: -1
       #Same as above but sell price
-      sellPrice: 25 
+      sellPrice: 25
       #Slot in shop's inventory, counting from 0 to 53
       slot: 0
 ```
@@ -173,30 +173,30 @@ In order to add more items, you have to add more sections as section named '''1'
 ```yaml
 food:
   #Shop inventory name
-  name: "&5Food Shop" 
+  name: "&5Food Shop"
   items:
     #Has to be unique for each of items, value doesn't matter
-    1: 
+    1:
       type: item
       item:
         #Material name, full list can be found here: https://docs.brcdev.net/#/materials
-        material: BREAD 
+        material: BREAD
         #(optional) Quantity of the item
         quantity: 32
         #(optional) Data value, for example 1 for WOOD:1 means spruce wood planks
-        damage: 0 
+        damage: 0
         #(optional) Custom name
         name: "&aYummy bread"
         #(optional) Lore, can contain multiple lines
-        lore: 
+        lore:
           - "&3<3"
       #Buy price, lower than 0 means you can't buy it, 0 mean free, higher than 0 is regular value
       buyPrice: -1
       #Same as above but sell price
-      sellPrice: 25 
+      sellPrice: 25
       #Slot in shop's inventory, counting from 0 to 53
       slot: 0
-    2: 
+    2:
 ```
 
 
@@ -204,27 +204,27 @@ Then just repeat steps from the previous tutorial section, add the type, item, p
 ```yaml
 food:
   #Shop inventory name
-  name: "&5Food Shop" 
+  name: "&5Food Shop"
   items:
     #Has to be unique for each of items, value doesn't matter
-    1: 
+    1:
       type: item
       item:
         #Material name, full list can be found here: https://docs.brcdev.net/#/materials
-        material: BREAD 
+        material: BREAD
         #(optional) Quantity of the item
         quantity: 32
         #(optional) Data value, for example 1 for WOOD:1 means spruce wood planks
-        damage: 0 
+        damage: 0
         #(optional) Custom name
         name: "&aYummy bread"
         #(optional) Lore, can contain multiple lines
-        lore: 
+        lore:
           - "&3<3"
       #Buy price, lower than 0 means you can't buy it, 0 mean free, higher than 0 is regular value
       buyPrice: -1
       #Same as above but sell price
-      sellPrice: 25 
+      sellPrice: 25
       #Slot in shop's inventory, counting from 0 to 53
       slot: 0
     2:
@@ -361,7 +361,7 @@ Brewery `wine` potion with quality `10`
 ```
 
 #### Executable Items
-Item from Executable Items with ID `heal` 
+Item from Executable Items with ID `heal`
 ```yaml
       1:
         type: item
@@ -384,10 +384,22 @@ Item from ItemsAdder with ID `ruby_sword`
         slot: 0
 ```
 
-### Mob spawners 
+#### Slimefun
+Item from Slimefun with ID `GRANDMAS_WALKING_STICK`
+```yaml
+      1:
+        type: item
+        item:
+          slimefun: "GRANDMAS_WALKING_STICK"
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
+
+### Mob spawners
 
 <p class="warn"><b>Note:</b> Remember to use valid material name corresponding to your Minecraft version (<i>SPAWNER
-</i> or <i>MOB_SPAWNER</i>).</p> 
+</i> or <i>MOB_SPAWNER</i>).</p>
 
 The `mob` entry has to represent a valid entity name. [List of all entity types](entity-types)
 
@@ -451,7 +463,7 @@ Knockback I
 
 
 
-### Permissions 
+### Permissions
 Single permission `essentials.msg` valid in all worlds
 ```yaml
       1:
@@ -473,7 +485,7 @@ Multiple permissions `essentials.msg` and `essentials.afk` valid in all worlds
 ```yaml
       2:
         type: permission
-        permissions: 
+        permissions:
           - "essentials.me"
           - "essentials.afk"
         item:
@@ -489,7 +501,7 @@ Multiple permissions `essentials.balance` and `essentials.balance.others` valid 
 ```yaml
       2:
         type: permission
-        permissions: 
+        permissions:
           1:
             permission: "essentials.balance"
             world: "world"
@@ -506,7 +518,7 @@ Multiple permissions `essentials.balance` and `essentials.balance.others` valid 
 ```
 
 
-### Commands 
+### Commands
 Selling single command: `/say Hello [player name]!`
 ```yaml
       1:
@@ -514,7 +526,7 @@ Selling single command: `/say Hello [player name]!`
         item:
           material: DIAMOND_PICKAXE
           quantity: 1
-        commands: 
+        commands:
           - "say Hello, %PLAYER%!"
         buyPrice: 100
         slot: 0
@@ -530,7 +542,7 @@ Selling multiple commands at once:
         item:
           material: DIAMOND_PICKAXE
           quantity: 1
-        commands: 
+        commands:
           - "say Good bye, %PLAYER%!"
           - "msg %PLAYER% See you later!"
         buyPrice: 100
@@ -545,7 +557,7 @@ Allowing players to purchase multiple executions (quantity is limited by the val
          item:
            material: DIAMOND_PICKAXE
            quantity: 1
-         commands: 
+         commands:
            - "say Sup %PLAYER%"
          commandsLimit: 64
          buyPrice: 100
@@ -561,7 +573,7 @@ Allowing players to purchase single execution (quantity is limited by the value 
          item:
            material: DIAMOND_PICKAXE
            quantity: 1
-         commands: 
+         commands:
            - "say Sup %PLAYER%, you bought %AMOUNT% commands"
          commandsLimit: 64
          runSingleCommand: true
@@ -583,7 +595,7 @@ You can add the same item multiple times to a shop by specifying the slots numbe
            - 32
 ```
 
-## Amount selection GUI customization 
+## Amount selection GUI customization
 You can change every part of the amount selection GUI in the config. You can change items/slots, hide buttons etc.
 
 All necessary settings are included in the `amountSelectionGUI` section of config.yml:
@@ -662,25 +674,25 @@ amountSelectionGUI:
 ```
 
 
-In order to change the button item you have to edit the appropriate entry. 
+In order to change the button item you have to edit the appropriate entry.
 
 Setting the slot to `-1` will result in the button being hidden.
 
 
-## Changing sizes/buttons of shops 
-You can change the size of any shop as well as next/previous page/go back button slots. 
+## Changing sizes/buttons of shops
+You can change the size of any shop as well as next/previous page/go back button slots.
 
 Just change/add the `size` entry to any of the shops yaml:
 ```yaml
 food:
   #Shop inventory name
-  name: "&5Food Shop (page %page%)" 
+  name: "&5Food Shop (page %page%)"
   #(Optional) Shop inventory size (valid values are 9, 18, 27, 36, 45 and 54)
   size: 45
 ```
 
 <p class="warn"><b>Note:</b> Sometimes it might be necessary to adjust the button slots in each shop
- according to the instructions below, if the target inventory size is too small.</p> 
+ according to the instructions below, if the target inventory size is too small.</p>
 
 These global settings from `config.yml` apply to every shop unless you override the item/slot/both for a specific shop:
 ```yaml
@@ -689,18 +701,18 @@ buttons:
   goBack:
     item:
       #Material name, full list can be found here: https://docs.brcdev.net/#/materials
-      material: NETHER_STAR 
+      material: NETHER_STAR
       #Amount of the item
-      amount: 1 
+      amount: 1
       #(optional) Data value, for example 1 for WOOD:1 means spruce wood planks
-      damage: 0 
+      damage: 0
       #(optional) Custom name
-      name: "&cBack to categories" 
+      name: "&cBack to categories"
       #(optional) Lore, can contain multiple lines
-      lore: 
+      lore:
         - "&aClick here to return to the main menu"
     #Slot in each shop's GUI
-    slot: 49 
+    slot: 49
   #"Previous page" button
   previousPage:
     item:
@@ -721,7 +733,7 @@ You can edit them for any shop using the same entry names/indentation:
 ```yaml
 food:
   #Shop inventory name
-  name: "&5Food Shop (page %page%)" 
+  name: "&5Food Shop (page %page%)"
   #(Optional) Shop inventory size (valid values are 9, 18, 27, 36, 45 and 54)
   size: 45
   #(Optional) Changed button types/slots
@@ -814,21 +826,21 @@ armor:
       buyPrice: 40
       sellPrice: 8
       slot: 10
-``` 
+```
 
 Make sure all of used economies are enabled in config.yml:
 ```yaml
 economyTypes:
   - VAULT
   - EXP
-``` 
+```
 
 
 ## Setting per-shop click actions
-You can override the default click actions from config.yml (so e.g. LMB sells items and RMB buys them) by setting 
+You can override the default click actions from config.yml (so e.g. LMB sells items and RMB buys them) by setting
 the same config entries in a shop.
 
-Note: It overrides specified actions only. If you want to disable an action from config.yml, you have to set it to 
+Note: It overrides specified actions only. If you want to disable an action from config.yml, you have to set it to
 `none`.
 
 Example:
@@ -847,6 +859,6 @@ armor:
       buyPrice: 40
       sellPrice: 8
       slot: 10
-``` 
+```
 
-This results in left and right clicks being overridden, while middle click is still inherited from config.yml. 
+This results in left and right clicks being overridden, while middle click is still inherited from config.yml.
