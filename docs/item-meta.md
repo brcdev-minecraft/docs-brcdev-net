@@ -119,6 +119,19 @@ item:
     - LOOTING:1
 ```
 
+
+## Glow
+You can add glow effect to any item using the `glow` option.
+
+Example:
+```yaml
+item:
+  material: STONE
+  quantity: 64
+  glow: true
+```
+
+
 ## Tipped Arrows
 You can add potion effects to tipped arrows same way as to potions (explained below in the potions section).
 
