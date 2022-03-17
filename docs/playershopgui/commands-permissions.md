@@ -1,10 +1,11 @@
 # Commands & permissions
 ## Commands
-| Command                        | Description               | Required permission                 |
-|--------------------------------|---------------------------|-------------------------------------|
-| /pshop                         | Open the main shop menu   | playershopguiplus.playershop        |
-| /pshop reload                  | Reload the configuration  | playershopguiplus.playershop.reload |
-| /pshop sell [quantity] [price] | Put up an item for sale   | playershopguiplus.playershop.sell   |
+| Command                        | Description                  | Required permission                 |
+|--------------------------------|------------------------------|-------------------------------------|
+| /pshop                         | Open the main shop menu      | playershopguiplus.playershop        |
+| /pshop [player]                | Open specified player's shop | playershopguiplus.playershop        |
+| /pshop reload                  | Reload the configuration     | playershopguiplus.playershop.reload |
+| /pshop sell [quantity] [price] | Put up an item for sale      | playershopguiplus.playershop.sell   |
 
 ## Permissions
 
