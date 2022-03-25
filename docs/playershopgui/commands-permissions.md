@@ -1,5 +1,7 @@
 # Commands & permissions
+
 ## Commands
+
 | Command                        | Description                  | Required permission                 |
 |--------------------------------|------------------------------|-------------------------------------|
 | /pshop                         | Open the main shop menu      | playershopguiplus.playershop        |
@@ -9,7 +11,7 @@
 
 ## Permissions
 
-All command permissions have been listed above. 
+All command permissions have been listed above.
 
 Furthermore, there are some extra permissions:
 

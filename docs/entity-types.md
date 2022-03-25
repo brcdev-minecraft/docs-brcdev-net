@@ -4,6 +4,7 @@
  plugins) and various Spigot versions. Always make sure you're using the correct one.</p>
 
 ## Spawn eggs
+
 <!-- tabs:start -->
 
 ### ** Minecraft 1.11-1.18 **

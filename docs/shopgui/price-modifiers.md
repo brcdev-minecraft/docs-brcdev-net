@@ -1,9 +1,10 @@
 # Price modifiers
-The plugin supports two types of price modifiers - command- and permission-based. You can choose one of them or run
- both (in the `priceModifiersType` setting in your `config.yml`).
 
+The plugin supports two types of price modifiers - command- and permission-based. You can choose one of them or run
+both (in the `priceModifiersType` setting in your `config.yml`).
 
 In case of using both the order of price modifier check is following:
+
 1. Command modifiers - Global
 1. Command modifiers - Shop
 1. Command modifiers - Shop Item
@@ -14,20 +15,24 @@ In case of using both the order of price modifier check is following:
 eg. when player has a shop command modifier and a global permission modifier, the second one overrides.
 
 When using only one of the types the order is similar:
+
 1. Global
 1. Shop
 1. Shop Item
 
+## Command-based price modifiers
 
-## Command-based price modifiers 
 Command-based price modifiers are entirely handled by commands. You can find them [here](shopgui/commands-permissions).
 
-## Permission-based price modifiers 
-The permission-based price modifiers can be configured inside the pricemodifiers.yml config file. 
+## Permission-based price modifiers
 
-Each price modifiers requires the player to have a permission in format of shopguiplus.pricemodifiers.<PRICE MODIFIER ID>, eg. shopguiplus.pricemodifiers.example1.
+The permission-based price modifiers can be configured inside the pricemodifiers.yml config file.
 
-### Global modifiers 
+Each price modifiers requires the player to have a permission in format of
+shopguiplus.pricemodifiers.<PRICE MODIFIER ID>, eg. shopguiplus.pricemodifiers.example1.
+
+### Global modifiers
+
 ```yaml
 priceModifiers:
   #Global price modifier with ID example1, 200% of buy & sell price, permission: shopguiplus.pricemodifiers.example1
@@ -40,7 +45,8 @@ priceModifiers:
     value: 2.0
 ```
 
-### Shop modifiers 
+### Shop modifiers
+
 ```yaml
 priceModifiers:
   #Food shop price modifier with ID example2, 150% of buy & sell price, permission: shopguiplus.pricemodifiers.example2
@@ -55,7 +61,8 @@ priceModifiers:
     shop: food
 ```
 
-### Shop item modifiers 
+### Shop item modifiers
+
 ```yaml
   #Item "1" from food shop price modifier with ID example3, 300% of buy price, permission: shopguiplus.pricemodifiers.example3
   example3:
@@ -71,9 +78,10 @@ priceModifiers:
     shopItem: 1
 ```
 
-
 ## Example config file
-Example `pricemodifiers.yml` file showing all three scopes combined: 
+
+Example `pricemodifiers.yml` file showing all three scopes combined:
+
 ```yaml
 priceModifiers:
   #Global price modifier with ID example1, 200% of buy & sell price, permission: shopguiplus.pricemodifiers.example1

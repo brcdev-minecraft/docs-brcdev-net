@@ -1,8 +1,12 @@
 # Commands & permissions
-The Gangs+ plugin comes with lots of useful commands with multiple aliases. If you would like to have a new command added please contact us, we are open for new feature suggestions. 
+
+The Gangs+ plugin comes with lots of useful commands with multiple aliases. If you would like to have a new command
+added please contact us, we are open for new feature suggestions.
 
 ## Commands
+
 ### Aliases
+
 | Command aliases              | Description               |
 |------------------------------|---------------------------|
 | /g or /gang                  | Gang command aliases      |
@@ -11,8 +15,8 @@ The Gangs+ plugin comes with lots of useful commands with multiple aliases. If y
 | /fight                       | Fight command aliases     |
 | /ga or /gadmin or /gangadmin | Admin command aliases     |
 
-
 ### Commands list
+
 | Command root | Command                                       | Description                                                                             | Required permission             |
 |--------------|-----------------------------------------------|-----------------------------------------------------------------------------------------|---------------------------------|
 | /g           | help                                          | List of all gang-related commands                                                       | gangsplus.gang.help           | gangsplus.gang.*      |
@@ -58,7 +62,7 @@ The Gangs+ plugin comes with lots of useful commands with multiple aliases. If y
 
 ### Permissions
 
-All command permissions have been listed above. 
+All command permissions have been listed above.
 
 Furthermore, there are some extra permissions:
 

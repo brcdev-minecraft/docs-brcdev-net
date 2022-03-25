@@ -1,5 +1,7 @@
 # Commands & permissions
+
 ## Commands
+
 | Command                                              | Description                           | Required permission           |
 |------------------------------------------------------|---------------------------------------|-------------------------------|
 | /auc                                                 | Open the main auction menu            | auctionguiplus.auction        |
@@ -11,7 +13,7 @@
 
 ## Permissions
 
-All command permissions have been listed above. 
+All command permissions have been listed above.
 
 Furthermore, there are some extra permissions:
 

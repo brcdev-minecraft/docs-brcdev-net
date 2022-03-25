@@ -1,10 +1,12 @@
 # Adding shops & items
 
 ## Adding new shops
+
 First, head to the `/plugins/ShopGUIPlus/shops/` directory. You can find all default and previously added shops in there
 . Each file is responsible for a single shop.
 
 This is an example of `armor.yml` file:
+
 ```yaml
 armor:
   name: "&4&lArmor (page %page%)"
@@ -31,20 +33,22 @@ armor:
       slot: 11
 ```
 
+As you can see, first of all you have to define the id of the shop (has to be unique, you will refer to it later in the
+main config). This name must also match the file's name (armor.yml and armor in here):
 
-As you can see, first of all you have to define the id of the shop (has to be unique, you will refer to it later in the main config). This name must also match the file's name (armor.yml and armor in here):
 ```yaml
 armor:
 ```
 
-
 Now you have to set the displayed name of the shop which will be visible in the GUI:
+
 ```yaml
 armor:
   name: "&4&lArmor (page %page%)"
 ```
 
 You can also set fill item for the entire shop, a gray glass pane in this case:
+
 ```yaml
 armor:
   name: "&4&lArmor (page %page%)"
@@ -54,8 +58,9 @@ armor:
     name: " "
 ```
 
+Then you can proceed to adding new items. You need '''items''' section with the same indentation as previously added '''
+name'''.
 
-Then you can proceed to adding new items. You need '''items''' section with the same indentation as previously added '''name'''.
 ```yaml
 armor:
   name: "&4&lArmor (page %page%)"
@@ -66,8 +71,10 @@ armor:
   items:
 ```
 
+Now, to add an item you have to create another section with higher indentation. Name it whatever you want (only
+alphanumeric characters), just remember the names have to be unique for each item. Then you have to add the '''type'''
+of the shop item. Valid types are item, permission, enchantment, command or dummy.
 
-Now, to add an item you have to create another section with higher indentation. Name it whatever you want (only alphanumeric characters), just remember the names have to be unique for each item. Then you have to add the '''type''' of the shop item. Valid types are item, permission, enchantment, command or dummy.
 ```yaml
 armor:
   name: "&4&lArmor (page %page%)"
@@ -80,8 +87,9 @@ armor:
       type: item
 ```
 
+Next you have to add the item meta like material, quantity etc. For more information on item meta please refer to
+the [Item meta](item-meta) page.
 
-Next you have to add the item meta like material, quantity etc. For more information on item meta please refer to the [Item meta](item-meta) page.
 ```yaml
 armor:
   name: "&4&lArmor (page %page%)"
@@ -96,8 +104,9 @@ armor:
         material: LEATHER_HELMET
 ```
 
+Finally, you can proceed to basic information like buy/sell price and GUI slot number. Setting buyPrice or sellPrice to
+-1 will result in unbuyable/unsellable item. Remember that slot numbers go from 0 to 53.
 
-Finally, you can proceed to basic information like buy/sell price and GUI slot number. Setting buyPrice or sellPrice to -1 will result in unbuyable/unsellable item. Remember that slot numbers go from 0 to 53.
 ```yaml
 armor:
   name: "&4&lArmor (page %page%)"
@@ -116,8 +125,8 @@ armor:
       slot: 10
 ```
 
-
-Now you have to add the shop to the main menu, otherwise players couldn't access it. Open the config.yml and proceed to shopMenuItems section. You can see there all previously added shops.
+Now you have to add the shop to the main menu, otherwise players couldn't access it. Open the config.yml and proceed to
+shopMenuItems section. You can see there all previously added shops.
 
 ```yaml
 shopMenuItems:
@@ -134,12 +143,14 @@ shopMenuItems:
     slot: 15
 ```
 
-
-We're done with our first shop. If you have any questions or errors please contact us at [our Discord server](https://discord.brcdev.net).
+We're done with our first shop. If you have any questions or errors please contact us
+at [our Discord server](https://discord.brcdev.net).
 
 ## Adding items to shops
 
-Now we want to add some more items to previously created shop. Let's start from what we've got at the end of the previous tutorial section.
+Now we want to add some more items to previously created shop. Let's start from what we've got at the end of the
+previous tutorial section.
+
 ```yaml
 food:
   #Shop inventory name
@@ -168,8 +179,9 @@ food:
       slot: 0
 ```
 
+In order to add more items, you have to add more sections as section named '''1''' in this case. Remember all sections
+have to have unique names, so you can just call them 1, 2, 3, 4... etc.
 
-In order to add more items, you have to add more sections as section named '''1''' in this case. Remember all sections have to have unique names, so you can just call them 1, 2, 3, 4... etc.
 ```yaml
 food:
   #Shop inventory name
@@ -199,8 +211,8 @@ food:
     2:
 ```
 
-
 Then just repeat steps from the previous tutorial section, add the type, item, prices and slot number:
+
 ```yaml
 food:
   #Shop inventory name
@@ -241,7 +253,9 @@ food:
 We're done with the second item. You can add up to 54 items to each shop this way.
 
 ### Items
+
 Pickaxe with custom name & Efficiency I
+
 ```yaml
       1:
         type: item
@@ -256,8 +270,8 @@ Pickaxe with custom name & Efficiency I
         slot: 0
 ```
 
-
 Firework
+
 ```yaml
       1:
         type: item
@@ -285,7 +299,9 @@ Firework
 ### Custom items
 
 #### HeadDatabase
+
 Head from HeadDatabase with ID `1734`
+
 ```yaml
       1:
         type: item
@@ -297,7 +313,9 @@ Head from HeadDatabase with ID `1734`
 ```
 
 #### MMOItems
+
 Item from MMOItems with type `armor` and id `MYTHRIL_CHAINMAIL`
+
 ```yaml
       1:
         type: item
@@ -311,7 +329,9 @@ Item from MMOItems with type `armor` and id `MYTHRIL_CHAINMAIL`
 ```
 
 #### CrackShot
+
 CrackShot gun with ID `AK-47`
+
 ```yaml
       1:
         type: item
@@ -323,7 +343,9 @@ CrackShot gun with ID `AK-47`
 ```
 
 #### Oraxen
+
 Oraxen item with ID `obsidian_pickaxe`
+
 ```yaml
       1:
         type: item
@@ -335,7 +357,9 @@ Oraxen item with ID `obsidian_pickaxe`
 ```
 
 #### Custom Items
+
 Custom Items item with ID `item1`
+
 ```yaml
       1:
         type: item
@@ -347,7 +371,9 @@ Custom Items item with ID `item1`
 ```
 
 #### Brewery
+
 Brewery `wine` potion with quality `10`
+
 ```yaml
       1:
         type: item
@@ -361,7 +387,9 @@ Brewery `wine` potion with quality `10`
 ```
 
 #### Executable Items
+
 Item from Executable Items with ID `heal`
+
 ```yaml
       1:
         type: item
@@ -373,7 +401,9 @@ Item from Executable Items with ID `heal`
 ```
 
 #### ItemsAdder
+
 Item from ItemsAdder with ID `ruby_sword`
+
 ```yaml
       1:
         type: item
@@ -385,7 +415,9 @@ Item from ItemsAdder with ID `ruby_sword`
 ```
 
 #### Slimefun
+
 Item from Slimefun with ID `GRANDMAS_WALKING_STICK`
+
 ```yaml
       1:
         type: item
@@ -404,6 +436,7 @@ Item from Slimefun with ID `GRANDMAS_WALKING_STICK`
 The `mob` entry has to represent a valid entity name. [List of all entity types](entity-types)
 
 Pig spawner with a custom name
+
 ```yaml
       1:
         type: item
@@ -418,6 +451,7 @@ Pig spawner with a custom name
 ```
 
 5 blaze spawners
+
 ```yaml
       2:
         type: item
@@ -431,7 +465,9 @@ Pig spawner with a custom name
 ```
 
 #### Enchantments
+
 Fortune II
+
 ```yaml
       1:
         type: enchantment
@@ -448,6 +484,7 @@ Fortune II
 ```
 
 Knockback I
+
 ```yaml
       1:
         type: enchantment
@@ -461,10 +498,10 @@ Knockback I
         slot: 1
 ```
 
-
-
 ### Permissions
+
 Single permission `essentials.msg` valid in all worlds
+
 ```yaml
       1:
         type: permission
@@ -482,6 +519,7 @@ Single permission `essentials.msg` valid in all worlds
 ```
 
 Multiple permissions `essentials.msg` and `essentials.afk` valid in all worlds
+
 ```yaml
       2:
         type: permission
@@ -498,6 +536,7 @@ Multiple permissions `essentials.msg` and `essentials.afk` valid in all worlds
 ```
 
 Multiple permissions `essentials.balance` and `essentials.balance.others` valid only in specific worlds
+
 ```yaml
       2:
         type: permission
@@ -517,9 +556,10 @@ Multiple permissions `essentials.balance` and `essentials.balance.others` valid 
         slot: 1
 ```
 
-
 ### Commands
+
 Selling single command: `/say Hello [player name]!`
+
 ```yaml
       1:
         type: command
@@ -533,6 +573,7 @@ Selling single command: `/say Hello [player name]!`
 ```
 
 Selling multiple commands at once:
+
 * `/say Good bye [player name]!`
 * `/msg [player name] See you later!`
 
@@ -550,7 +591,8 @@ Selling multiple commands at once:
 ```
 
 Allowing players to purchase multiple executions (quantity is limited by the value of `commandsLimit`) of a single
- command:
+command:
+
  ```yaml
        1:
          type: command
@@ -565,8 +607,8 @@ Allowing players to purchase multiple executions (quantity is limited by the val
  ```
 
 Allowing players to purchase single execution (quantity is limited by the value of `commandsLimit`) of a single command
- with
- placeholder `%AMOUNT%` being replaced with purchased quantity:
+with placeholder `%AMOUNT%` being replaced with purchased quantity:
+
  ```yaml
        1:
          type: command
@@ -582,7 +624,9 @@ Allowing players to purchase single execution (quantity is limited by the value 
  ```
 
 ## Adding same item to multiple slots
+
 You can add the same item multiple times to a shop by specifying the slots numbers as a list instead of a single value:
+
 ```yaml
        1:
          item:
@@ -596,6 +640,7 @@ You can add the same item multiple times to a shop by specifying the slots numbe
 ```
 
 ## Amount selection GUI customization
+
 You can change every part of the amount selection GUI in the config. You can change items/slots, hide buttons etc.
 
 All necessary settings are included in the `amountSelectionGUI` section of config.yml:
@@ -673,16 +718,16 @@ amountSelectionGUI:
       slot: 41
 ```
 
-
 In order to change the button item you have to edit the appropriate entry.
 
 Setting the slot to `-1` will result in the button being hidden.
 
-
 ## Changing sizes/buttons of shops
+
 You can change the size of any shop as well as next/previous page/go back button slots.
 
 Just change/add the `size` entry to any of the shops yaml:
+
 ```yaml
 food:
   #Shop inventory name
@@ -695,6 +740,7 @@ food:
  according to the instructions below, if the target inventory size is too small.</p>
 
 These global settings from `config.yml` apply to every shop unless you override the item/slot/both for a specific shop:
+
 ```yaml
 buttons:
   #"Go back button"
@@ -730,6 +776,7 @@ buttons:
 ```
 
 You can edit them for any shop using the same entry names/indentation:
+
 ```yaml
 food:
   #Shop inventory name
@@ -752,11 +799,12 @@ food:
       slot: 44
 ```
 
-
 You can edit only the item or slot or both as well.
 
 ## Using per item permissions
+
 First, you have to add the `enablePerItemPermissions: true` entry to your shop in the shop yaml:
+
 ```yaml
 mining:
   name: "&2Mining Shop (page %page%)"
@@ -795,21 +843,26 @@ mining:
       slot: 2
 ```
 
-Then you have to give your players appropriate permissions. The format of permissions is `shopguiplus.item.<shop id>.<item id>`.
+Then you have to give your players appropriate permissions. The format of permissions
+is `shopguiplus.item.<shop id>.<item id>`.
 
 The item ID is this number:
+
 ```yaml
     items:
       1:
 ```
 
-For instance, permissions for these 3 items in shop above would be `shopguiplus.item.mining.1`, `shopguiplus.item.mining.2` and `shopguiplus.item.mining.3`.
+For instance, permissions for these 3 items in shop above would be `shopguiplus.item.mining.1`
+, `shopguiplus.item.mining.2` and `shopguiplus.item.mining.3`.
 
-You can use `shopguiplus.item.<shop id>.*` wildcard permission (eg. `shopguiplus.item.mining.*`) to give access to all items within particular shop.
-
+You can use `shopguiplus.item.<shop id>.*` wildcard permission (eg. `shopguiplus.item.mining.*`) to give access to all
+items within particular shop.
 
 ## Setting per-shop economy
+
 In order to use another economy within a single shop, set the economy field in shop's yml to the economy name:
+
 ```yaml
 armor:
   name: "&4&lArmor (page %page%)"
@@ -829,21 +882,23 @@ armor:
 ```
 
 Make sure all of used economies are enabled in config.yml:
+
 ```yaml
 economyTypes:
   - VAULT
   - EXP
 ```
 
-
 ## Setting per-shop click actions
-You can override the default click actions from config.yml (so e.g. LMB sells items and RMB buys them) by setting
-the same config entries in a shop.
+
+You can override the default click actions from config.yml (so e.g. LMB sells items and RMB buys them) by setting the
+same config entries in a shop.
 
 Note: It overrides specified actions only. If you want to disable an action from config.yml, you have to set it to
 `none`.
 
 Example:
+
 ```yaml
 armor:
   name: "&4&lArmor (page %page%)"

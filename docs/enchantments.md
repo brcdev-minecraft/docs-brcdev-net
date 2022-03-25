@@ -1,4 +1,5 @@
 # Enchantments
+
 | In game name          | Aliases                                                                                                  | Minecraft version |
 |-----------------------|----------------------------------------------------------------------------------------------------------|-------------------|
 | Power                 | power, arrowdamage, ARROW_DAMAGE                                                                         | 1.7 or newer     |

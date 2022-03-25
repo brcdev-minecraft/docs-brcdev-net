@@ -1,8 +1,9 @@
 # Placeholders
 
-Remember to get the placeholders from a list corresponding to the placeholders plugin you're using. 
+Remember to get the placeholders from a list corresponding to the placeholders plugin you're using.
 
-## PlaceholderAPI 
+## PlaceholderAPI
+
 <p class="warn"><b>Note:</b> PAPI expansion isn't required and it even may break the plugin placeholders.</p>
 
 Plugin versions required to use these placeholders:
@@ -35,7 +36,7 @@ Placeholders list:
 | %gangsplus_gang_deaths%               | Returns the player's gang deaths                          |
 | %gangsplus_gang_kdr%                  | Returns the player's gang fight kill/death ratio          |
 
-## MVdWPlaceholderAPI 
+## MVdWPlaceholderAPI
 
 Plugin versions required to use these placeholders:
 

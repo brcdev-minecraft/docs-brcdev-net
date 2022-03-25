@@ -1,8 +1,11 @@
 # Controlling the stack size
+
 There are several options which allow you to alter the purchased item's stack size.
 
-## unstack 
-When an item with this option is purchased, it's going to be unstacked to 1 item per stack. This allows you to sell unstacked blocks, armor etc.
+## unstack
+
+When an item with this option is purchased, it's going to be unstacked to 1 item per stack. This allows you to sell
+unstacked blocks, armor etc.
 
 With `unstack: true`:
 
@@ -13,6 +16,7 @@ With `unstack: false` or none set:
 ![](https://i.imgur.com/C4bM24E.png)
 
 Example:
+
 ```yaml
     4:
       type: item
@@ -25,8 +29,10 @@ Example:
       slot: 13
 ```
 
-## stacked 
-When an item with this option is purchased, it's going to preserve the amount from the shop or the selection GUI. This allows you to sell stacked items which don't stack by default, such as potions.
+## stacked
+
+When an item with this option is purchased, it's going to preserve the amount from the shop or the selection GUI. This
+allows you to sell stacked items which don't stack by default, such as potions.
 
 With `stacked: true`:
 
@@ -36,8 +42,8 @@ With ``stacked: false`` or none set:
 
 ![](https://i.imgur.com/J7RBH27.png)
 
-
 Example:
+
 ```yaml
     1:
       type: item

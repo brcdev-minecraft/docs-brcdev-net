@@ -1,6 +1,7 @@
 # Firework Effects
 
 ## Firework types
+
 Ball<br />
 Ball_Large<br />
 Burst<br />
@@ -8,6 +9,7 @@ Creeper<br />
 Start
 
 ## Firework colors & fade colors
+
 Black<br />
 Blue<br />
 Brown<br />

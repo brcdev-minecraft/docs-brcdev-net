@@ -1,4 +1,5 @@
 # Item Flags
+
 | Item flag name        | Description                                                      | Minecraft version |
 |-----------------------|------------------------------------------------------------------|-------------------|
 | HIDE_ATTRIBUTES       | Setting to show/hide Attributes like Damage                      | 1.8 or newer      |

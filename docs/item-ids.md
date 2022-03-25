@@ -7,7 +7,9 @@
 <!-- tabs:start -->
 
 ## ** Minecraft 1.14-1.18 **
+
 ### Stone types
+
 | Item Name         | Material          | Damage Value |
 |-------------------|-------------------|--------------|
 | Granite           | GRANITE           | 0            |
@@ -18,6 +20,7 @@
 | Polished Andesite | POLISHED_ANDESITE | 0            |
 
 ### Stone brick types
+
 | Item Name            | Material              | Damage Value |
 |----------------------|-----------------------|--------------|
 | Stone Brick          | STONE_BRICKS          | 0            |
@@ -26,6 +29,7 @@
 | Chiseled Stone Brick | CHISELED_STONE_BRICKS | 0            |
 
 ### Wood types
+
 | Item Name     | Material        | Damage Value |
 |---------------|-----------------|--------------|
 | Oak Wood      | OAK_WOOD        | 0            |
@@ -36,6 +40,7 @@
 | Dark Oak Wood | DARK_OAK_WOOD   | 0            |
 
 ### Saplings
+
 | Item Name        | Material         | Damage Value |
 |------------------|------------------|--------------|
 | Oak Sapling      | OAK_SAPLING      | 0            |
@@ -46,6 +51,7 @@
 | Dark Oak Sapling | DARK_OAK_SAPLING | 0            |
 
 ### Dyes
+
 | Item name        | Material       | Damage value |
 |------------------|----------------|--------------|
 | Ink Sac          | INK_SAC        | 0            |
@@ -66,6 +72,7 @@
 | Bone Meal        | BONE_MEAL      | 0            |
 
 ### Fish
+
 | Item name                 | Material      | Damage value |
 |---------------------------|---------------|--------------|
 | Cooked Cod / Cooked Fish  | COOKED_COD    | 0            |
@@ -75,8 +82,8 @@
 | Tropical Fish / Clownfish | TROPICAL_FISH | 0            |
 | Pufferfish                | PUFFERFISH    | 0            |
 
-
 ### Flowers
+
 | Item name        | Material     | Damage value |
 |------------------|--------------|--------------|
 | Dandelion        | DANDELION    | 0            |
@@ -96,6 +103,7 @@
 | Peony            | PEONY        | 0            |
 
 ### Mob spawning eggs
+
 | Item name                 | Material                  | Damage value |
 |---------------------------|---------------------------|--------------|
 | Bat Spawn Egg             | bat_spawn_egg             | 0            |
@@ -151,6 +159,7 @@
 | Zombie Villager Spawn Egg | zombie_villager_spawn_egg | 0            |
 
 ### Other
+
 | Item name                       | Material               | Damage value |
 |---------------------------------|------------------------|--------------|
 | Gunpowder                       | GUNPOWDER              | 0            |
@@ -161,9 +170,10 @@
 | Cooked Porkchop                 | COOKED_PORKCHOP        | 0            |
 | Enchanted Golden Apple (Gapple) | ENCHANTED_GOLDEN_APPLE | 0            |
 
-
 ## ** Minecraft 1.13 **
+
 ### Stone types
+
 | Item name         | Material          | Damage value |
 |-------------------|-------------------|--------------|
 | Granite           | GRANITE           | 0            |
@@ -174,6 +184,7 @@
 | Polished Andesite | POLISHED_ANDESITE | 0            |
 
 ### Stone brick types
+
 | Item name            | Material              | Damage value |
 |----------------------|-----------------------|--------------|
 | Stone Brick          | STONE_BRICKS          | 0            |
@@ -182,6 +193,7 @@
 | Chiseled Stone Brick | CHISELED_STONE_BRICKS | 0            |
 
 ### Wood types
+
 | Item name     | Material      | Damage value |
 |---------------|---------------|--------------|
 | Oak Wood      | OAK_WOOD      | 0            |
@@ -192,6 +204,7 @@
 | Dark Oak Wood | DARK_OAK_WOOD | 0            |
 
 ### Saplings
+
 | Item name        | Material         | Damage value |
 |------------------|------------------|--------------|
 | Oak Sapling      | OAK_SAPLING      | 0            |
@@ -201,8 +214,8 @@
 | Acacia Sapling   | ACACIA_SAPLING   | 0            |
 | Dark Oak Sapling | DARK_OAK_SAPLING | 0            |
 
-
 ### Dyes
+
 | Item name        | Material         | Damage value |
 |------------------|------------------|--------------|
 | Ink Sac          | INK_SAC          | 0            |
@@ -223,6 +236,7 @@
 | Bone Meal        | BONE_MEAL        | 0            |
 
 ### Fish
+
 | Item name                 | Material      | Damage value |
 |---------------------------|---------------|--------------|
 | Cooked Cod / Cooked Fish  | COOKED_COD    | 0            |
@@ -233,6 +247,7 @@
 | Pufferfish                | PUFFERFISH    | 0            |
 
 ### Flowers
+
 | Item name        | Material     | Damage value |
 |------------------|--------------|--------------|
 | Dandelion        | DANDELION    | 0            |
@@ -252,6 +267,7 @@
 | Peony            | PEONY        | 0            |
 
 ### Mob spawning eggs
+
 | Item name                  | Material                   | Damage value |
 |----------------------------|----------------------------|--------------|
 | Axolotl Spawn Egg          | axolotl_spawn_egg          | 0            |
@@ -324,6 +340,7 @@
 | Zombified Piglin Spawn Egg | zombified_piglin_spawn_egg | 0            |
 
 ### Other
+
 | Item name                       | Material               | Damage value |
 |---------------------------------|------------------------|--------------|
 | Gunpowder                       | GUNPOWDER              | 0            |
@@ -335,7 +352,9 @@
 | Enchanted Golden Apple (Gapple) | ENCHANTED_GOLDEN_APPLE | 0            |
 
 ## ** Minecraft 1.7-1.12 **
+
 ### Stone types
+
 | Item name         | Material | Damage value |
 |-------------------|----------|--------------|
 | Granite           | STONE    | 1            |
@@ -346,6 +365,7 @@
 | Polished Andesite | STONE    | 6            |
 
 ### Stone brick types
+
 | Item name            | Material     | Damage value |
 |----------------------|--------------|--------------|
 | Stone Brick          | SMOOTH_BRICK | 0            |
@@ -354,6 +374,7 @@
 | Chiseled Stone Brick | SMOOTH_BRICK | 3            |
 
 ### Wood types
+
 | Item name     | Material | Damage value |
 |---------------|----------|--------------|
 | Oak Wood      | LOG      | 0            |
@@ -364,6 +385,7 @@
 | Dark Oak Wood | LOG_2    | 1            |
 
 ### Saplings
+
 | Item name        | Material | Damage value |
 |------------------|----------|--------------|
 | Oak Sapling      | SAPLING  | 0            |
@@ -374,6 +396,7 @@
 | Dark Oak Sapling | SAPLING  | 5            |
 
 ### Dyes
+
 | Item name        | Material  | Damage value |
 |------------------|-----------|--------------|
 | Ink Sac          | INK_SACK  | 0            |
@@ -394,6 +417,7 @@
 | Bone Meal        | INK_SACK  | 15           |
 
 ### Fish
+
 | Item name     | Material    | Damage value |
 |---------------|-------------|--------------|
 | Cooked Fish   | COOKED_FISH | 0            |
@@ -404,6 +428,7 @@
 | Pufferfish    | RAW_FISH    | 3            |
 
 ### Flowers
+
 | Item name        | Material      | Damage value |
 |------------------|---------------|--------------|
 | Dandelion        | YELLOW_FLOWER | 0            |
@@ -423,10 +448,13 @@
 | Peony            | DOUBLE_PLANT  | 5            |
 
 ### Mob spawning eggs
+
 #### 1.9-1.12
+
 See [Item Meta](item-meta#spawn-eggs).
 
 #### 1.7-1.8
+
 | Item name           | Material     | Damage value |
 |---------------------|--------------|--------------|
 | Spawn Creeper       | MONSTER_EGG | 50           |
@@ -458,8 +486,8 @@ See [Item Meta](item-meta#spawn-eggs).
 | Spawn Rabbit        | MONSTER_EGG | 101          |
 | Spawn Villager      | MONSTER_EGG | 120          |
 
-
 ### Other
+
 | Item name                         | Material            | Damage value |
 |-----------------------------------|---------------------|--------------|
 | Gunpowder                         | SULPHUR             | 0            |
