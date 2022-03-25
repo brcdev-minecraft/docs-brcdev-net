@@ -581,3 +581,16 @@ food:
       sellPrice: 6
       slot: 10
 ```
+
+#### Creating a NPC with shop
+
+You can combine the ShopGUI+'s commands with NPC plugins such as i.e. Citizens.
+
+Following commands can be used to set up a NPC shop with Citizens, so players have main shop menu opened when they click
+the NPC:
+
+```
+/npc select
+/npc cmd add -p shop
+/citizens save
+```
