@@ -40,3 +40,4 @@
 | Quick Charge          | quickcharge, QUICK_CHARGE                                                                                | 1.14 or newer    |
 | Piercing              | piercing, PIERCING                                                                                       | 1.14 or newer    |
 | Soul Speed            | soulspeed, soul, SOUL_SPEED                                                                              | 1.16 or newer    |
+| Swift Sneak           | swiftsneak, sneak, SWIFT_SNEAK                                                                           | 1.19 or newer    |
