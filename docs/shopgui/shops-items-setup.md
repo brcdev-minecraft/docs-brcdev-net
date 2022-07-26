@@ -623,6 +623,22 @@ with placeholder `%AMOUNT%` being replaced with purchased quantity:
          slot: 0
  ```
 
+### Shop links
+You can directly link shops to each other using link items. All you have to do is specify the other shop ID to be opened.
+
+Example:
+
+```yaml
+    1:
+      type: shop_link
+      shop: "blocks"
+      item:
+        material: STONE
+        quantity: 1
+        name: "&fBlocks shop"
+      slot: 10
+```
+
 ## Adding same item to multiple slots
 
 You can add the same item multiple times to a shop by specifying the slots numbers as a list instead of a single value:
