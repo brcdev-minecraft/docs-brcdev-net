@@ -421,8 +421,8 @@ item:
 
 <p class="warn"><b>Note:</b> The <i>compareMeta</i> option must be enabled for an item to use the NBT option!</p>
 
-Adding NBT tags to items is as simple as adding `nbt` section and tags inside. Each tag (except `COMPOUND` type) must
-contain `type`, `key` and `value`. Compound tags require `type`, `key` and `children` instead. Compounds can be nested
+Adding NBT tags to items is as simple as adding `nbt` section and tags inside. Each tag (except `STRING_ARRAY` and `COMPOUND` types) must
+contain `type`, `key` and `value`. String array tags require `type`, `key` and `values`. Compound tags require `type`, `key` and `children` instead. Compounds can be nested
 recursively.
 
 More info on the NBT format itself can be found [here](https://minecraft.gamepedia.com/NBT_format).
@@ -437,6 +437,7 @@ More info on the NBT format itself can be found [here](https://minecraft.gameped
 * DOUBLE
 * BYTE_ARRAY
 * STRING
+* STRING_ARRAY
 * COMPOUND
 * INT_ARRAY
 
@@ -452,6 +453,30 @@ item:
       type: STRING
       key: Hello
       value: World
+```
+
+Example (compound with a string array to add name and lore using NBT):
+
+```yaml
+item:
+  material: BREAD
+  amount: 32
+  damage: 0
+  nbt:
+    1:
+      type: COMPOUND
+      key: display
+      children:
+        1:
+          type: String
+          key: Name
+          value: "{\"bold\":true,\"italic\":false,\"color\":\"white\",\"text\":\"Magic Bread\"}"
+        2:
+          type: STRING_ARRAY
+          key: Lore
+          values:
+            - "{\"italic\":false,\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"text\":\"High Value\"}],\"text\":\"This item can be sold for \"}"
+            - "{\"italic\":false,\"color\":\"gray\",\"text\":\"on the server shop\"}"
 ```
 
 Example (two tags - string and compound containing two doubles):
