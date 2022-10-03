@@ -468,7 +468,7 @@ item:
       key: display
       children:
         1:
-          type: String
+          type: STRING
           key: Name
           value: "{\"bold\":true,\"italic\":false,\"color\":\"white\",\"text\":\"Magic Bread\"}"
         2:
