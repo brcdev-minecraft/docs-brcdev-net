@@ -1,7 +1,7 @@
 # Commands & permissions
 
 <p class="warn"><b>Tip:</b> Typically players need both <i>shopguiplus.shop</i> and <i>shopguiplus.shops.*</i
-> permissions to access all shops.</p> 
+> permissions to access all shops.</p>
 
 ## Commands
 

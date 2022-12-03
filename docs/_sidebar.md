@@ -30,3 +30,8 @@
 - PlayerShopGUI+
 
     - [Commands & permissions](playershopgui/commands-permissions)
+
+- Christmas+
+
+    - [Commands & permissions](christmas/commands-permissions)
+    - [FAQ](christmas/faq)
