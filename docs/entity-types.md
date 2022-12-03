@@ -7,7 +7,7 @@
 
 <!-- tabs:start -->
 
-### ** Minecraft 1.11-1.18 **
+### ** Minecraft 1.11-1.19 **
 
 axolotl<br />
 bat<br />
