@@ -123,3 +123,29 @@ snow:
   # Interval of the snow display taks
   displayTaskInterval: 2L
 ```
+
+
+#### How do you give crackers as gifts or add as Santa drops?
+
+Simply add `cracker: <cracker id>` entry inside the item section to give cracker item. Other entries such as name, lore etc. aren't required and may result in item being not recognised as cracker, thus aren't recommended to be set.
+
+Example (adventcalendar.yml):
+```yaml
+3:
+  default:
+    type: item
+    item:
+      cracker: example
+```
+
+Example (config.yml):
+```yaml
+gifts:
+  # Gift ID, value doesn't matter but has to be unique
+  1:
+    # Chance to drop this gift (out of total of chances of all gifts listed below, it DOESN'T HAVE to sum up to 1.0)
+    chance: 0.6
+    # Gift item, more info: https://docs.brcdev.net/#/item-meta
+    item:
+      cracker: example
+```
