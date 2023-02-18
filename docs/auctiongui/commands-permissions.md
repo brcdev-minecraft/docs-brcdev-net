@@ -9,6 +9,7 @@
 | /auc bid \<auction ID\> [amount]                     | Place a bid                           | auctionguiplus.auction.bid    |
 | /auc reload                                          | Reload the configuration              | auctionguiplus.auction.reload |
 | /auc start [quantity] [price] [increment] [duration] | Start an auction                      | auctionguiplus.auction.start  |
+| /auc cancel \<auction ID\>                           | Cancel own auction                    | auctionguiplus.auction.cancel |
 | /bid \<auction ID\> [amount]                         | Place a bid                           | auctionguiplus.auction.bid    |
 
 ## Permissions
