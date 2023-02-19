@@ -3,13 +3,14 @@
 ## Commands
 
 | Command                                              | Description                           | Required permission           |
-|------------------------------------------------------|---------------------------------------|-------------------------------|
+| ---------------------------------------------------- | ------------------------------------- | ----------------------------- |
 | /auc                                                 | Open the main auction menu            | auctionguiplus.auction        |
-| /auc \<player\>                                        | Open the main auction menu for player | auctionguiplus.others         |
+| /auc \<player\>                                      | Open the main auction menu for player | auctionguiplus.others         |
 | /auc bid \<auction ID\> [amount]                     | Place a bid                           | auctionguiplus.auction.bid    |
 | /auc reload                                          | Reload the configuration              | auctionguiplus.auction.reload |
 | /auc start [quantity] [price] [increment] [duration] | Start an auction                      | auctionguiplus.auction.start  |
 | /auc cancel \<auction ID\>                           | Cancel own auction                    | auctionguiplus.auction.cancel |
+| /auc limits                                          | Shows your auctions number limit      | auctionguiplus.auction.limits |
 | /bid \<auction ID\> [amount]                         | Place a bid                           | auctionguiplus.auction.bid    |
 
 ## Permissions
