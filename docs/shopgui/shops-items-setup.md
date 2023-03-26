@@ -920,7 +920,7 @@ armor:
   name: "&4&lArmor (page %page%)"
   clickActions:
     LEFT: SELL
-   RIGHT: BUY
+    RIGHT: BUY
   items:
     1:
       type: item
