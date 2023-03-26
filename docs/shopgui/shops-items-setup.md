@@ -645,10 +645,10 @@ You can add the same item multiple times to a shop by specifying the slots numbe
 
 ```yaml
        1:
+         type: DUMMY
          item:
            material: STONE
            quantity: 1
-         type: DUMMY
          slots:
            - 30
            - 31
