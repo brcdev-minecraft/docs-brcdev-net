@@ -558,6 +558,8 @@ Multiple permissions `essentials.balance` and `essentials.balance.others` valid 
 
 ### Commands
 
+*If you are wanting to add a shop item that isn't for purchase but executes a command when clicked, see [here](https://docs.brcdev.net/#/shopgui/faq?id=adding-commands-on-item-click-to-the-main-shop-menu)*
+
 Selling single command: `/say Hello [player name]!`
 
 ```yaml
