@@ -36,6 +36,9 @@ Example:
         material: SPONGE
         name: "Surprise!"
         quantity: 1
+      buyPrice: 10
+      sellPrice: 1
+      slot: 1
 ```
 
 #### Making bought commands executed by the player instead the console
@@ -122,7 +125,7 @@ shopMenuItems:
       quantity: 1
       name: "&3&lTest"
     commandsOnClickConsole:
-      - say "Example console command!"
+      - "say Example console command!"
     slot: 32
 ```
 
