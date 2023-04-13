@@ -116,11 +116,11 @@ shopMenuItems:
     commandsOnClick:
       - say Example!
   2:
+    type: dummy
     item:
       material: STONE
       quantity: 1
       name: "&3&lTest"
-    type: DUMMY
     slot: 32
     commandsOnClickConsole:
       - say Example console command!
