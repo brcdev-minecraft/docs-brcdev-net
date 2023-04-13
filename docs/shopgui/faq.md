@@ -77,23 +77,23 @@ Example:
       item:
         material: GRASS
         quantity: 64
-      slot: 10
       commandsOnClick:
-        - shop wood
+        - "shop wood"
+      slot: 10
     2:
       type: item
       item:
         material: DIRT
         quantity: 64
+      commandsOnBuy:
+        - "shop"
+      commandsOnSell:
+        - "shop"
+      commandsOnSellConsole:
+        - "say Hey, %PLAYER%!"
       buyPrice: 30
       sellPrice: 3
       slot: 11
-      commandsOnBuy:
-        - shop
-      commandsOnSell:
-        - shop
-      commandsOnSellConsole:
-        - say Hey, %PLAYER%!
 ```
 
 #### Adding commands on item click to the main /shop menu
@@ -111,19 +111,19 @@ shopMenuItems:
       material: SADDLE
       quantity: 1
       name: "&3&lMiscellanous"
+    commandsOnClick:
+      - "say Example!"
     shop: "miscellanous"
     slot: 31
-    commandsOnClick:
-      - say Example!
   2:
     type: dummy
     item:
       material: STONE
       quantity: 1
       name: "&3&lTest"
-    slot: 32
     commandsOnClickConsole:
-      - say Example console command!
+      - say "Example console command!"
+    slot: 32
 ```
 
 #### Changing the size of a shop
@@ -156,10 +156,10 @@ mining:
       item:
         material: DIAMOND_PICKAXE
         quantity: 5
+      unstack: true
       buyPrice: 1000
       sellPrice: 500
       slot: 1
-      unstack: true
       page: 2
     3:
       type: item
@@ -208,10 +208,10 @@ mining:
       item:
         material: DIAMOND_PICKAXE
         quantity: 5
+      unstack: true
       buyPrice: 1000
       sellPrice: 500
       slot: 1
-      unstack: true
     3:
       type: item
       item:
@@ -238,10 +238,10 @@ Example:
         material: DIAMOND_PICKAXE
         quantity: 5
         name: "&aPickaxe"
+      stripItemMeta: true
       buyPrice: 1000
       sellPrice: 500
       slot: 1
-      stripItemMeta: true
 ```
 
 #### Changing the maximal item stack size (regardless of global settings from config.yml)
@@ -256,10 +256,10 @@ Example:
       item:
         material: BUCKET
         quantity: 1
+      maxStackSize: 10
       buyPrice: 200
       sellPrice: 20
       slot: 1
-      maxStackSize: 10
 ```
 
 #### Changing the format of displayed price and decimals
@@ -292,11 +292,11 @@ Example:
       item:
         material: GRASS
         quantity: 64
-      buyPrice: 50
-      sellPrice: 5
       messageBuy: "You bought %amount% x %item% for $%price%."
       messageSell: "You sold %amount% x %item% for $%price%."
       messageSellAll: "You sold all %item% for $%price%."
+      buyPrice: 50
+      sellPrice: 5
       slot: 0
 ```
 
@@ -316,10 +316,10 @@ Example:
         quantity: 1
         enchantments:
           - SHARPNESS:1
+      enchantmentStackSizeLimit: 1
       buyPrice: 50
       sellPrice: 5
       slot: 0
-      enchantmentStackSizeLimit: 1
 ```
 
 #### Adding more pages
@@ -363,6 +363,8 @@ blocks:
         quantity: 64
       buyPrice: 50
       sellPrice: 5
+      slot: 1
+      page: 1
 ```
 
 #### Disallowing selling items with name/lore different from the shop item's ones
@@ -380,9 +382,9 @@ Example:
         lore:
           - "Test"
           - "Abc"
+      compareMeta: true
       buyPrice: 50
       sellPrice: 5
-      compareMeta: true
       slot: 0
 ```
 
@@ -524,12 +526,12 @@ Example:
       item:
         material: GRASS
         quantity: 64
-      buyPrice: 50
-      sellPrice: 5
-      slot: 10
       requiredPermissions:
         - "example.permission1"
         - "example.permission2"
+      buyPrice: 50
+      sellPrice: 5
+      slot: 10
 ```
 
 #### Adding decoration items to GUIs
