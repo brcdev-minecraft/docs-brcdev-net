@@ -299,6 +299,8 @@ item:
 ```
 
 ## Base64 heads
+You can find Base64 heads on [Minecraft-Heads](https://minecraft-heads.com/). <br>
+Simply find a head you like, and use the "value" property at the bottom of the head's page as the skin value in the item's config. 
 
 ### 1.7-1.12
 

@@ -58,8 +58,7 @@ armor:
     name: " "
 ```
 
-Then you can proceed to adding new items. You need '''items''' section with the same indentation as previously added '''
-name'''.
+Then you can proceed to adding new items. You need ``items`` section with the same indentation as previously added ``name``.
 
 ```yaml
 armor:
@@ -110,6 +109,29 @@ Finally, you can proceed to basic information like buy/sell price and GUI slot n
 ```yaml
 armor:
   name: "&4&lArmor (page %page%)"
+  fillItem:
+    material: STAINED_GLASS_PANE
+    damage: 15
+    name: " "
+  items:
+    1:
+      type: item
+      item:
+        material: LEATHER_HELMET
+        quantity: 1
+      buyPrice: 40
+      sellPrice: 8
+      slot: 10
+```
+
+Optionally, you can customise the number of rows in the shop gui by setting a ``size`` property.
+
+Accepted values: ``9, 18, 27, 36, 45, 54`` 
+
+```yaml
+armor:
+  name: "&4&lArmor (page %page%)"
+  size: 45
   fillItem:
     material: STAINED_GLASS_PANE
     damage: 15
@@ -558,6 +580,8 @@ Multiple permissions `essentials.balance` and `essentials.balance.others` valid 
 
 ### Commands
 
+*If you are wanting to add a shop item that isn't for purchase but executes a command when clicked, see [here](shopgui/faq?id=adding-commands-on-item-click-to-the-main-shop-menu)*
+
 Selling single command: `/say Hello [player name]!`
 
 ```yaml
@@ -636,6 +660,50 @@ Example:
         material: STONE
         quantity: 1
         name: "&fBlocks shop"
+      slot: 10
+```
+
+### Decorations
+You can add items to your shops and main menu that are purely cosmetic thus are not purchasable or sellable, we call these dummy items.
+
+Example:
+
+```yaml
+     1:
+      type: dummy
+      item:
+        material: STONE
+        quantity: 1
+        name: "&fThis is an example of a dummy item"
+      slot: 10
+```
+
+### Custom / Alternative Buttons
+You can add custom / alternative buttons to your shops and main menu by using dummy items with commandsOnClick.
+
+Example with command ran through console (commandsOnClickConsole): 
+```yaml
+     1:
+      type: dummy
+      item:
+        material: STONE
+        quantity: 1
+        name: "&fThis is an example of a dummy item with commandsOnClickConsole"
+      commandsOnClickConsole:
+      - "say Hello %PLAYER%, you clicked a custom / alternative button" # Send a messages in chat
+      slot: 10
+```
+
+Example with command ran through the player (commandsOnClick): 
+```yaml
+     1:
+      type: dummy
+      item:
+        material: STONE
+        quantity: 1
+        name: "&fThis is an example of a dummy item with commandsOnClick"
+      commandsOnClick:
+      - "shop block" # Opens the blocks shop
       slot: 10
 ```
 
