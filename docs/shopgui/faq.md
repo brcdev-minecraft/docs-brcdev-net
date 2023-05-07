@@ -649,3 +649,20 @@ the NPC:
 /npc cmd add -p shop
 /citizens save
 ```
+
+#### Adding buttons to close currently open GUI
+
+You can use the `closeGuiOnClick: true` option within both main menu and shops to add a button closing the currently open GUI.  
+
+Example:
+
+```yaml
+  11:
+    type: DUMMY
+    item:
+      material: BARRIER
+      quantity: 1
+      name: "&cClose"
+    closeGuiOnClick: true
+    slot: 32
+ ```
