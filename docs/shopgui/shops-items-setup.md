@@ -647,6 +647,20 @@ with placeholder `%AMOUNT%` being replaced with purchased quantity:
          slot: 0
  ```
 
+Requiring an empty slots in buyer's inventory (i.e. for commands giving items to the player):
+ ```yaml
+       1:
+         type: command
+         item:
+           material: STICK
+           quantity: 1
+         commands:
+           - "give %PLAYER% stick 1"
+         requireInventorySpace: true
+         buyPrice: 100
+         slot: 0
+ ```
+
 ### Shop links
 You can directly link shops to each other using link items. All you have to do is specify the other shop ID to be opened.
 
