@@ -42,7 +42,7 @@ Placeholders list:
 
 ## MVdWPlaceholderAPI
 
-<p class="error"><b>MVdWPlaceholderAPI support was removed in Gangs+ 2.26.0. Use PlaceholderAPI placeholders above instead.</b></p>
+<p class="error">MVdWPlaceholderAPI support was removed in Gangs+ 2.26.0. Use PlaceholderAPI placeholders above instead.</p>
 
 
 Plugin versions required to use these placeholders:
