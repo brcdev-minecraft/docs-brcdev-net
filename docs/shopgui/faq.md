@@ -652,7 +652,8 @@ the NPC:
 
 #### Adding buttons to close currently open GUI
 
-You can use the `closeGuiOnClick: true` option within both main menu and shops to add a button closing the currently open GUI.  
+You can use the `closeGuiOnClick: true` option within both main menu and shops to add a button closing the currently
+open GUI.
 
 Example:
 
@@ -666,3 +667,15 @@ Example:
     closeGuiOnClick: true
     slot: 32
  ```
+
+#### Disabling permission cache
+
+For some reason, on some setups permission checks for price modifiers may not be working correctly. If it occurs on your
+server, try disabling the cache. It may impact your server performance, but may fix issues with permission-based price
+modifiers. This feature requires ShopGUI+ version 1.87.0 or newer.
+
+Add following entry to the bottom of your `config.yml` file:
+
+```yaml
+disablePermissionCache: true
+```
