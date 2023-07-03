@@ -31,6 +31,7 @@
 - PlayerShopGUI+
 
     - [Commands & permissions](playershopgui/commands-permissions)
+    - [Hidden Configuration Options](playershopgui/hidden-options.md)
 
 - Christmas+
 

@@ -1,6 +1,6 @@
 # Hidden Configuration Options
 
-There are some hidden configuration options that can resolve some potential issues with ShopGUIPlus on some setups, along with provide additional behaviour to the plugin, that may be potentially dangerous.
+There are some hidden configuration options that can resolve some potential issues with ShopGUI+ on some setups, along with provide additional behaviour to the plugin, that may be potentially dangerous.
 
 ## Click Cooldown
 Using the `clickCooldown` option can change the time allowed between clicks in the GUI in milliseconds.
