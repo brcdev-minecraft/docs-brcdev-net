@@ -27,6 +27,7 @@
 - AuctionGUI+
 
     - [Commands & permissions](auctiongui/commands-permissions)
+    - [Hidden Configuration Options](auctiongui/hidden-options.md) 
 
 - PlayerShopGUI+
 
