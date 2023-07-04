@@ -37,4 +37,5 @@
 - Christmas+
 
     - [Commands & permissions](christmas/commands-permissions)
+    - [Hidden Configuration Options](christmas/hidden-options.md)
     - [FAQ](christmas/faq)

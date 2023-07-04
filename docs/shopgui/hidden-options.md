@@ -7,9 +7,10 @@ Using the `clickCooldown` option can change the time allowed between clicks in t
 
  **WARNING:** This setting is dangerous. This is used to prevent duplication bugs, and is set to 250ms to prevent this. Removing this cooldown can harm changes of duplication. 
 
- To make use of this option, insert the following anywhere in your configuration file:
+ This can be changed by inserting the following setting in the [`config.yml`](https://pastebin.com/KiM3PjU7):
  ```yaml
  gui:
+   # The default value for this is "250".
    clickCooldown: 250
    ```
 Any decimal number can be inserted into this value, as long as it lies within the bounds of $-2^{63}$ and $2^{63}-1$
@@ -51,7 +52,7 @@ If you would like to bypass Minecraft's default stack sizes for certain items (s
 
 **WARNING:** This setting circumvents typical Minecraft behavior. While this specific use-case has not seen any issues within servers, it cannot be guaranteed that changing this setting will not cause issues. 
 
-To use this setting, insert the following anywhere within your configuration file:
+This can be changed by inserting the following setting in the [`config.yml`](https://pastebin.com/KiM3PjU7):
 ```yaml
 # The default value for this key is "true".
 enforceDefaultStackSize: true
@@ -64,7 +65,7 @@ In order to aid server performance, permission nodes are cached temporarily with
 
 **WARNING:** Changing this setting can negatively affect server performance, as checks must be done as and when needed, instead of being retrieved from a cache. This setting also required ShopGUI+ version 1.87.0 or higher to be used.
 
-To use this setting, insert the following anywhere within your configuration file:
+This can be changed by inserting the following setting in the [`config.yml`](https://pastebin.com/KiM3PjU7):
 ```yaml
 # The default value for this key is "false".
 disablePermissionCache: false
