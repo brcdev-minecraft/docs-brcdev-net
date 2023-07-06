@@ -142,3 +142,30 @@ numberFormat:
   # The default value for this is "true".
   hideFraction: true
 ```
+
+## Close GUI On Click
+This option can be used to close the GUI as soon as an item within the GUI is selected. It is worth noting that such an option is primarily intended for dummy items, but can be used on any item. 
+
+This can be used within any shop item within any shop file, by inserting the following:
+```yaml
+armor:
+  name: "&4&lArmor (page %page%)"
+  fillItem:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  items:
+    1:
+      type: item
+      item:
+        material: LEATHER_HELMET
+        quantity: 1
+      buyPrice: 100
+      sellPrice: 100
+      slot: 10
+      # There is no default value for this. This is a hidden option entirely.
+      closeGuiOnClick: true
+```
+
+It is worth noting that the `closeGuiOnClick` option only needs to be suffixed within the shop item. There is no need to insert the entire section into your config file. This is only an exemplar.
+
+This option has also been documented [here.](https://docs.brcdev.net/#/shopgui/faq?id=adding-buttons-to-close-currently-open-gui)
