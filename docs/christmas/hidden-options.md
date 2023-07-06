@@ -26,4 +26,4 @@ snow:
   # The default value for this is "2".
   displayTaskInterval: 2
 ```
-Any decimal number can be inserted into this value, as long as it lies within the bounds of $-2^{63}$ and $2^{63}-1$
+Any integer can be inserted into this value, as long as it lies within the bounds of $-2^{63}$ and $2^{63}-1$
