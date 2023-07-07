@@ -5,7 +5,7 @@ There are some hidden configuration options that can resolve some potential issu
 ## Click Cooldown
 Using the `clickCooldown` option can change the time allowed between clicks in the GUI in milliseconds.
 
- **WARNING:** This setting is dangerous. This is used to prevent duplication bugs, and is set to 250ms to prevent this. Removing this cooldown can harm changes of duplication. 
+ <p class="error"><b>WARNING:</b> This setting is dangerous. This is used to prevent duplication bugs, and is set to 250ms to prevent this. Removing this cooldown can harm changes of duplication. 
 
  This can be changed by inserting the following setting in the [`config.yml`](https://pastebin.com/KiM3PjU7):
  ```yaml
@@ -45,12 +45,12 @@ buttons:
       - 51
 ```
 
-**WARNING:** This setting can clash with the already existing `slot` option. Remove this entirely if you wish to use the `slots` option.
+<p class="error"><b>WARNING:</b> This setting can clash with the already existing `slot` option. Remove this entirely if you wish to use the `slots` option.
 
 ## Enforce Default Stack Size
 If you would like to bypass Minecraft's default stack sizes for certain items (such as armour, tools and potions), you can make use of the `enforceDefaultStackSize` setting. This will allow purchased items in the shop to bypass the limit, allowing you to purchase more than one of these items, and keep them in the same inventory slot. 
 
-**WARNING:** This setting circumvents typical Minecraft behavior. While this specific use-case has not seen any issues within servers, it cannot be guaranteed that changing this setting will not cause issues. 
+<p class="error"><b>WARNING:</b> This setting circumvents typical Minecraft behavior. While this specific use-case has not seen any issues within servers, it cannot be guaranteed that changing this setting will not cause issues. 
 
 This can be changed by inserting the following setting in the [`config.yml`](https://pastebin.com/KiM3PjU7):
 ```yaml
@@ -63,7 +63,7 @@ It is also worth noting that this is essentially the "stacked" option set to `tr
 ## Permission Cache
 In order to aid server performance, permission nodes are cached temporarily within ShopGUIPlus. If you wind this causes issues with your price modifiers, you can try disabling it.
 
-**WARNING:** Changing this setting can negatively affect server performance, as checks must be done as and when needed, instead of being retrieved from a cache. This setting also required ShopGUI+ version 1.87.0 or higher to be used.
+<p class="error"><b>WARNING:</b> Changing this setting can negatively affect server performance, as checks must be done as and when needed, instead of being retrieved from a cache. This setting also required ShopGUI+ version 1.87.0 or higher to be used.
 
 This can be changed by inserting the following setting in the [`config.yml`](https://pastebin.com/KiM3PjU7):
 ```yaml

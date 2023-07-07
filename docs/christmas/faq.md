@@ -1,6 +1,6 @@
 # FAQ
 
-#### How do you give multiple gifts one day?
+## How do you give multiple gifts one day?
 
 First, make sure you're using at least the 1.0.4 version. Now, in order to add multiple items you have to create a config section named `multiple` inside the type of the gift (in the example it's `default` and `donor`, I added it to `default` - you add it to both or just one of them). Then you can add the items inside the multiple sections, each of them has to have an unique ID (value doesn't matter, it isn't the number of the day, it just has to be unique). I set it to `1`, `2` and `3`. In the example it's an item, enchantment and command, though it can be as many items as you want.
 
@@ -31,7 +31,7 @@ gifts:
 ```
 
 
-#### How do you change the advent calendar's month?
+## How do you change the advent calendar's month?
 
 You can change the month by adding a `month` entry to your adventcalendar.yml.
 
@@ -44,7 +44,7 @@ month: 11
 ```
 
 
-#### How do you give a random gift each day in the advent calendar?
+## How do you give a random gift each day in the advent calendar?
 
 <p class="error"><b>Note:</b> You need at least 2.2.8 version to use this feature.</p>
 
@@ -79,7 +79,7 @@ Example:
       quantity: 32
 ```
 
-#### How do you start the Santa event in random locations?
+## How do you start the Santa event in random locations?
 
 For performance and convenience reasons Santa can spawn randomly only in preconfigured locations. You can edit them in the `santaClausEvent` -> `locations` section of your config.yml. After adding some, you can start the event using the `/christmas start santa [time] random` command.
 
@@ -102,7 +102,7 @@ locations:
 ```
 
 
-#### How do you optimise the snow particles displaying?
+## How do you optimise the snow particles displaying?
 
 When using the snow particles feature on bigger servers, you may experience minor performance issues. This is because the snow display task has a low interval value set by default for the best player experiences. Try increasing it with a hidden config.yml entry to 10 or 20 ticks to make it lighter for your server.
 
@@ -125,7 +125,7 @@ snow:
 ```
 
 
-#### How do you give crackers as gifts or add as Santa drops?
+## How do you give crackers as gifts or add as Santa drops?
 
 Simply add `cracker: <cracker id>` entry inside the item section to give cracker item. Other entries such as name, lore etc. aren't required and may result in item being not recognised as cracker, thus aren't recommended to be set.
 

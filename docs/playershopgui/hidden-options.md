@@ -94,3 +94,13 @@ cancelWord: "cancel"
 ```
 
 ## Spawner Provider
+If you make use of multiple spawner plugins (for whatever reason) then you can make use of this option to forcefully select a spawner plugin to handle spawners within PlayerShopGUIPlus. 
+
+This can be changed by inserting the following setting in the [`config.yml`](https://pastebin.com/vFT034vE):
+```yaml
+# You will need to insert the name of the spawner plugin/spawner provider within this key.
+# No default value, as many servers will use many different spawner plugins. 
+spawnerProvider: ""
+```
+
+<p class="error"><b>WARNING:</b> There is little to no need to make use of this option at all. Very few/no servers hold multiple spawner plugins and as such, PlayerShopGUIPlus will automatically handle this for you. You will typically not need to make use of this setting yourself and its use is not recommended. 
