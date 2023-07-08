@@ -6,6 +6,7 @@
     - [Materials](materials.md)
     - [Entity types](entity-types.md)
     - [Enchantments](enchantments.md)
+    - [Hidden Configuration Options](hidden-options.md)
 
 - ShopGUI+
 
@@ -27,7 +28,6 @@
 - AuctionGUI+
 
     - [Commands & permissions](auctiongui/commands-permissions)
-    - [Hidden Configuration Options](auctiongui/hidden-options.md) 
 
 - PlayerShopGUI+
 

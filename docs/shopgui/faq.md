@@ -408,8 +408,7 @@ defaultItemSettings:
 
 ## Changing the /shop command
 
-You can't completely change it, you can only add aliases using the spigot's built-in commands.yml file (you can find in
-the root directory of your server).
+You can't completely change it, you can only add aliases using Spigot's built-in commands.yml file, which can be found in the root directory of your server.
 
 Example:
 
@@ -429,9 +428,10 @@ Example:
 command-block-overrides: [ ]
 aliases:
   market:
-    - shop
+    - shop $1-
 ```
 
+The above extract will allow players to make use of the /market command as if it was the /shop command, while accounting for any arguments that may be passed through. 
 ## Adding an alias /sellhand for /sell hand (with no space inbetween)
 
 You can add it in commands.yml in the root folder of your server like shown below.
