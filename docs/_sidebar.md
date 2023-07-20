@@ -28,6 +28,7 @@
 - AuctionGUI+
 
     - [Commands & permissions](auctiongui/commands-permissions)
+    - [Changing currency names](auctiongui/currency-names.md)
 
 - PlayerShopGUI+
 
