@@ -10,7 +10,7 @@ Items with less obvious names can be found at [Item IDs](item-ids).
 
 <!-- tabs:start -->
 
-## ** Minecraft 1.17-1.19 **
+## ** Minecraft 1.17-1.20 **
 
 ACACIA_BOAT <br />
 ACACIA_BUTTON <br />

@@ -6,7 +6,7 @@
 
 <!-- tabs:start -->
 
-## ** Minecraft 1.14-1.19 **
+## ** Minecraft 1.14-1.20 **
 
 ### Stone types
 

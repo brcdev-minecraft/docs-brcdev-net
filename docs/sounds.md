@@ -2,7 +2,7 @@
 
 <!-- tabs:start -->
 
-## ** Minecraft 1.9-1.19 **
+## ** Minecraft 1.9-1.20 **
 
 AMBIENT_CAVE<br />
 AMBIENT_UNDERWATER_ENTER<br />
