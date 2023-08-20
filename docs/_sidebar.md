@@ -6,7 +6,7 @@
     - [Materials](materials.md)
     - [Entity types](entity-types.md)
     - [Enchantments](enchantments.md)
-    - [Hidden Configuration Options](hidden-options.md)
+    - [Hidden configuration options](hidden-options.md)
 
 - ShopGUI+
 
@@ -15,7 +15,7 @@
     - [Price modifiers](shopgui/price-modifiers)
     - [Changing currency names](shopgui/currency-names)
     - [Controlling the item stack size](shopgui/stack-size)
-    - [Hidden Configuration Options](shopgui/hidden-options)
+    - [Hidden configuration options](shopgui/hidden-options)
     - [FAQ](shopgui/faq)
     - [API](shopgui/api)
 
@@ -33,10 +33,10 @@
 - PlayerShopGUI+
 
     - [Commands & permissions](playershopgui/commands-permissions)
-    - [Hidden Configuration Options](playershopgui/hidden-options.md)
+    - [Hidden configuration options](playershopgui/hidden-options.md)
 
 - Christmas+
 
     - [Commands & permissions](christmas/commands-permissions)
-    - [Hidden Configuration Options](christmas/hidden-options.md)
+    - [Hidden configuration options](christmas/hidden-options.md)
     - [FAQ](christmas/faq)
