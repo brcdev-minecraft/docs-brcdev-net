@@ -1,6 +1,6 @@
 # FAQ
 
-#### Making weapons/armor/potions unstack
+## Making weapons/armor/potions unstack
 
 You can make multiple weapons/armor/potions unstack by adding `unstack: true` entry to the item. There is more detailed
 instruction available [here](shopgui/stack-size).
@@ -19,7 +19,7 @@ Example:
       unstack: true
 ```
 
-#### Setting other item as a placeholder instead of the sold one
+## Setting other item as a placeholder instead of the sold one
 
 You can set another item as a placeholder in order to sell a different item (even with a different lore or name) by
 adding additional a `placeholder` entry below specific item in the shop yaml.
@@ -41,7 +41,7 @@ Example:
       slot: 1
 ```
 
-#### Making bought commands executed by the player instead the console
+## Making bought commands executed by the player instead the console
 
 Simply add the `runAsBuyer: true` entry to your command item in the shop yml.
 
@@ -61,7 +61,7 @@ Example:
       slot: 0
 ```
 
-#### Adding commands when player clicks/buys/sells an item
+## Adding commands when player clicks/buys/sells an item
 
 For commands executed by the player you can add any of following to an item: `commandsOnClick`, `commandsOnBuy`
 , `commandsOnSell`<br />
@@ -99,7 +99,7 @@ Example:
       slot: 11
 ```
 
-#### Adding commands on item click to the main /shop menu
+## Adding commands on item click to the main /shop menu
 
 You can use both `commandsOnClick` and `commandsOnClickConsole` described above in the main menu as well. You can use it
 both for an item actually opening a shop or a placeholder item with type `DUMMY`.
@@ -129,7 +129,7 @@ shopMenuItems:
     slot: 32
 ```
 
-#### Changing the size of a shop
+## Changing the size of a shop
 
 You can change the size of any of shop inventories in the shop yml. Simply add a size: x entry where x is the desired
 size (it has to be either 9, 18, 27, 36, 45 or 54).
@@ -177,12 +177,12 @@ mining:
       slot: 2
 ```
 
-#### Making the buying/selling process faster
+## Making the buying/selling process faster
 
 You can enable `quickBuySell` in your config.yml. This will result in the amount selection GUI not being closed after
 buying or selling an item.
 
-#### Disabling direct access to a shop (using the GUI or /shop <name>) so it can be accessed only by having it open from the console/by another plugin
+## Disabling direct access to a shop (using the GUI or /shop <name>) so it can be accessed only by having it open from the console/by another plugin
 
 Simply add the `denyDirectAccess: true` entry to the shop in the shop yaml. Then the only way for players to access the
 shop will be to have the /shop <player name> <shop name> executed by the console/another player/plugin.
@@ -228,7 +228,7 @@ mining:
       slot: 2
 ```
 
-#### Removing custom name/lore from the item bought by players
+## Removing custom name/lore from the item bought by players
 
 You can remove it by adding `stripItemMeta: true` entry to the item.
 
@@ -247,7 +247,7 @@ Example:
       slot: 1
 ```
 
-#### Changing the maximal item stack size (regardless of global settings from config.yml)
+## Changing the maximal item stack size (regardless of global settings from config.yml)
 
 Simply add a `maxStackSize` entry to desired item in the shop yaml.
 
@@ -265,7 +265,7 @@ Example:
       slot: 1
 ```
 
-#### Changing the format of displayed price and decimals
+## Changing the format of displayed price and decimals
 
 There are some additional secret settings available config.yml to change the format of displayed price.
 
@@ -282,7 +282,7 @@ numberFormat:
   hideFraction: true
 ```
 
-#### Changing the receipt message sent after buying/selling an item
+## Changing the receipt message sent after buying/selling an item
 
 You can define the custom messages at the bottom of the shop item (`messageBuy`, `messageSell`, `messageSellAll`). Same
 placeholders apply as in the default messages from lang.yml.
@@ -303,7 +303,7 @@ Example:
       slot: 0
 ```
 
-#### Limiting the item stack size players are able to enchant at once
+## Limiting the item stack size players are able to enchant at once
 
 Simply add an entry named `enchantmentStackSizeLimit` with the value of the limit.
 
@@ -325,7 +325,7 @@ Example:
       slot: 0
 ```
 
-#### Adding more pages
+## Adding more pages
 
 Adding a new page is as simple as adding a `page: x` entry where `x` is the page number. When there's at least 1 item on
 a page it will be automatically added to the GUI. Slot numbers start from 0 for every page.
@@ -344,7 +344,7 @@ Example:
       page: 2
 ```
 
-#### Setting a different name of each page
+## Setting a different name of each page
 
 Add an entry named `namePerPage` below `name` in the shop yaml. You can set as many names as you wish (the format
 is `PAGE: NAME`)
@@ -370,7 +370,7 @@ blocks:
       page: 1
 ```
 
-#### Disallowing selling items with name/lore different from the shop item's ones
+## Disallowing selling items with name/lore different from the shop item's ones
 
 Simply add a `compareMeta: true` setting to your shop item in the shop yaml.
 
@@ -391,7 +391,7 @@ Example:
       slot: 0
 ```
 
-#### Enabling compareMeta and/or stripItemMeta globally for all items
+## Enabling compareMeta and/or stripItemMeta globally for all items
 
 Add the following section to your config.yml and adjust it to your needs.
 
@@ -406,10 +406,9 @@ defaultItemSettings:
   stripItemMeta: false
 ```
 
-#### Changing the /shop command
+## Changing the /shop command
 
-You can't completely change it, you can only add aliases using the spigot's built-in commands.yml file (you can find in
-the root directory of your server).
+You can't completely change it, you can only add aliases using Spigot's built-in commands.yml file, which can be found in the root directory of your server.
 
 Example:
 
@@ -429,10 +428,11 @@ Example:
 command-block-overrides: [ ]
 aliases:
   market:
-    - shop
+    - shop $1-
 ```
 
-#### Adding an alias /sellhand for /sell hand (with no space inbetween)
+The above extract will allow players to make use of the /market command as if it was the /shop command, while accounting for any arguments that may be passed through. 
+## Adding an alias /sellhand for /sell hand (with no space inbetween)
 
 You can add it in commands.yml in the root folder of your server like shown below.
 
@@ -444,7 +444,7 @@ aliases:
     - "sell hand $1-"
 ```
 
-#### Adding "Owned"/"Not owned" tag to permission shop items
+## Adding "Owned"/"Not owned" tag to permission shop items
 
 Simply add `%owned%` placeholder to `shopItemLoreFormat` -> `permission` in config.yml. It will be replaced with an
 appropriate tag.
@@ -480,7 +480,7 @@ shopItemLoreFormat:
     - "&7Buy price: &c%buy%$"
 ```
 
-#### Hiding only one of the "Owned"/"Not owned" tags from permission shop items
+## Hiding only one of the "Owned"/"Not owned" tags from permission shop items
 
 If you want to have only one of them displayed simply set the other one to blank in lang.yml. The example below shows
 how to have only the "Owned" tag displayed.
@@ -494,7 +494,7 @@ SHOP:
     NOTOWNED: ''
 ```
 
-#### Allowing/disallowing access to particular shop in particular worlds
+## Allowing/disallowing access to particular shop in particular worlds
 
 You can add either `worldsWhitelist` (to whitelist allowed worlds) or `worldsBlacklist` (to blacklist blocked worlds)
 entry to shop yaml.
@@ -517,7 +517,7 @@ blocks:
     - "world_nether"
 ```
 
-#### Requiring players to have certain permissions to purchase an item
+## Requiring players to have certain permissions to purchase an item
 
 You can add `requiredPermissions` list to an item inside the shop yaml.
 
@@ -537,7 +537,7 @@ Example:
       slot: 10
 ```
 
-#### Adding decoration items to GUIs
+## Adding decoration items to GUIs
 
 You can add item with type `DUMMY` (since 1.18.2 version of the plugin). Such items can't be bought or sold, they can be
 used for commands on click though.
@@ -553,12 +553,12 @@ Example:
       slot: 10
 ```
 
-#### Adding custom economy plugin support
+## Adding custom economy plugin support
 
 You can use the EconomyProvider (see section API above for link) to implement your own economy handler. Then you need to
 use the ShopGuiPlusApi#registerEconomyProvider method to register it and set the economyType in config.yml to CUSTOM.
 
-#### Changing the click cooldown inside GUIs
+## Changing the click cooldown inside GUIs
 
 You can change it by adding a `clickCooldown` entry to `gui` section in config.yml. The value is click cooldown in
 milliseconds (250 ms is default).
@@ -570,7 +570,7 @@ gui:
   clickCooldown: 250
 ```
 
-#### Enabling/disabling amount selection GUI in particular shops
+## Enabling/disabling amount selection GUI in particular shops
 
 You can override the default amount selection GUI settings (`enableBuyGUI`, `enableSellGUI`, `enableSellGUISellAll`)
 from config.yml in each of shop yamls.
@@ -596,7 +596,7 @@ armor:
       slot: 10
 ```
 
-#### Fixing previous/next page buttons opening buy menu instead
+## Fixing previous/next page buttons opening buy menu instead
 
 If you're experiencing this issue, it means you're running a really outdated configuration. We highly suggest to contact
 its author with an inquiry to either update it or refund if it's a paid configuration - these changes were few years ago
@@ -637,7 +637,7 @@ food:
       slot: 10
 ```
 
-#### Creating a NPC with shop
+## Creating a NPC with shop
 
 You can combine the ShopGUI+'s commands with NPC plugins such as i.e. Citizens.
 
@@ -650,7 +650,7 @@ the NPC:
 /citizens save
 ```
 
-#### Adding buttons to close currently open GUI
+## Adding buttons to close currently open GUI
 
 You can use the `closeGuiOnClick: true` option within both main menu and shops to add a button closing the currently
 open GUI.
@@ -668,7 +668,7 @@ Example:
     slot: 32
  ```
 
-#### Disabling permission cache
+## Disabling permission cache
 
 For some reason, on some setups permission checks for price modifiers may not be working correctly. If it occurs on your
 server, try disabling the cache. It may impact your server performance, but may fix issues with permission-based price
