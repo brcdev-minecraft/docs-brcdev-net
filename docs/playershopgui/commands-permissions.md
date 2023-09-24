@@ -21,3 +21,5 @@ Furthermore, there are some extra permissions:
 | playershopguiplus.bypassgamemode | Allows to access shops when in one of the banned gamemodes                    |
 | playershopguiplus.bypassworld    | Allows to access shops when in one of the banned worlds                       |
 | playershopguiplus.editshopname   | Allows players to edit their own shop's name                                  |
+| playershopguiplus.tax.exempt     | Allows players to be exempt from taxation charges and refunds                 |
+| playershopguiplus.tax.refund     | Allows players to get tax refunds from expired items                          |
