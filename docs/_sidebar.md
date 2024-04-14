@@ -23,6 +23,7 @@
 
     - [Commands & permissions](gangs/commands-permissions)
     - [Adding fight arenas](gangs/fight-arenas)
+    - [WorldGuard integration](gangs/worldguard-integration.md)
     - [Placeholders](gangs/placeholders)
 
 - AuctionGUI+
