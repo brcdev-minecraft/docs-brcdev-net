@@ -3,7 +3,7 @@
 
 <!-- tabs:start -->
 
-### ** Minecraft 1.20.2 and newer **
+## ** Minecraft 1.20.2 and newer **
 
 AWKWARD<br />
 FIRE_RESISTANCE<br />
@@ -52,7 +52,7 @@ WEAKNESS<br />
 WEAVING<br />
 WIND_CHARGED
 
-### ** Minecraft 1.7-1.20.1 **
+## ** Minecraft 1.7-1.20.1 **
 
 <p class="warn"><b>Note:</b> You can't both upgrade and extend the same potion at once!</p>
 
@@ -75,3 +75,5 @@ WIND_CHARGED
 | WATER           | :x:️                | :x:️                 |
 | TURTLE_MASTER   | :heavy_check_mark:️ | :heavy_check_mark:️  |
 | SLOW_FALLING    | :x:️                | :heavy_check_mark:️  |
+
+<!-- tabs:end -->
