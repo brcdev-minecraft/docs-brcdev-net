@@ -189,7 +189,7 @@ item:
   damage: 16417
 ```
 
-### 1.9+
+### 1.9-1.20.1
 
 Since 1.9 damage values don't work any more. You have to set the potion parameters using particular settings.
 
@@ -209,6 +209,20 @@ item:
     level: 1
     extended: true
     color: BLUE
+```
+
+### 1.20.2+
+
+In 1.20.2 there were separate potion types introduced in place of extended and level fields.
+
+Example:
+
+```yaml
+item:
+  material: POTION
+  quantity: 1
+  potion:
+    type: STRONG_STRENGTH
 ```
 
 ## Spawn Eggs
