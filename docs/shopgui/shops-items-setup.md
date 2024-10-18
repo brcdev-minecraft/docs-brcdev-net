@@ -424,7 +424,7 @@ Item from Executable Items with ID `heal`
 
 #### ItemsAdder
 
-<p class="warn"><b>Note:</b> If you're having issues with ItemsAdder items not loading in ShopGUIPlus, try setting `force-sync-loading` to `true` in ItemsAdder's config and restart your server.</p>
+<p class="warn"><b>Note:</b> If you're having issues with ItemsAdder items not loading in ShopGUIPlus, try setting <code>force-sync-loading</code> to <code>true</code> in ItemsAdder's config and restart your server.</p>
 
 Item from ItemsAdder with ID `ruby_sword`
 
