@@ -91,7 +91,7 @@ priceModifiers:
     scope: ITEM
     # Valid types: BOTH, BUY, SELL
     type: BUY
-    # odifier value, 1.0 = 100%, 2.0 = 200% etc.
+    # Modifier value, 1.0 = 100%, 2.0 = 200% etc.
     value: 3.0
     # Shop ID (from shops.yml, case insensitive)
     shop: food
