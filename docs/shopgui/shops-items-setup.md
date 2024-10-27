@@ -422,6 +422,20 @@ Item from Executable Items with ID `heal`
         slot: 0
 ```
 
+#### Executable Blocks
+
+Item from Executable Blocks with ID `teleporter`
+
+```yaml
+      1:
+        type: item
+        item:
+          executableBlocks: "teleporter"
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
+
 #### ItemsAdder
 
 <p class="warn"><b>Note:</b> If you're having issues with ItemsAdder items not loading in ShopGUIPlus, try setting <code>force-sync-loading</code> to <code>true</code> in ItemsAdder's config and restart your server.</p>
