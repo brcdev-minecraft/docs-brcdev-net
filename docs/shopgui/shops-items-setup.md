@@ -516,7 +516,7 @@ Pig spawner with a custom name
         slot: 1
 ```
 
-#### Enchantments
+### Enchantments
 
 Fortune II
 
