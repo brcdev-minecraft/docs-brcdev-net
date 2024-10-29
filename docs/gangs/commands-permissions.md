@@ -59,6 +59,7 @@ added please contact us, we are open for new feature suggestions.
 | /fight       | leave                                         | Leave the fight your gang takes part in                                               | gangsplus.fight.leave         |
 | /ga          | disband \<name\>                              | Disband specified gang                                                                | gangsplus.gangadmin.disband   | gangsplus.gangadmin.* |
 | /ga          | reload                                        | Disband specified gang                                                                | gangsplus.gangadmin.reload    |
+| /ga          | setleader <gang> <new leader>                 | Change the leader of an existing gang                                                 | gangsplus.gangadmin.setleader |
 | /ga          | socialspy [player]                            | Toggle on gang chat social spy for specified player (or yourself if no name is given) | gangsplus.gangadmin.socialspy |
 
 ### Permissions
