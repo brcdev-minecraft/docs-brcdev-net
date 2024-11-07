@@ -647,3 +647,15 @@ item:
   fireworkColor: RED
   fireworkFadeColor: PURPLE
 ```
+
+
+## Goat horns
+
+Example (Goat Horn Dream):
+
+```yaml
+item:
+  material: GOAT_HORN
+  quantity: 1
+  musicInstrument: DREAM_GOAT_HORN`
+```
