@@ -12,6 +12,7 @@ Useful links:
 * [Leather dye colors list](leather-dye-colors)
 * [Potion types list (1.9+ only)](potion-types)
 * [Potion Calculator by Graham Edgecombe (1.7-1.8 only)](https://minecraft-ids.grahamedgecombe.com/potion-calculator)
+* [Goat horns list](music-instruments)
 
 ## Basic meta
 
