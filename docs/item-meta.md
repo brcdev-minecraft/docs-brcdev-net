@@ -657,5 +657,5 @@ Example (Goat Horn Dream):
 item:
   material: GOAT_HORN
   quantity: 1
-  musicInstrument: DREAM_GOAT_HORN`
+  musicInstrument: DREAM_GOAT_HORN
 ```
