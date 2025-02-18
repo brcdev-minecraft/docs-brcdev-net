@@ -13,7 +13,7 @@ Plugin versions required to use these placeholders:
 | Gangs+         | 2.27.0 or newer |
 | PlaceholderAPI | 2.10.3 or newer |
 
-Placeholders list:
+### Placeholders
 
 | Placeholder name                                                                                                                                                       | Description                                                   |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
@@ -43,8 +43,32 @@ Placeholders list:
 | %gangsplus_gang_bank_raw%                                                                                                                                              | Returns the player's gang bank balance (raw number)           |
 | %gangsplus_gang_money%                                                                                                                                                 | Returns the player's gang members balance sum                 |
 | %gangsplus_gang_money_raw%                                                                                                                                             | Returns the player's gang members balance sum (raw number)    |
-| %gangsplus_gangs_top_1_name%<br />%gangsplus_gangs_top_2_name%<br />%gangsplus_gangs_top_3_name%<br />%gangsplus_gangs_top_4_name%<br />%gangsplus_gangs_top_5_name%   | Returns name of n-th top gang (from 1 to 5)                   |
-| %gangsplus_gangs_top_1_leader%<br />%gangsplus_gangs_top_2_leader%<br />%gangsplus_gangs_top_3_leader%<br />%gangsplus_gangs_top_4_leader%<br />%gangsplus_gangs_top_5_leader% | Returns leader's name of n-th top gang (from 1 to 5)          |
+
+### Leaderboard Placeholders
+
+| Placeholder Name                                | Description                                             |
+|------------------------------------------------|---------------------------------------------------------|
+| %gangsplus_gangs_top_1_bank%                   | Returns the total bank balance of n-th top gang (from 1 to ∞) |
+| %gangsplus_gangs_top_1_bank_raw%               | Returns the raw bank balance of n-th top gang (from 1 to ∞) |
+| %gangsplus_gangs_top_1_deaths%                 | Returns the number of deaths of n-th top gang (from 1 to ∞) |
+| %gangsplus_gangs_top_1_homes_count%            | Returns the number of homes owned by n-th top gang (from 1 to ∞) |
+| %gangsplus_gangs_top_1_kdr%                    | Returns the kill/death ratio of n-th top gang (from 1 to ∞) |
+| %gangsplus_gangs_top_1_kdr_raw%                | Returns the raw kill/death ratio of n-th top gang (from 1 to ∞) |
+| %gangsplus_gangs_top_1_kills%                  | Returns the number of kills by n-th top gang (from 1 to ∞) |
+| %gangsplus_gangs_top_1_leader%                 | Returns leader's name of n-th top gang (from 1 to ∞)   |
+| %gangsplus_gangs_top_1_level%                  | Returns level of n-th top gang (from 1 to ∞)           |
+| %gangsplus_gangs_top_1_loss%                   | Returns the number of losses of n-th top gang (from 1 to ∞) |
+| %gangsplus_gangs_top_1_members_count%          | Returns the number of members in n-th top gang (from 1 to ∞) |
+| %gangsplus_gangs_top_1_members_list%           | Returns a list of members of n-th top gang (from 1 to ∞) |
+| %gangsplus_gangs_top_1_money%                  | Returns the total money owned by n-th top gang (from 1 to ∞) |
+| %gangsplus_gangs_top_1_money_raw%              | Returns the raw money amount of n-th top gang (from 1 to ∞) |
+| %gangsplus_gangs_top_1_name%                   | Returns name of n-th top gang (from 1 to ∞)            |
+| %gangsplus_gangs_top_1_wins%                   | Returns the number of wins of n-th top gang (from 1 to ∞) |
+| %gangsplus_gangs_top_1_wlr%                    | Returns the win/loss ratio of n-th top gang (from 1 to ∞) |
+| %gangsplus_gangs_top_1_wlr_raw%                | Returns the raw win/loss ratio of n-th top gang (from 1 to ∞) |
+
+
+
 
 ## MVdWPlaceholderAPI
 
