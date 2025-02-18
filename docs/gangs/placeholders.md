@@ -46,7 +46,15 @@ Plugin versions required to use these placeholders:
 
 ### Leaderboard Placeholders
 
-Placeholders are in the format of ``%gangsplus_gangs_top_<statistic>_<position>_<gang_property>%`` where ``statistic`` is the rank order (eg. most kills) of the leaderboard and the ``gang_property`` is the Gang's statistic you want to display (eg. gang's kills).
+Leaderboard Placeholders are in the format of ``%gangsplus_gangs_top_<statistic>_<position>_<gang_property>%``.
+
+> ``statistic`` is the rank order of the leaderboard. (eg. most kills)
+> 
+> ``position`` is the leaderboard position number. (eg. '1' for 1st place)
+> 
+> ``gang_property`` is the Gang's statistic you want to display. (eg. gang's kills)
+
+#### Statistics
 
 | Statistic Name | Description               |
 |----------------|---------------------------|
@@ -62,6 +70,8 @@ Placeholders are in the format of ``%gangsplus_gangs_top_<statistic>_<position>_
 | bank           | Gang Bank Balance         |
 | balance        | Gang Balance              | 
 | homes          | Gang Home Count           |
+
+#### Gang Properties
 
 | Gang Property Name | Description                     |
 |--------------------|---------------------------------|
