@@ -46,27 +46,43 @@ Plugin versions required to use these placeholders:
 
 ### Leaderboard Placeholders
 
-| Placeholder Name                                | Description                                             |
-|------------------------------------------------|---------------------------------------------------------|
-| %gangsplus_gangs_top_1_bank%                   | Returns the total bank balance of n-th top gang (from 1 to ∞) |
-| %gangsplus_gangs_top_1_bank_raw%               | Returns the raw bank balance of n-th top gang (from 1 to ∞) |
-| %gangsplus_gangs_top_1_deaths%                 | Returns the number of deaths of n-th top gang (from 1 to ∞) |
-| %gangsplus_gangs_top_1_homes_count%            | Returns the number of homes owned by n-th top gang (from 1 to ∞) |
-| %gangsplus_gangs_top_1_kdr%                    | Returns the kill/death ratio of n-th top gang (from 1 to ∞) |
-| %gangsplus_gangs_top_1_kdr_raw%                | Returns the raw kill/death ratio of n-th top gang (from 1 to ∞) |
-| %gangsplus_gangs_top_1_kills%                  | Returns the number of kills by n-th top gang (from 1 to ∞) |
-| %gangsplus_gangs_top_1_leader%                 | Returns leader's name of n-th top gang (from 1 to ∞)   |
-| %gangsplus_gangs_top_1_level%                  | Returns level of n-th top gang (from 1 to ∞)           |
-| %gangsplus_gangs_top_1_loss%                   | Returns the number of losses of n-th top gang (from 1 to ∞) |
-| %gangsplus_gangs_top_1_members_count%          | Returns the number of members in n-th top gang (from 1 to ∞) |
-| %gangsplus_gangs_top_1_members_list%           | Returns a list of members of n-th top gang (from 1 to ∞) |
-| %gangsplus_gangs_top_1_money%                  | Returns the total money owned by n-th top gang (from 1 to ∞) |
-| %gangsplus_gangs_top_1_money_raw%              | Returns the raw money amount of n-th top gang (from 1 to ∞) |
-| %gangsplus_gangs_top_1_name%                   | Returns name of n-th top gang (from 1 to ∞)            |
-| %gangsplus_gangs_top_1_wins%                   | Returns the number of wins of n-th top gang (from 1 to ∞) |
-| %gangsplus_gangs_top_1_wlr%                    | Returns the win/loss ratio of n-th top gang (from 1 to ∞) |
-| %gangsplus_gangs_top_1_wlr_raw%                | Returns the raw win/loss ratio of n-th top gang (from 1 to ∞) |
+Placeholders are in the format of ``%gangsplus_gangs_top_<statistic>_<position>_<gang_property>%`` where ``statistic`` is the rank order (eg. most kills) of the leaderboard and the ``gang_property`` is the Gang's statistic you want to display (eg. gang's kills).
 
+| Statistic Name | Description |
+|------------------------------------------------|---------------------------------------------------------|
+| kills | Gang Kill Count |
+| deaths | Gang Death Count |
+| kdr | Gang Kill/Death Ratio |
+| wins | Gang Wins |
+| losses | Gang Losses |
+| wlr | Gang Fight Win/Loss Ratio |
+| level | Gang Level |
+| members | Gang Member Count |
+| members_online | Gang Online Member Count |
+| bank | Gang Bank Balance |
+| balance | Gang Balance | 
+| homes | Gang Home Count |
+
+| Gang Property Name | Description |
+|--------------------|-------------|
+| bank               | Gang Bank Balance Formatted |
+| bank_raw           | Gang Bank Balance |
+| deaths             | Gang Death Count |
+| homes_count        | Gang Home Count |
+| kdr                | Gang Kill/Death Ratio Formatted |
+| kdr_raw            | Gang Kill/Death Ratio |
+| kills              | Gang Kill Count |
+| leader             | Gang Leader's username |
+| level              | Gang Level |
+| loss               | Gang Loss Count |
+| members_count      | Gang Member Count |
+| members_list       | Gang Member List |
+| money              | Gang Balance Formatted |
+| money_raw          | Gang Balance |
+| name               | Gang Name |
+| wins               | Gang Win Count |
+| wlr                | Gang Win/Loss Ratio Formatted |
+| wlr_raw            | Gang Win/Loss Ratio |
 
 
 
