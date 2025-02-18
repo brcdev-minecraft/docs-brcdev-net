@@ -1,4 +1,4 @@
-# Placeholders
+ # Placeholders
 
 Remember to get the placeholders from a list corresponding to the placeholders plugin you're using.
 
@@ -48,41 +48,41 @@ Plugin versions required to use these placeholders:
 
 Placeholders are in the format of ``%gangsplus_gangs_top_<statistic>_<position>_<gang_property>%`` where ``statistic`` is the rank order (eg. most kills) of the leaderboard and the ``gang_property`` is the Gang's statistic you want to display (eg. gang's kills).
 
-| Statistic Name | Description |
-|------------------------------------------------|---------------------------------------------------------|
-| kills | Gang Kill Count |
-| deaths | Gang Death Count |
-| kdr | Gang Kill/Death Ratio |
-| wins | Gang Wins |
-| losses | Gang Losses |
-| wlr | Gang Fight Win/Loss Ratio |
-| level | Gang Level |
-| members | Gang Member Count |
-| members_online | Gang Online Member Count |
-| bank | Gang Bank Balance |
-| balance | Gang Balance | 
-| homes | Gang Home Count |
+| Statistic Name | Description               |
+|----------------|---------------------------|
+| kills          | Gang Kill Count           |
+| deaths         | Gang Death Count          |
+| kdr            | Gang Kill/Death Ratio     |
+| wins           | Gang Wins                 |
+| losses         | Gang Losses               |
+| wlr            | Gang Fight Win/Loss Ratio |
+| level          | Gang Level                |
+| members        | Gang Member Count         |
+| members_online | Gang Online Member Count  |
+| bank           | Gang Bank Balance         |
+| balance        | Gang Balance              | 
+| homes          | Gang Home Count           |
 
-| Gang Property Name | Description |
-|--------------------|-------------|
-| bank               | Gang Bank Balance Formatted |
-| bank_raw           | Gang Bank Balance |
-| deaths             | Gang Death Count |
-| homes_count        | Gang Home Count |
+| Gang Property Name | Description                     |
+|--------------------|---------------------------------|
+| bank               | Gang Bank Balance Formatted     |
+| bank_raw           | Gang Bank Balance               |
+| deaths             | Gang Death Count                |
+| homes_count        | Gang Home Count                 |
 | kdr                | Gang Kill/Death Ratio Formatted |
-| kdr_raw            | Gang Kill/Death Ratio |
-| kills              | Gang Kill Count |
-| leader             | Gang Leader's username |
-| level              | Gang Level |
-| loss               | Gang Loss Count |
-| members_count      | Gang Member Count |
-| members_list       | Gang Member List |
-| money              | Gang Balance Formatted |
-| money_raw          | Gang Balance |
-| name               | Gang Name |
-| wins               | Gang Win Count |
-| wlr                | Gang Win/Loss Ratio Formatted |
-| wlr_raw            | Gang Win/Loss Ratio |
+| kdr_raw            | Gang Kill/Death Ratio           |
+| kills              | Gang Kill Count                 |
+| leader             | Gang Leader's username          |
+| level              | Gang Level                      |
+| loss               | Gang Loss Count                 |
+| members_count      | Gang Member Count               |
+| members_list       | Gang Member List                |
+| money              | Gang Balance Formatted          |
+| money_raw          | Gang Balance                    |
+| name               | Gang Name                       |
+| wins               | Gang Win Count                  |
+| wlr                | Gang Win/Loss Ratio Formatted   |
+| wlr_raw            | Gang Win/Loss Ratio             |
 
 
 
