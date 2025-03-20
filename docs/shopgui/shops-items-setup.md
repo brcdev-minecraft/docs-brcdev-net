@@ -452,20 +452,19 @@ Item from ItemsAdder with ID `ruby_sword`
         slot: 0
 ```
 
-You can also use the Custom Model Data from ItemsAdder items to display them in the shop.
+You can also use the Custom Model Data from ItemsAdder items to display them in the shop. Note that it is only recommended for displaying and not purchasable/sellable items.
 
-Run `/ia tag` while holding any ItemsAdder item to get the Custom Model Data Value:
+Run `/iatag` while holding any ItemsAdder item to get the Custom Model Data Value:
 
 ![image](https://github.com/user-attachments/assets/dca98eb4-31b9-40dc-bf55-542dfd287210)
 
 ```yaml
       1:
-        type: item
+        type: dummy
         item:
           item: paper
+          name: "Example Item with ItemsAdder Texture"
           model: 10002
-        buyPrice: 50
-        sellPrice: 25
         slot: 0
 ```
 
