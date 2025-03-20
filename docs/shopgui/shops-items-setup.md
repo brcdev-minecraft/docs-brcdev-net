@@ -455,6 +455,7 @@ Item from ItemsAdder with ID `ruby_sword`
 You can also use the Custom Model Data from ItemsAdder items to display them in the shop.
 
 Run `/ia tag` while holding any ItemsAdder item to get the Custom Model Data Value:
+
 ![image](https://github.com/user-attachments/assets/dca98eb4-31b9-40dc-bf55-542dfd287210)
 
 ```yaml
