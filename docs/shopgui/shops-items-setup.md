@@ -452,6 +452,24 @@ Item from ItemsAdder with ID `ruby_sword`
         slot: 0
 ```
 
+You can also use the Custom Model Data from ItemsAdder items to display them in the shop.
+
+Run `/ia tag` while holding any ItemsAdder item to get the Custom Model Data Value:
+![image](https://github.com/user-attachments/assets/dca98eb4-31b9-40dc-bf55-542dfd287210)
+
+```yaml
+      1:
+        type: item
+        item:
+          item: paper
+          model: 10002
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
+
+Click [here](https://docs.brcdev.net/#/item-meta?id=custom-item-models) for more information on Custom Model Data in ShopGUIPlus.
+
 #### Slimefun
 
 Item from Slimefun with ID `GRANDMAS_WALKING_STICK`
