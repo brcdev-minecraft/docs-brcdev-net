@@ -717,7 +717,9 @@ Example:
 ```yaml
     1:
       type: shop_link
-      shop: "blocks"
+      link:
+        shop: "blocks"
+        page: 2 # <--- Optional, defaults to page 1 if not set.
       item:
         material: STONE
         quantity: 1
