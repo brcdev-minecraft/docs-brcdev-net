@@ -5,7 +5,7 @@ There are some hidden configuration options that can resolve some potential issu
 ## Click Cooldown
 Using the `clickCooldown` option can change the time allowed between clicks in the GUI in milliseconds.
 
- <p class="error"><b>WARNING:</b> This setting is dangerous. This is used to prevent duplication bugs, and is set to 250ms to prevent this. Removing this cooldown can harm changes of duplication. </p>
+ <p class="error"><b>WARNING:</b> This setting is dangerous. This is used to prevent duplication bugs, and is set to 250ms to prevent this. Removing this cooldown can harm chances of duplication. </p>
 
  This can be changed by inserting the following setting in the [`config.yml`](https://pastebin.com/KiM3PjU7):
  ```yaml
