@@ -378,6 +378,20 @@ Oraxen item with ID `obsidian_pickaxe`
         slot: 0
 ```
 
+#### Nexo
+
+Nexo item with ID `mithril_helmet`
+
+```yaml
+      1:
+        type: item
+        item:
+          nexo: "mithril_helmet"
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
+
 #### Custom Items
 
 Custom Items item with ID `item1`
