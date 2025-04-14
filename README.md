@@ -60,6 +60,3 @@ Contributions are welcome! If you'd like to improve the documentation:
 
 For major changes or suggestions, please open an issue first to discuss your ideas.
 
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
