@@ -1,4 +1,4 @@
-# Placeholders
+ # Placeholders
 
 Remember to get the placeholders from a list corresponding to the placeholders plugin you're using.
 
@@ -13,7 +13,7 @@ Plugin versions required to use these placeholders:
 | Gangs+         | 2.27.0 or newer |
 | PlaceholderAPI | 2.10.3 or newer |
 
-Placeholders list:
+### Placeholders
 
 | Placeholder name                                                                                                                                                       | Description                                                   |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
@@ -43,8 +43,58 @@ Placeholders list:
 | %gangsplus_gang_bank_raw%                                                                                                                                              | Returns the player's gang bank balance (raw number)           |
 | %gangsplus_gang_money%                                                                                                                                                 | Returns the player's gang members balance sum                 |
 | %gangsplus_gang_money_raw%                                                                                                                                             | Returns the player's gang members balance sum (raw number)    |
-| %gangsplus_gangs_top_1_name%<br />%gangsplus_gangs_top_2_name%<br />%gangsplus_gangs_top_3_name%<br />%gangsplus_gangs_top_4_name%<br />%gangsplus_gangs_top_5_name%   | Returns name of n-th top gang (from 1 to 5)                   |
-| %gangsplus_gangs_top_1_leader%<br />%gangsplus_gangs_top_2_leader%<br />%gangsplus_gangs_top_3_leader%<br />%gangsplus_gangs_top_4_leader%<br />%gangsplus_gangs_top_5_leader% | Returns leader's name of n-th top gang (from 1 to 5)          |
+
+### Leaderboard Placeholders
+
+Leaderboard Placeholders are in the format of ``%gangsplus_gangs_top_<statistic>_<position>_<gang_property>%``.
+
+> ``statistic`` is the rank order of the leaderboard. (eg. most kills)
+> 
+> ``position`` is the leaderboard position number. (eg. '1' for 1st place)
+> 
+> ``gang_property`` is the Gang's statistic you want to display. (eg. gang's kills)
+
+#### Statistics
+
+| Statistic Name | Description               |
+|----------------|---------------------------|
+| kills          | Gang Kill Count           |
+| deaths         | Gang Death Count          |
+| kdr            | Gang Kill/Death Ratio     |
+| wins           | Gang Wins                 |
+| losses         | Gang Losses               |
+| wlr            | Gang Fight Win/Loss Ratio |
+| level          | Gang Level                |
+| members        | Gang Member Count         |
+| members_online | Gang Online Member Count  |
+| bank           | Gang Bank Balance         |
+| balance        | Gang Balance              | 
+| homes          | Gang Home Count           |
+
+#### Gang Properties
+
+| Gang Property Name | Description                     |
+|--------------------|---------------------------------|
+| bank               | Gang Bank Balance Formatted     |
+| bank_raw           | Gang Bank Balance               |
+| deaths             | Gang Death Count                |
+| homes_count        | Gang Home Count                 |
+| kdr                | Gang Kill/Death Ratio Formatted |
+| kdr_raw            | Gang Kill/Death Ratio           |
+| kills              | Gang Kill Count                 |
+| leader             | Gang Leader's username          |
+| level              | Gang Level                      |
+| loss               | Gang Loss Count                 |
+| members_count      | Gang Member Count               |
+| members_list       | Gang Member List                |
+| money              | Gang Balance Formatted          |
+| money_raw          | Gang Balance                    |
+| name               | Gang Name                       |
+| wins               | Gang Win Count                  |
+| wlr                | Gang Win/Loss Ratio Formatted   |
+| wlr_raw            | Gang Win/Loss Ratio             |
+
+
 
 ## MVdWPlaceholderAPI
 
