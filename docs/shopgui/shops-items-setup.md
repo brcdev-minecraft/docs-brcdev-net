@@ -452,7 +452,7 @@ Item from Executable Blocks with ID `teleporter`
 
 #### ItemsAdder
 
-<p class="warn"><b>Note:</b> If you're having issues with ItemsAdder items not loading in ShopGUIPlus, try setting <code>force-sync-loading</code> to <code>true</code> in ItemsAdder's config and restart your server.</p>
+<p class="warn"><b>Note:</b> If you're having issues with ItemsAdder items not loading in ShopGUIPlus, try re-generating your ItemsAdder Storage folder (/plugins/ItemsAdder/storage) by deleting it and restarting your server.</p>
 
 Item from ItemsAdder with ID `ruby_sword`
 
@@ -500,13 +500,40 @@ Item from Slimefun with ID `GRANDMAS_WALKING_STICK`
 
 #### MythicMobs
 
-Item from MythicMobs with ID `SKELETON_BOSS_SKULL`
+Item from MythicMobs with ID `PIG_BONE`
 
 ```yaml
       1:
         type: item
         item:
-          mythicMobs: "SKELETON_BOSS_SKULL"
+          mythicMobs: 
+            item: "PIG_BONE"
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
+
+Spawner Item from MythicMobs with Mob Type `PENGUIN`
+
+```yaml
+      1:
+        type: item
+        item:
+          mythicMobs: 
+            spawner: "PENGUIN"
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
+
+Spawn Egg Item from MythicMobs with Mob Type `FIRE_DRAGON`
+
+```yaml
+      1:
+        type: item
+        item:
+          mythicMobs: 
+            egg: "FIRE_DRAGON"
         buyPrice: 50
         sellPrice: 25
         slot: 0
