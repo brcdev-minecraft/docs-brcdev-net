@@ -392,6 +392,21 @@ Nexo item with ID `mithril_helmet`
         slot: 0
 ```
 
+#### CraftEngine
+
+CraftEngine item with namespace `customcrops` and item ID `apple`
+
+```yaml
+      1:
+        type: item
+        item:
+          craftEngine: "customcrops:apple"
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
+
+
 #### Custom Items
 
 Custom Items item with ID `item1`
