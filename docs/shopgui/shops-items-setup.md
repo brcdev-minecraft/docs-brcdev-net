@@ -320,31 +320,17 @@ Firework
 
 ### Custom items
 
-#### HeadDatabase
+#### Brewery
 
-Head from HeadDatabase with ID `1734`
-
-```yaml
-      1:
-        type: item
-        item:
-          headDatabase: 1734
-        buyPrice: 50
-        sellPrice: 25
-        slot: 0
-```
-
-#### MMOItems
-
-Item from MMOItems with type `armor` and id `MYTHRIL_CHAINMAIL`
+Brewery `wine` potion with quality `10`
 
 ```yaml
       1:
         type: item
         item:
-          mmoItems:
-            type: ARMOR
-            id: MYTHRIL_CHAINMAIL
+          brewery:
+            recipe: "wine"
+            quality: 10
         buyPrice: 50
         sellPrice: 25
         slot: 0
@@ -364,34 +350,6 @@ CrackShot gun with ID `AK-47`
         slot: 0
 ```
 
-#### Oraxen
-
-Oraxen item with ID `obsidian_pickaxe`
-
-```yaml
-      1:
-        type: item
-        item:
-          oraxen: "obsidian_pickaxe"
-        buyPrice: 50
-        sellPrice: 25
-        slot: 0
-```
-
-#### Nexo
-
-Nexo item with ID `mithril_helmet`
-
-```yaml
-      1:
-        type: item
-        item:
-          nexo: "mithril_helmet"
-        buyPrice: 50
-        sellPrice: 25
-        slot: 0
-```
-
 #### CraftEngine
 
 CraftEngine item with namespace `customcrops` and item ID `apple`
@@ -405,7 +363,6 @@ CraftEngine item with namespace `customcrops` and item ID `apple`
         sellPrice: 25
         slot: 0
 ```
-
 
 #### Custom Items
 
@@ -421,17 +378,15 @@ Custom Items item with ID `item1`
         slot: 0
 ```
 
-#### Brewery
+#### Executable Blocks
 
-Brewery `wine` potion with quality `10`
+Item from Executable Blocks with ID `teleporter`
 
 ```yaml
       1:
         type: item
         item:
-          brewery:
-            recipe: "wine"
-            quality: 10
+          executableBlocks: "teleporter"
         buyPrice: 50
         sellPrice: 25
         slot: 0
@@ -451,15 +406,15 @@ Item from Executable Items with ID `heal`
         slot: 0
 ```
 
-#### Executable Blocks
+#### HeadDatabase
 
-Item from Executable Blocks with ID `teleporter`
+Head from HeadDatabase with ID `1734`
 
 ```yaml
       1:
         type: item
         item:
-          executableBlocks: "teleporter"
+          headDatabase: 1734
         buyPrice: 50
         sellPrice: 25
         slot: 0
@@ -499,15 +454,17 @@ Run `/iatag` while holding any ItemsAdder item to get the Custom Model Data Valu
 
 Click [here](https://docs.brcdev.net/#/item-meta?id=custom-item-models) for more information on Custom Model Data in ShopGUIPlus.
 
-#### Slimefun
+#### MMOItems
 
-Item from Slimefun with ID `GRANDMAS_WALKING_STICK`
+Item from MMOItems with type `armor` and id `MYTHRIL_CHAINMAIL`
 
 ```yaml
       1:
         type: item
         item:
-          slimefun: "GRANDMAS_WALKING_STICK"
+          mmoItems:
+            type: ARMOR
+            id: MYTHRIL_CHAINMAIL
         buyPrice: 50
         sellPrice: 25
         slot: 0
@@ -554,6 +511,34 @@ Spawn Egg Item from MythicMobs with Mob Type `FIRE_DRAGON`
         slot: 0
 ```
 
+#### Nexo
+
+Nexo item with ID `mithril_helmet`
+
+```yaml
+      1:
+        type: item
+        item:
+          nexo: "mithril_helmet"
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
+
+#### Oraxen
+
+Oraxen item with ID `obsidian_pickaxe`
+
+```yaml
+      1:
+        type: item
+        item:
+          oraxen: "obsidian_pickaxe"
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
+
 #### QualityArmory
 
 Item from QualityArmory with ID `PISTOL`
@@ -563,6 +548,20 @@ Item from QualityArmory with ID `PISTOL`
         type: item
         item:
           qualityArmory: "PISTOL"
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
+
+#### Slimefun
+
+Item from Slimefun with ID `GRANDMAS_WALKING_STICK`
+
+```yaml
+      1:
+        type: item
+        item:
+          slimefun: "GRANDMAS_WALKING_STICK"
         buyPrice: 50
         sellPrice: 25
         slot: 0
