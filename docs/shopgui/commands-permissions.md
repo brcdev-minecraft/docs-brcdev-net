@@ -10,7 +10,8 @@
 | /shop                                                                     | Open the main shop menu                                                        | shopguiplus.shop                                          |
 | /sell hand [quantity]                                                     | Sell the item held in your hand                                                | shopguiplus.sell.hand                                     |
 | /sell handall                                                             | Sell all inventory items the same as the one held in your hand                 | shopguiplus.sell.hand.all                                 |
-| /sell all                                                                 | Sell all items from your inventory                                             | shopguiplus.sell.all                                      |
+| /sell all [shop]                                                          | Sell all items from your inventory                                             | shopguiplus.sell.all                                      |
+| /sell all [shop] [player]                                                 | Sell all items from the player's inventory                                     | shopguiplus.sell.all.others                               |
 | /shop reload                                                              | Reload the configuration                                                       | shopguiplus.reload                                        |
 | /shop check                                                               | Get information on the item held in hand                                       | shopguiplus.check                                         |
 | /shop [shop name] [page]                                                  | Directly open the specified shop                                               | shopguiplus.shops.SHOP_ID (see **Permissions** paragraph) |
