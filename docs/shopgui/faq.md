@@ -570,9 +570,9 @@ gui:
   clickCooldown: 250
 ```
 
-## Enabling/disabling amount selection GUI and bulk buy GUI for specific shops or shop items 
+## Enabling/disabling amount selection GUI and bulk buy/sell GUI for specific shops or shop items 
 
-You can override the default amount selection GUI and bulk buy GUI settings (`enableBuyGUI`, `enableSellGUI`, `enableSellGUISellAll`)
+You can override the default amount selection GUI and bulk buy/sell GUI settings (`enableBuyGUI`, `enableSellGUI`, `enableSellGUISellAll`)
 from config.yml in each of shop yamls for specific shops and shop items.
 
 Example:
