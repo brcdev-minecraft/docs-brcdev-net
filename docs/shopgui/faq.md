@@ -570,10 +570,10 @@ gui:
   clickCooldown: 250
 ```
 
-## Enabling/disabling amount selection GUI in particular shops
+## Enabling/disabling amount selection GUI and bulk buy GUI for specific shops or shop items 
 
-You can override the default amount selection GUI settings (`enableBuyGUI`, `enableSellGUI`, `enableSellGUISellAll`)
-from config.yml in each of shop yamls.
+You can override the default amount selection GUI and bulk buy GUI settings (`enableBuyGUI`, `enableSellGUI`, `enableSellGUISellAll`)
+from config.yml in each of shop yamls for specific shops and shop items.
 
 Example:
 
@@ -582,12 +582,18 @@ armor:
   name: "&4&lArmor (page %page%)"
   enableBuyGUI: false
   enableSellGUI: false
+  enableBuyMoreGUI: false
+  enableSellMoreGUI: false
   fillItem:
     material: BLACK_STAINED_GLASS_PANE
     name: " "
   items:
     1:
       type: item
+      enableBuyGUI: false
+      enableBuyMoreGUI: false
+      enableSellGUI: false
+      enableSellMoreGUI: false
       item:
         material: LEATHER_HELMET
         quantity: 1
