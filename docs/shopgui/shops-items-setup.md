@@ -567,6 +567,37 @@ Item from Slimefun with ID `GRANDMAS_WALKING_STICK`
         slot: 0
 ```
 
+#### WeaponMechanics
+
+Weapon from WeaponMechanics with ID `AK_47`
+
+```yaml
+      1:
+        type: item
+        item:
+          weaponMechanics:
+            weapon: AK_47
+          quantity: 1
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
+
+
+Ammo from WeaponMechanics with ID `Rocket`
+
+```yaml
+      1:
+        type: item
+        item:
+          weaponMechanics:
+            ammo: Rocket
+          quantity: 1
+        buyPrice: 50
+        sellPrice: 25
+        slot: 0
+```
+
 ### Mob spawners
 
 <p class="warn"><b>Note:</b> Remember to use valid material name corresponding to your Minecraft version (<i>SPAWNER
