@@ -660,3 +660,15 @@ item:
   quantity: 1
   musicInstrument: DREAM_GOAT_HORN
 ```
+
+## Armor trims
+
+Example (Lapis Wayfinder trim):
+```yaml
+item:
+  material: LEATHER_CHESTPLATE
+  quantity: 1
+  armorTrim: 
+    material: "LAPIS"
+    pattern: "WAYFINDER"
+```
