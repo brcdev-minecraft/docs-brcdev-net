@@ -13,7 +13,8 @@ Useful links:
 * [Potion types list (1.9+ only)](potion-types)
 * [Potion Calculator by Graham Edgecombe (1.7-1.8 only)](https://minecraft-ids.grahamedgecombe.com/potion-calculator)
 * [Goat horns list](music-instruments)
-
+* [Armor Trim Materials and Patterns list](armor-trims)
+* 
 ## Basic meta
 
 The most important and the only required part is the material name. It has to be a valid material name or numeric
