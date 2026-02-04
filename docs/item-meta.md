@@ -13,6 +13,7 @@ Useful links:
 * [Potion types list (1.9+ only)](potion-types)
 * [Potion Calculator by Graham Edgecombe (1.7-1.8 only)](https://minecraft-ids.grahamedgecombe.com/potion-calculator)
 * [Goat horns list](music-instruments)
+* [Armor Trim Materials and Patterns list](armor-trims)
 
 ## Basic meta
 
@@ -659,4 +660,16 @@ item:
   material: GOAT_HORN
   quantity: 1
   musicInstrument: DREAM_GOAT_HORN
+```
+
+## Armor trims
+
+Example (Lapis Wayfinder trim):
+```yaml
+item:
+  material: LEATHER_CHESTPLATE
+  quantity: 1
+  armorTrim: 
+    material: "LAPIS"
+    pattern: "WAYFINDER"
 ```
