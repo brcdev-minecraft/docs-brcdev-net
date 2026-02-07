@@ -437,6 +437,8 @@ item:
 
 ## NBT tags
 
+<p class="error"><b>WARNING:</b> If you're using ShopGUI+, we recommend using our [Item Providers](shopgui/shops-items-setup#custom-items) where possible instead. Please reach out to our Discord support if you need any help whatsoever with NBT: https://discord.brcdev.net/</p>
+
 <p class="warn"><b>Note:</b> The <i>compareMeta</i> option must be enabled for an item to use the NBT option!</p>
 
 Adding NBT tags to items is as simple as adding `nbt` section and tags inside. Each tag (except `STRING_ARRAY` and `COMPOUND` types) must
@@ -453,11 +455,50 @@ More info on the NBT format itself can be found [here](https://minecraft.gameped
 * LONG
 * FLOAT
 * DOUBLE
-* BYTE_ARRAY
 * STRING
-* STRING_ARRAY
-* COMPOUND
+* BYTE_ARRAY
+* DOUBLE_ARRAY
+* FLOAT_ARRAY
 * INT_ARRAY
+* LONG_ARRAY
+* STRING_ARRAY
+* UUID_ARRAY
+* COMPOUND
+
+### NBT Tag Configuration
+
+Below is a table showing how each of the NBT tag types are configured and what their resultant NBT looks like:
+
+<table>
+  <tr>
+   <th>NBT Tag Type</th>
+   <th>YAML Format</th>
+   <th>Result NBT</th>
+  </tr>
+  <tr>
+   <td><b>BYTE</b></td>
+   <td>
+      
+```yaml
+nbt:
+  1:
+    type: BYTE
+    key: BYTE_EXAMPLE
+    value: 1 # or 0
+```
+   </td>
+   <td>
+     
+```yaml
+{
+  BYTE_EXAMPLE: 1b
+}
+```    
+   </td>
+  </tr>
+</table>
+
+### Specific Examples
 
 Example (single string tag):
 
