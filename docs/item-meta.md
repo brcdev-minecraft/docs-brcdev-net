@@ -469,16 +469,8 @@ More info on the NBT format itself can be found [here](https://minecraft.gameped
 
 Below is a table showing how each of the NBT tag types are configured and what their resultant NBT looks like:
 
-<table>
-  <tr>
-   <th>NBT Tag Type</th>
-   <th>YAML Format</th>
-   <th>Result NBT</th>
-  </tr>
-  <tr>
-   <td><b>BYTE</b></td>
-   <td>
-      
+#### Byte
+
 ```yaml
 nbt:
   1:
@@ -486,17 +478,13 @@ nbt:
     key: BYTE_EXAMPLE
     value: 1 # or 0
 ```
-   </td>
-   <td>
-     
+
+Result
 ```yaml
 {
   BYTE_EXAMPLE: 1b
 }
-```    
-   </td>
-  </tr>
-</table>
+```
 
 ### Specific Examples
 
