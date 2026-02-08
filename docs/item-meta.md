@@ -855,6 +855,21 @@ item:
 
 <!-- tabs:end -->
 
+#### Poke Balls (Pixelmon)
+We don't officially support modded server however here is an example of how Pokeballs are configured for 1.16.5.
+
+Gold & Silver (GS) Ball:
+```yaml
+item:
+  material: PIXELMON_POKE_BALL
+  quantity: 1
+  nbt:
+    1:
+      type: STRING
+      key: "PokeBallID"
+      value: "gs_ball"
+```
+
 ## Leather armor color
 
 To add a dyed leather armor you can define the color either as a [RGB color](leather-dye-colors) or one
