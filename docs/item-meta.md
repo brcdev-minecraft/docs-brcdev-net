@@ -470,6 +470,7 @@ More info on the NBT format itself can be found [here](https://minecraft.gameped
 Below is a table showing how each of the NBT tag types are configured and what their resultant NBT looks like:
 
 #### Byte
+Byte is a boolean with two values (1 or 0) and the following YAML produces: `{ BYTE_EXAMPLE: 1b }`
 
 ```yaml
 nbt:
