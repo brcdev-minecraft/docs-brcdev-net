@@ -480,13 +480,6 @@ nbt:
     value: 1 # or 0
 ```
 
-Result
-```yaml
-{
-  BYTE_EXAMPLE: 1b
-}
-```
-
 ### Specific Examples
 
 Example (single string tag):
