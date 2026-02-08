@@ -709,7 +709,7 @@ item:
           value: '{"color":"gold","translate":"block.minecraft.ominous_banner"}'
 ```
 
-#### 1.20.5 - 1.21.4
+##### 1.20.5 - 1.21.4
 ```yaml
 item:
   material: WHITE_BANNER
@@ -750,7 +750,7 @@ item:
       children: {}
 ```
 
-#### 1.21.5+
+##### 1.21.5+
 ```yaml
 item:
   material: WHITE_BANNER
