@@ -458,12 +458,12 @@ More info on the NBT format itself can be found [here](https://minecraft.gameped
 * DOUBLE
 * STRING
 * BYTE_ARRAY
-* DOUBLE_ARRAY
-* FLOAT_ARRAY
+* DOUBLE_ARRAY (LIST of DOUBLEs)
+* FLOAT_ARRAY (LIST of FLOATs)
 * INT_ARRAY
 * LONG_ARRAY
-* STRING_ARRAY
-* UUID_ARRAY
+* STRING_ARRAY (LIST of STRINGs)
+* UUID_ARRAY (LIST of UUIDs)
 * COMPOUND
 
 ### NBT tag Configuration
@@ -545,6 +545,96 @@ nbt:
     type: STRING
     key: STRING_EXAMPLE
     value: "This is an example string"
+```
+
+#### Byte Array
+Byte Array is a list of Bytes and the following YAML produces: `{ BYTE_ARRAY_EXAMPLE: [B; 1B, 0B] }` 
+
+```yaml
+nbt:
+  1:
+    type: BYTE_ARRAY
+    key: "BYTE_ARRAY_EXAMPLE"
+    values:
+      - 1
+      - 0
+```
+
+#### Double Array (LIST of DOUBLEs)
+Double Array is a list of Doubles and the following YAML produces: `{ DOUBLE_ARRAY_EXAMPLE: [1.0d, 2.0d] }`
+
+```yaml
+nbt:
+  1:
+    type: DOUBLE_ARRAY
+    key: "DOUBLE_ARRAY_EXAMPLE"
+    values:
+      - 1.0
+      - 2.0
+```
+
+#### Float Array (LIST of FLOATs)
+Float Array is a list of Floats and the following YAML produces: `{ FLOAT_ARRAY_EXAMPLE: [1.0f, 2.0f] }`
+
+```yaml
+nbt:
+  1:
+    type: FLOAT_ARRAY
+    key: "FLOAT_ARRAY_EXAMPLE"
+    values:
+      - 1.0
+      - 2.0
+```
+
+#### Int Array
+Int Array is a list of Ints and the following YAML produces: `{ INT_ARRAY_EXAMPLE: [I; 1, 2] }`
+
+```yaml
+nbt:
+  1:
+    type: INT_ARRAY
+    key: "INT_ARRAY_EXAMPLE"
+    values:
+      - 1
+      - 2
+```
+
+#### Long Array
+Long Array is a list of Longs and the following YAML produces: `{ LONG_ARRAY_EXAMPLE: [1L, 2L] }`
+
+```yaml
+nbt:
+  1:
+    type: LONG_ARRAY
+    key: "LONG_ARRAY_EXAMPLE"
+    values:
+      - 1
+      - 2
+```
+
+#### String Array (LIST of STRINGs)
+String Array is a list of Strings and the following YAML produces: `{ STRING_ARRAY_EXAMPLE: ["Text1", "Text2"] }`
+
+```yaml
+nbt:
+  1:
+    type: STRING_ARRAY
+    key: "STRING_ARRAY_EXAMPLE"
+    values:
+      - "Text1"
+      - "Text2"
+```
+
+#### UUID Array (LIST of UUIDs)
+UUID Array is a list of UUIDs and the following YAML produces: `{ UUID_ARRAY_EXAMPLE: [[I; -129209735, 172901862, -2123148138, 422810289]] }`
+
+```yaml
+nbt:
+  1:
+    type: UUID_ARRAY
+    key: "UUID_ARRAY_EXAMPLE"
+    values:
+      - "f84c6a79-0a4e-45e6-8173-5496193392b1"
 ```
 
 ### Specific Examples
