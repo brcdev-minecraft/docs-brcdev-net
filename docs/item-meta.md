@@ -664,7 +664,7 @@ nbt:
 
 #### Ominious Banner
 
-##### 1.20.3 and below
+##### 1.20.4 and below
 ```yaml
 item:
   material: WHITE_BANNER
@@ -707,6 +707,47 @@ item:
           type: STRING
           key: "Name"
           value: '{"color":"gold","translate":"block.minecraft.ominous_banner"}'
+```
+
+#### 1.20.5 - 1.21.4
+```yaml
+item:
+  material: WHITE_BANNER
+  quantity: 1
+  patterns:
+    1:
+      type: RHOMBUS
+      color: CYAN
+    2:
+      type: STRIPE_BOTTOM
+      color: LIGHT_GRAY
+    3:
+      type: STRIPE_CENTER
+      color: GRAY
+    4:
+      type: BORDER
+      color: LIGHT_GRAY
+    5:
+      type: STRIPE_MIDDLE
+      color: BLACK
+    6:
+      type: HALF_HORIZONTAL
+      color: LIGHT_GRAY
+    7:
+      type: CIRCLE
+      color: LIGHT_GRAY
+    8:
+      type: BORDER
+      color: BLACK
+  nbt:
+    1:
+      type: STRING
+      key: "minecraft:item_name"
+      value: '{"color":"gold","translate":"block.minecraft.ominous_banner"}'
+    2:
+      type: COMPOUND
+      key: "minecraft:hide_additional_tooltip"
+      children: {}
 ```
 
 #### 1.12.5+
