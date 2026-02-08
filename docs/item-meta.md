@@ -637,6 +637,29 @@ nbt:
       - "f84c6a79-0a4e-45e6-8173-5496193392b1"
 ```
 
+#### Compound
+Compound is a collection of NBT tags and the following YAML produces: `{ COMPOUND_EXAMPLE: { STRING_EXAMPLE: "String inside compound", CHILD_COMPOUND_EXAMPLE: { CHILD_BYTE_EXAMPLE: 1b } } }` 
+
+```yaml
+nbt:
+  1:
+    type: COMPOUND
+    key: "COMPOUND_EXAMPLE"
+    children:
+      1:
+        type: STRING
+        key: "STRING_EXAMPLE"
+        value: "String inside compound"
+      2:
+        type: COMPOUND
+        key: "CHILD_COMPOUND_EXAMPLE"
+        children:
+          1:
+            type: BYTE
+            key: "CHILD_BYTE_EXAMPLE"
+            value: 1
+```
+
 ### Specific Examples
 
 #### Ominious Banner
@@ -686,7 +709,7 @@ item:
           value: '{"color":"gold","translate":"block.minecraft.ominous_banner"}'
 ```
 
-#### 1.20.4+
+#### 1.12.5+
 ```yaml
 item:
   material: WHITE_BANNER
@@ -738,70 +761,6 @@ item:
           key: "hidden_components"
           values:
             - "minecraft:banner_patterns"
-```                  
-
-Example (single string tag):
-
-```yaml
-item:
-  material: BREAD
-  amount: 32
-  damage: 0
-  nbt:
-    1:
-      type: STRING
-      key: Hello
-      value: World
-```
-
-Example (compound with a string array to add name and lore using NBT):
-
-```yaml
-item:
-  material: BREAD
-  amount: 32
-  damage: 0
-  nbt:
-    1:
-      type: COMPOUND
-      key: display
-      children:
-        1:
-          type: STRING
-          key: Name
-          value: "{\"bold\":true,\"italic\":false,\"color\":\"white\",\"text\":\"Magic Bread\"}"
-        2:
-          type: STRING_ARRAY
-          key: Lore
-          values:
-            - "{\"italic\":false,\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"text\":\"High Value\"}],\"text\":\"This item can be sold for \"}"
-            - "{\"italic\":false,\"color\":\"gray\",\"text\":\"on the server shop\"}"
-```
-
-Example (two tags - string and compound containing two doubles):
-
-```yaml
-item:
-  material: BREAD
-  amount: 32
-  damage: 0
-  nbt:
-    1:
-      type: STRING
-      key: Hello
-      value: World
-    2:
-      type: COMPOUND
-      key: TestCompound
-      children:
-        1:
-          type: DOUBLE
-          key: ExampleKey1
-          value: 123
-        2:
-          type: DOUBLE
-          key: ExampleKey2
-          value: 456
 ```
 
 ## Leather armor color
