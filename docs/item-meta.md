@@ -437,7 +437,7 @@ item:
 
 ## NBT tags
 
-<p class="error"><b>WARNING:</b> If you're using ShopGUI+, we recommend using our [Item Providers](shopgui/shops-items-setup#custom-items) where possible instead. Please reach out to our Discord support if you need any help whatsoever with NBT: https://discord.brcdev.net/</p>
+<p class="error"><b>WARNING:</b> If you're using ShopGUI+, we recommend using our <a href="#/shopgui/shops-items-setup?id=custom-items">Item Providers</a> where possible instead. Please reach out to our Discord support if you need any help whatsoever with NBT: <a href="https://discord.brcdev.net/">https://discord.brcdev.net/</a></p>
 
 <p class="warn"><b>Note:</b> The <i>compareMeta</i> option must be enabled for an item to use the NBT option!</p>
 
