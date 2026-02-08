@@ -466,19 +466,85 @@ More info on the NBT format itself can be found [here](https://minecraft.gameped
 * UUID_ARRAY
 * COMPOUND
 
-### NBT Tag Configuration
+### NBT tag Configuration
 
-Below is a table showing how each of the NBT tag types are configured and what their resultant NBT looks like:
+Below shows how each of the NBT tag types are configured and what their resultant NBT looks like:
 
 #### Byte
-Byte is a boolean with two values (1 or 0) and the following YAML produces: `{ BYTE_EXAMPLE: 1b }`
+Byte is a boolean with two possible values, 1 or 0, and the following YAML produces: `{ BYTE_EXAMPLE: 1b }`
 
 ```yaml
 nbt:
   1:
     type: BYTE
     key: BYTE_EXAMPLE
-    value: 1 # or 0
+    value: 1
+```
+
+#### Short
+Short is a 16-bit signed integer ranging from -32,768 to 32,767 and the following YAML produces: `{ SHORT_EXAMPLE: 100s }`
+
+```yaml
+nbt:
+  1:
+    type: SHORT
+    key: SHORT_EXAMPLE
+    value: 100
+```
+
+#### Int
+Int is a 32-bit signed integer ranging from -2,147,483,648 and 2,147,483,647 and the following YAML produces: `{ INT_EXAMPLE: 2026 }`
+
+```yaml
+nbt:
+  1:
+    type: INT
+    key: INT_EXAMPLE
+    value: 2026
+```
+
+#### Long
+Long is a 64-bit signed integer ranging from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 and the following YAML produces: `{ LONG_EXAMPLE: 19072005L }`
+
+```yaml
+nbt:
+  1:
+    type: LONG
+    key: LONG_EXAMPLE
+    value: 19072005
+```
+
+#### Float
+Float is a 32-bit single-precision floating-point number ranging from -3.4E+38 to +3.4E+38 and the following YAML produces: `{ FLOAT_EXAMPLE: 1430262000f }`
+
+```yaml
+nbt:
+  1:
+    type: FLOAT
+    key: FLOAT_EXAMPLE
+    value: 1430262000
+```
+
+#### Double
+Double is a 64-bit double-precision floating-point number ranging from -1.7E+308 to +1.7E+308 and the following YAML produces: `{ DOUBLE_EXAMPLE: 6515 }`
+
+```yaml
+nbt:
+  1:
+    type: DOUBLE
+    key: DOUBLE_EXAMPLE
+    value: 6515
+```
+
+#### String
+String is text and the following YAML produces: `{ STRING_EXAMPLE: "This is an example string" }`
+
+```yaml
+nbt:
+  1:
+    type: STRING
+    key: STRING_EXAMPLE
+    value: "This is an example string"
 ```
 
 ### Specific Examples
