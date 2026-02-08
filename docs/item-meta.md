@@ -856,7 +856,7 @@ item:
 <!-- tabs:end -->
 
 #### Poke Balls (Pixelmon)
-We don't officially support modded server however here is an example of how Pokeballs are configured for 1.16.5.
+We don't officially support modded (Forge, Fabric, Arclight, Magma, etc) servers however here is an example of how Pokeballs are configured for 1.16.5.
 
 Gold & Silver (GS) Ball:
 ```yaml
