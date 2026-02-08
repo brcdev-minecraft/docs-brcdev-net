@@ -441,8 +441,9 @@ item:
 
 <p class="warn"><b>Note:</b> The <i>compareMeta</i> option must be enabled for an item to use the NBT option!</p>
 
-Adding NBT tags to items is as simple as adding `nbt` section and tags inside. Each tag (except `STRING_ARRAY` and `COMPOUND` types) must
-contain `type`, `key` and `value`. String array tags require `type`, `key` and `values`. Compound tags require `type`, `key` and `children` instead. Compounds can be nested
+Adding NBT tags to items is as simple as adding `nbt` section and tags inside.
+
+Each tag (except `ARRAY`s and `COMPOUND` types) must contain `type`, `key` and `value`. Array tags require `type`, `key` and `values`. Compound tags require `type`, `key` and `children` instead. Compounds can be nested
 recursively.
 
 More info on the NBT format itself can be found [here](https://minecraft.gamepedia.com/NBT_format).
