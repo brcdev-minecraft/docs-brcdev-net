@@ -750,7 +750,7 @@ item:
       children: {}
 ```
 
-#### 1.12.5+
+#### 1.21.5+
 ```yaml
 item:
   material: WHITE_BANNER
