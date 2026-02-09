@@ -528,14 +528,14 @@ nbt:
 ```
 
 #### Double
-Double is a 64-bit double-precision floating-point number ranging from -1.7E+308 to +1.7E+308 and the following YAML produces: `{ DOUBLE_EXAMPLE: 6515 }`
+Double is a 64-bit double-precision floating-point number ranging from -1.7E+308 to +1.7E+308 and the following YAML produces: `{ DOUBLE_EXAMPLE: 6515.0d }`
 
 ```yaml
 nbt:
   1:
     type: DOUBLE
     key: DOUBLE_EXAMPLE
-    value: 6515
+    value: 6515.0
 ```
 
 #### String
