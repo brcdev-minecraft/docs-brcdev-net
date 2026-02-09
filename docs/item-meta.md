@@ -437,11 +437,16 @@ item:
 
 ## NBT tags
 
+<p class="error"><b>WARNING:</b> If you're using ShopGUI+, we recommend using our <a href="#/shopgui/shops-items-setup?id=custom-items">Item Providers</a> where possible instead. Please reach out to our Discord support if you need any help whatsoever with NBT: <a href="https://discord.brcdev.net/">https://discord.brcdev.net/</a></p>
+
 <p class="warn"><b>Note:</b> The <i>compareMeta</i> option must be enabled for an item to use the NBT option!</p>
 
-Adding NBT tags to items is as simple as adding `nbt` section and tags inside. Each tag (except `STRING_ARRAY` and `COMPOUND` types) must
-contain `type`, `key` and `value`. String array tags require `type`, `key` and `values`. Compound tags require `type`, `key` and `children` instead. Compounds can be nested
+Adding NBT tags to items is as simple as adding `nbt` section and tags inside.
+
+Each tag (except `ARRAY`s and `COMPOUND` types) must contain `type`, `key` and `value`. Array tags require `type`, `key` and `values`. Compound tags require `type`, `key` and `children` instead. Compounds can be nested
 recursively.
+
+Since 1.13, you can easily view item NBT data by holding the item ingame and running `/data get entity <player> SelectedItem`.
 
 More info on the NBT format itself can be found [here](https://minecraft.gamepedia.com/NBT_format).
 
@@ -453,74 +458,416 @@ More info on the NBT format itself can be found [here](https://minecraft.gameped
 * LONG
 * FLOAT
 * DOUBLE
-* BYTE_ARRAY
 * STRING
-* STRING_ARRAY
-* COMPOUND
+* BYTE_ARRAY
+* DOUBLE_ARRAY (LIST of DOUBLEs)
+* FLOAT_ARRAY (LIST of FLOATs)
 * INT_ARRAY
+* LONG_ARRAY
+* STRING_ARRAY (LIST of STRINGs)
+* UUID_ARRAY (LIST of UUIDs)
+* COMPOUND
 
-Example (single string tag):
+### NBT tag Configuration
+
+Below shows how each of the NBT tag types are configured and what their resultant NBT looks like:
+
+#### Byte
+Byte is a boolean with two possible values, 1 or 0, and the following YAML produces: `{ BYTE_EXAMPLE: 1b }`
 
 ```yaml
+nbt:
+  1:
+    type: BYTE
+    key: BYTE_EXAMPLE
+    value: 1
+```
+
+#### Short
+Short is a 16-bit signed integer ranging from -32,768 to 32,767 and the following YAML produces: `{ SHORT_EXAMPLE: 100s }`
+
+```yaml
+nbt:
+  1:
+    type: SHORT
+    key: SHORT_EXAMPLE
+    value: 100
+```
+
+#### Int
+Int is a 32-bit signed integer ranging from -2,147,483,648 and 2,147,483,647 and the following YAML produces: `{ INT_EXAMPLE: 2026 }`
+
+```yaml
+nbt:
+  1:
+    type: INT
+    key: INT_EXAMPLE
+    value: 2026
+```
+
+#### Long
+Long is a 64-bit signed integer ranging from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 and the following YAML produces: `{ LONG_EXAMPLE: 19072005L }`
+
+```yaml
+nbt:
+  1:
+    type: LONG
+    key: LONG_EXAMPLE
+    value: 19072005
+```
+
+#### Float
+Float is a 32-bit single-precision floating-point number ranging from -3.4E+38 to +3.4E+38 and the following YAML produces: `{ FLOAT_EXAMPLE: 1430262000f }`
+
+```yaml
+nbt:
+  1:
+    type: FLOAT
+    key: FLOAT_EXAMPLE
+    value: 1430262000
+```
+
+#### Double
+Double is a 64-bit double-precision floating-point number ranging from -1.7E+308 to +1.7E+308 and the following YAML produces: `{ DOUBLE_EXAMPLE: 6515.0d }`
+
+```yaml
+nbt:
+  1:
+    type: DOUBLE
+    key: DOUBLE_EXAMPLE
+    value: 6515.0
+```
+
+#### String
+String is text and the following YAML produces: `{ STRING_EXAMPLE: "This is an example string" }`
+
+```yaml
+nbt:
+  1:
+    type: STRING
+    key: STRING_EXAMPLE
+    value: "This is an example string"
+```
+
+#### Byte Array
+Byte Array is a list of Bytes and the following YAML produces: `{ BYTE_ARRAY_EXAMPLE: [B; 1B, 0B] }` 
+
+```yaml
+nbt:
+  1:
+    type: BYTE_ARRAY
+    key: "BYTE_ARRAY_EXAMPLE"
+    values:
+      - 1
+      - 0
+```
+
+#### Double Array (LIST of DOUBLEs)
+Double Array is a list of Doubles and the following YAML produces: `{ DOUBLE_ARRAY_EXAMPLE: [1.0d, 2.0d] }`
+
+```yaml
+nbt:
+  1:
+    type: DOUBLE_ARRAY
+    key: "DOUBLE_ARRAY_EXAMPLE"
+    values:
+      - 1.0
+      - 2.0
+```
+
+#### Float Array (LIST of FLOATs)
+Float Array is a list of Floats and the following YAML produces: `{ FLOAT_ARRAY_EXAMPLE: [1.0f, 2.0f] }`
+
+```yaml
+nbt:
+  1:
+    type: FLOAT_ARRAY
+    key: "FLOAT_ARRAY_EXAMPLE"
+    values:
+      - 1.0
+      - 2.0
+```
+
+#### Int Array
+Int Array is a list of Ints and the following YAML produces: `{ INT_ARRAY_EXAMPLE: [I; 1, 2] }`
+
+```yaml
+nbt:
+  1:
+    type: INT_ARRAY
+    key: "INT_ARRAY_EXAMPLE"
+    values:
+      - 1
+      - 2
+```
+
+#### Long Array
+Long Array is a list of Longs and the following YAML produces: `{ LONG_ARRAY_EXAMPLE: [1L, 2L] }`
+
+```yaml
+nbt:
+  1:
+    type: LONG_ARRAY
+    key: "LONG_ARRAY_EXAMPLE"
+    values:
+      - 1
+      - 2
+```
+
+#### String Array (LIST of STRINGs)
+String Array is a list of Strings and the following YAML produces: `{ STRING_ARRAY_EXAMPLE: ["Text1", "Text2"] }`
+
+```yaml
+nbt:
+  1:
+    type: STRING_ARRAY
+    key: "STRING_ARRAY_EXAMPLE"
+    values:
+      - "Text1"
+      - "Text2"
+```
+
+#### UUID Array (LIST of UUIDs)
+UUID Array is a list of UUIDs and the following YAML produces: `{ UUID_ARRAY_EXAMPLE: [[I; -129209735, 172901862, -2123148138, 422810289]] }`
+
+```yaml
+nbt:
+  1:
+    type: UUID_ARRAY
+    key: "UUID_ARRAY_EXAMPLE"
+    values:
+      - "f84c6a79-0a4e-45e6-8173-5496193392b1"
+```
+
+#### Compound
+Compound is a collection of NBT tags and the following YAML produces: `{ COMPOUND_EXAMPLE: { STRING_EXAMPLE: "String inside compound", CHILD_COMPOUND_EXAMPLE: { CHILD_BYTE_EXAMPLE: 1b } } }` 
+
+```yaml
+nbt:
+  1:
+    type: COMPOUND
+    key: "COMPOUND_EXAMPLE"
+    children:
+      1:
+        type: STRING
+        key: "STRING_EXAMPLE"
+        value: "String inside compound"
+      2:
+        type: COMPOUND
+        key: "CHILD_COMPOUND_EXAMPLE"
+        children:
+          1:
+            type: BYTE
+            key: "CHILD_BYTE_EXAMPLE"
+            value: 1
+```
+
+### Specific Examples
+
+#### Ominious Banner
+
+<!-- tabs:start -->
+
+## ** 1.20.4 and below **
+```yaml
 item:
-  material: BREAD
-  amount: 32
-  damage: 0
+  material: WHITE_BANNER
+  quantity: 1
+  patterns:
+    1:
+      type: RHOMBUS_MIDDLE
+      color: CYAN
+    2:
+      type: STRIPE_BOTTOM
+      color: LIGHT_GRAY
+    3:
+      type: STRIPE_CENTER
+      color: GRAY
+    4:
+      type: BORDER
+      color: LIGHT_GRAY
+    5:
+      type: STRIPE_MIDDLE
+      color: BLACK
+    6:
+      type: HALF_HORIZONTAL
+      color: LIGHT_GRAY
+    7:
+      type: CIRCLE_MIDDLE
+      color: LIGHT_GRAY
+    8:
+      type: BORDER
+      color: BLACK
+  nbt:
+    0:
+      type: INT
+      key: "HideFlags"
+      value: 32
+    1:
+      type: COMPOUND
+      key: "display"
+      children:
+        1: 
+          type: STRING
+          key: "Name"
+          value: '{"translate":"block.minecraft.ominous_banner","color":"gold"}'
+```
+
+## ** 1.20.5 - 1.21.1 **
+```yaml
+item:
+  material: WHITE_BANNER
+  quantity: 1
+  patterns:
+    1:
+      type: RHOMBUS
+      color: CYAN
+    2:
+      type: STRIPE_BOTTOM
+      color: LIGHT_GRAY
+    3:
+      type: STRIPE_CENTER
+      color: GRAY
+    4:
+      type: BORDER
+      color: LIGHT_GRAY
+    5:
+      type: STRIPE_MIDDLE
+      color: BLACK
+    6:
+      type: HALF_HORIZONTAL
+      color: LIGHT_GRAY
+    7:
+      type: CIRCLE
+      color: LIGHT_GRAY
+    8:
+      type: BORDER
+      color: BLACK
   nbt:
     1:
       type: STRING
-      key: Hello
-      value: World
+      key: "minecraft:item_name"
+      value: '{"color":"gold","translate":"block.minecraft.ominous_banner"}'
+    2:
+      type: COMPOUND
+      key: "minecraft:hide_additional_tooltip"
+      children: {}
 ```
 
-Example (compound with a string array to add name and lore using NBT):
-
+## ** 1.21.2 - 1.21.4 **
 ```yaml
 item:
-  material: BREAD
-  amount: 32
-  damage: 0
+  material: WHITE_BANNER
+  quantity: 1
+  patterns:
+    1:
+      type: RHOMBUS
+      color: CYAN
+    2:
+      type: STRIPE_BOTTOM
+      color: LIGHT_GRAY
+    3:
+      type: STRIPE_CENTER
+      color: GRAY
+    4:
+      type: BORDER
+      color: LIGHT_GRAY
+    5:
+      type: STRIPE_MIDDLE
+      color: BLACK
+    6:
+      type: HALF_HORIZONTAL
+      color: LIGHT_GRAY
+    7:
+      type: CIRCLE
+      color: LIGHT_GRAY
+    8:
+      type: BORDER
+      color: BLACK
+  nbt:
+    1:
+      type: STRING
+      key: "minecraft:rarity"
+      value: "uncommon"
+    2:
+      type: STRING
+      key: "minecraft:item_name"
+      value: '{"translate":"block.minecraft.ominous_banner"}'
+    3:
+      type: COMPOUND
+      key: "minecraft:hide_additional_tooltip"
+      children: {}
+```
+
+## ** 1.21.5+ **
+```yaml
+item:
+  material: WHITE_BANNER
+  quantity: 1
+  patterns:
+    1:
+      type: RHOMBUS
+      color: CYAN
+    2:
+      type: STRIPE_BOTTOM
+      color: LIGHT_GRAY
+    3:
+      type: STRIPE_CENTER
+      color: GRAY
+    4:
+      type: BORDER
+      color: LIGHT_GRAY
+    5:
+      type: STRIPE_MIDDLE
+      color: BLACK
+    6:
+      type: HALF_HORIZONTAL
+      color: LIGHT_GRAY
+    7:
+      type: CIRCLE
+      color: LIGHT_GRAY
+    8:
+      type: BORDER
+      color: BLACK
   nbt:
     1:
       type: COMPOUND
-      key: display
+      key: "minecraft:item_name"
       children:
         1:
           type: STRING
-          key: Name
-          value: "{\"bold\":true,\"italic\":false,\"color\":\"white\",\"text\":\"Magic Bread\"}"
-        2:
+          key: "translate"
+          value: "block.minecraft.ominous_banner"
+    2:
+      type: COMPOUND
+      key: "minecraft:tooltip_display"
+      children:
+        1:
           type: STRING_ARRAY
-          key: Lore
+          key: "hidden_components"
           values:
-            - "{\"italic\":false,\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"text\":\"High Value\"}],\"text\":\"This item can be sold for \"}"
-            - "{\"italic\":false,\"color\":\"gray\",\"text\":\"on the server shop\"}"
+            - "minecraft:banner_patterns"
+    3:
+      type: STRING
+      key: "minecraft:rarity"
+      value: "uncommon"
 ```
 
-Example (two tags - string and compound containing two doubles):
+<!-- tabs:end -->
 
+#### Poke Balls (Pixelmon)
+We don't officially support modded (Forge, Fabric, Arclight, Magma, etc) servers however here is an example of how Pokeballs are configured for 1.16.5.
+
+Gold & Silver (GS) Ball:
 ```yaml
 item:
-  material: BREAD
-  amount: 32
-  damage: 0
+  material: PIXELMON_POKE_BALL
+  quantity: 1
   nbt:
     1:
       type: STRING
-      key: Hello
-      value: World
-    2:
-      type: COMPOUND
-      key: TestCompound
-      children:
-        1:
-          type: DOUBLE
-          key: ExampleKey1
-          value: 123
-        2:
-          type: DOUBLE
-          key: ExampleKey2
-          value: 456
+      key: "PokeBallID"
+      value: "gs_ball"
 ```
 
 ## Leather armor color
