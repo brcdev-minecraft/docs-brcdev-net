@@ -460,6 +460,7 @@ More info on the NBT format itself can be found [here](https://minecraft.gameped
 * DOUBLE
 * STRING
 * BYTE_ARRAY
+* COMPOUND_ARRAY (LIST of COMPOUNDs)
 * DOUBLE_ARRAY (LIST of DOUBLEs)
 * FLOAT_ARRAY (LIST of FLOATs)
 * INT_ARRAY
@@ -560,6 +561,25 @@ nbt:
     values:
       - 1
       - 0
+```
+
+#### Compound Array
+Compound Array is a list of Compounds and the following YAML produces: `{ COMPOUND_ARRAY_EXAMPLE: [{ CHILD_STRING_EXAMPLE: "Compound inside Compound Array" }] }`
+
+```yaml
+nbt:
+  1:
+    type: COMPOUND_ARRAY
+    key: COMPOUND_ARRAY_EXAMPLE
+    children:
+      1:
+        type: COMPOUND
+        key: ""
+        children:
+          1:
+            type: STRING
+            key: "CHILD_STRING_EXAMPLE"
+            value: "Compound inside Compound Array"
 ```
 
 #### Double Array (LIST of DOUBLEs)
@@ -854,6 +874,32 @@ item:
 ```
 
 <!-- tabs:end -->
+
+#### Suspicious Stew
+The following configuration was tested on 1.21.4:
+
+```yaml
+item:
+  material: SUSPICIOUS_STEW
+  quantity: 1
+  nbt:
+    1: 
+      type: COMPOUND_ARRAY
+      key: "minecraft:suspicious_stew_effects"
+      values: 
+        1: 
+          type: COMPOUND
+          key: ""
+          children:
+            1: 
+              type: STRING
+              key: "id"
+              value: "minecraft:blindness"
+            2:
+              type: INT
+              key: "duration"
+              value: 220
+```
 
 #### Poke Balls (Pixelmon)
 We don't officially support modded (Forge, Fabric, Arclight, Magma, etc) servers however here is an example of how Pokeballs are configured for 1.16.5.
