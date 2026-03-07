@@ -577,7 +577,6 @@ Weapon from WeaponMechanics with ID `AK_47`
         item:
           weaponMechanics:
             weapon: AK_47
-          quantity: 1
         buyPrice: 50
         sellPrice: 25
         slot: 0
@@ -592,7 +591,6 @@ Ammo from WeaponMechanics with ID `Rocket`
         item:
           weaponMechanics:
             ammo: Rocket
-          quantity: 1
         buyPrice: 50
         sellPrice: 25
         slot: 0
