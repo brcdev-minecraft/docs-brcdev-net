@@ -16,6 +16,7 @@
     - [Changing currency names](shopgui/currency-names)
     - [Controlling the item stack size](shopgui/stack-size)
     - [Hidden configuration options](shopgui/hidden-options)
+    - [Config updates](shopgui/config-updates)
     - [FAQ](shopgui/faq)
     - [API](shopgui/api)
 
