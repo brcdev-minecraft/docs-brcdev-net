@@ -3,6 +3,7 @@
 Some of new releases come with new configuration options, that must be added manually.
 
 ## 1.113.0
+### Buy Full Inventory
 ```yaml
 amountSelectionGUI:
   (...)
