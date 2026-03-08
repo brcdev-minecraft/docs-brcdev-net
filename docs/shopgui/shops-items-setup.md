@@ -885,6 +885,18 @@ You can add the same item multiple times to a shop by specifying the slots numbe
            - 32
 ```
 
+You can also use ranges to achieve the same result:
+
+```yaml
+       1:
+         type: DUMMY
+         item:
+           material: STONE
+           quantity: 1
+         slots:
+           - 30-32
+```
+
 ## Amount selection GUI customization
 
 You can change every part of the amount selection GUI in the config. You can change items/slots, hide buttons etc.
