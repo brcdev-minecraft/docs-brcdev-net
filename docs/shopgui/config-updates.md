@@ -25,5 +25,5 @@ amountSelectionGUI:
           name: "&a&lBuy Full Inventory"
           lore:
             - "&cYour inventory is already full."
-      slot: 40v
+      slot: 40
 ```
