@@ -1175,3 +1175,33 @@ armor:
 ```
 
 This results in left and right clicks being overridden, while middle click is still inherited from config.yml.
+
+## Per-shop and per-item scoped 
+
+### Messages
+
+You can override the default messages set for purchasing, selling, insufficent funds, etc on a per-shop and per-item scope.
+
+```yaml
+blocks:
+  name: "&9&lBlocks (page %page%)"
+  fillItem:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+  messageBuy: "You bought %amount% x %item% for $%price%."
+  messageSell: "You sold %amount% x %item% for $%price%."
+  messageSellAll: "You sold all %item% for $%price%."
+  messageCannotAfford: "You cannot afford this item."
+  items:
+    0:
+      messageBuy: "You bought %amount% x %item% for $%price%."
+      messageSell: "You sold %amount% x %item% for $%price%."
+      messageSellAll: "You sold all %item% for $%price%."
+      messageCannotAfford: "You cannot afford this item."
+      type: item
+      item:
+        material: GRASS_BLOCK
+      buyPrice: 10
+      sellPrice: 5
+      slot: 10
+```
