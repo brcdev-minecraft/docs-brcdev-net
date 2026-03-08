@@ -1176,7 +1176,7 @@ armor:
 
 This results in left and right clicks being overridden, while middle click is still inherited from config.yml.
 
-## Per-shop and per-item scoped 
+## Setting per-shop and per-item properties
 
 ### Messages
 
@@ -1185,23 +1185,51 @@ You can override the default messages set for purchasing, selling, insufficent f
 ```yaml
 blocks:
   name: "&9&lBlocks (page %page%)"
-  fillItem:
-    material: BLACK_STAINED_GLASS_PANE
-    name: " "
+  # Messages
   messageBuy: "You bought %amount% x %item% for $%price%."
   messageSell: "You sold %amount% x %item% for $%price%."
   messageSellAll: "You sold all %item% for $%price%."
   messageCannotAfford: "You cannot afford this item."
   items:
-    0:
+    1:
+      # Messages
       messageBuy: "You bought %amount% x %item% for $%price%."
       messageSell: "You sold %amount% x %item% for $%price%."
       messageSellAll: "You sold all %item% for $%price%."
       messageCannotAfford: "You cannot afford this item."
+      # Physical item properties
       type: item
       item:
         material: GRASS_BLOCK
       buyPrice: 10
-      sellPrice: 5
+      sellPrice: 1
+      slot: 1
+```
+
+### GUIs
+
+You can enable and disable the various transaction GUIs on a per-shop and per-item scope.
+
+```yaml
+armor:
+  name: "&4&lArmor (page %page%)"
+  # GUI Options
+  enableBuyGUI: true
+  enableSellGUI: true
+  enableBuyMoreGUI: true
+  enableSellMoreGUI: true
+  items:
+    1:
+      # GUI Options
+      enableBuyGUI: true
+      enableBuyMoreGUI: true
+      enableSellGUI: true
+      enableSellMoreGUI: true
+      # Physical item properties
+      type: item
+      item:
+        material: GRASS_BLOCK
+      buyPrice: 10
+      sellPrice: 1
       slot: 10
 ```
