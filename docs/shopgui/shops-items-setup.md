@@ -869,9 +869,9 @@ Example with command ran through the player (commandsOnClick):
       slot: 10
 ```
 
-## Adding same item to multiple slots
+## Adding same item to multiple slots and pages
 
-You can add the same item multiple times to a shop by specifying the slots numbers as a list instead of a single value:
+You can add the same item multiple times to a shop by specifying the slots and pages numbers as a list instead of a single value:
 
 ```yaml
        1:
@@ -883,6 +883,10 @@ You can add the same item multiple times to a shop by specifying the slots numbe
            - 30
            - 31
            - 32
+         pages:
+           - 1
+           - 2
+           - 3
 ```
 
 You can also use ranges to achieve the same result:
@@ -895,6 +899,8 @@ You can also use ranges to achieve the same result:
            quantity: 1
          slots:
            - 30-32
+         pages:
+           - 1-3
 ```
 
 ## Amount selection GUI customization
