@@ -1066,3 +1066,14 @@ item:
     material: "LAPIS"
     pattern: "WAYFINDER"
 ```
+
+# Ominous Bottles
+
+Example (Ominous Bottle with Bad Omen IV):
+```yaml
+item:
+  material: OMINOUS_BOTTLE
+  quantity: 1
+  potion: 
+    level: 4
+```
