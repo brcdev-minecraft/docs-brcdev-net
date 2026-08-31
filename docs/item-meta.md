@@ -25,10 +25,10 @@ item:
   material: BREAD
 ```
 
-Now you can add the amount of the item.
+Now you can add the quantity of the item.
 
 ```yaml
-  amount: 32
+  quantity: 32
 ```
 
 You can also add the damage value. Damage value is the part after the colon in data values, for instance 35:1 is Orange
@@ -44,7 +44,7 @@ Result:
 ```yaml
 item:
   material: BREAD
-  amount: 32
+  quantity: 32
   damage: 0
 ```
 
@@ -72,7 +72,7 @@ Result:
 ```yaml
 item:
   material: DIAMOND_SWORD
-  amount: 1
+  quantity: 1
   damage: 0
   name: "&aPowerful Blade"
   lore:
@@ -89,7 +89,7 @@ Example of item with hidden attributes:
 ```yaml
 item:
   material: DIAMOND_SWORD
-  amount: 1
+  quantity: 1
   damage: 0
   name: "&aPowerful Blade"
   lore:
@@ -109,7 +109,7 @@ Example of a pickaxe with "Unbreakable" tag:
 ```yaml
 item:
   material: DIAMOND_PICKAXE
-  amount: 1
+  quantity: 1
   unbreakable: true
 ```
 
@@ -131,7 +131,7 @@ Result:
 ```yaml
 item:
   material: DIAMOND_SWORD
-  amount: 1
+  quantity: 1
   damage: 0
   name: "&aPowerful Blade"
   lore:
@@ -187,7 +187,7 @@ Example:
 ```yaml
 item:
   material: POTION
-  amount: 1
+  quantity: 1
   damage: 16417
 ```
 
@@ -947,7 +947,7 @@ power by adding fireworkPower entry with number from 1 to 4 which will be the re
 ```yaml
 item:
   material: FIREWORK
-  amount: 32
+  quantity: 32
   damage: 0
   fireworkPower: 4
 ```
@@ -960,7 +960,7 @@ and fade colors (optional) to each of effects. [Full list of firework effects](f
 ```yaml
 item:
   material: FIREWORK
-  amount: 32
+  quantity: 32
   damage: 0
   fireworkPower: 4
   fireworkEffects:
@@ -990,7 +990,7 @@ Final result:
 ```yaml
 item:
   material: FIREWORK
-  amount: 32
+  quantity: 32
   damage: 0
   fireworkPower: 4
   fireworkEffects:
@@ -1021,7 +1021,7 @@ Example (regular Firework Star):
 ```yaml
 item:
   material: FIREWORK_STAR
-  amount: 1
+  quantity: 1
 ```
 
 Example (Firework Star with color):
@@ -1029,7 +1029,7 @@ Example (Firework Star with color):
 ```yaml
 item:
   material: FIREWORK_STAR
-  amount: 1
+  quantity: 1
   fireworkColor: RED
 ```
 
@@ -1038,7 +1038,7 @@ Example (Firework Star with color and fade color):
 ```yaml
 item:
   material: FIREWORK_STAR
-  amount: 1
+  quantity: 1
   fireworkColor: RED
   fireworkFadeColor: PURPLE
 ```
