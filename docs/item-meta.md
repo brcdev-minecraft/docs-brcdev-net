@@ -1011,6 +1011,16 @@ item:
       trail: true
 ```
 
+### Custom RGB fireworks
+
+Example:
+```yaml
+  item:
+    material: FIREWORK_STAR
+    quantity: 1
+    fireworkColor: 100,100,100
+```
+
 ## Firework stars
 
 <p class="warn"><b>Note:</b> Remember to use valid material name corresponding to your Minecraft version (<i
@@ -1067,7 +1077,7 @@ item:
     pattern: "WAYFINDER"
 ```
 
-# Ominous Bottles
+## Ominous Bottles
 
 Example (Ominous Bottle with Bad Omen IV):
 ```yaml
@@ -1076,4 +1086,14 @@ item:
   quantity: 1
   potion: 
     level: 4
+```
+
+## Tooltip styles
+
+Example:
+```yaml
+item:
+  material: DIRT
+  quantity: 64
+  tooltipStyle: "minecraft:rainbow"
 ```
