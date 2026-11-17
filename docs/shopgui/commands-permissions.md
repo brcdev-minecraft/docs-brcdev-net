@@ -46,4 +46,4 @@ Additional permissions:
 | shopguiplus.bypassworld      | Allows to access the shop when in banned world    | false               |
 | shopguiplus.buymore          | Allows use of the "Buy more" feature              | true                |
 | shopguiplus.sellmore         | Allows use of the "Sell more" feature             | true                |
-| shopguiplus.buyfullinventory | Allows use of the "Buy full inventory" feature    | false               |
+| shopguiplus.buyfullinventory | Allows use of the "Buy full inventory" feature    | true                |
