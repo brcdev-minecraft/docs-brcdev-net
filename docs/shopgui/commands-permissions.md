@@ -40,9 +40,10 @@ To ban players from accessing a particular shop, negate the corresponding permis
 
 Additional permissions:
 
-| Permission                 | Description                                       | Default for players |
-|----------------------------|---------------------------------------------------|---------------------|
-| shopguiplus.bypassgamemode | Allows to access the shop when in banned gamemode | false               |
-| shopguiplus.bypassworld    | Allows to access the shop when in banned world    | false               |
-| shopguiplus.buymore        | Allows to use the "Buy more" feature              | true                |
-| shopguiplus.sellmore       | Allows to use the "Sell more" feature             | true                |
+| Permission                   | Description                                       | Default for players |
+|------------------------------|---------------------------------------------------|---------------------|
+| shopguiplus.bypassgamemode   | Allows to access the shop when in banned gamemode | false               |
+| shopguiplus.bypassworld      | Allows to access the shop when in banned world    | false               |
+| shopguiplus.buymore          | Allows use of the "Buy more" feature              | true                |
+| shopguiplus.sellmore         | Allows use of the "Sell more" feature             | true                |
+| shopguiplus.buyfullinventory | Allows use of the "Buy full inventory" feature    | false               |
